@@ -11,7 +11,16 @@
 </head>
 <body>
 <!--Nav bar-->
-    <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+    <ul class="nav nav-tabs justify-content-end navbar navbar-dark bg-dark" id="myTab" role="tablist">
+
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
         </li>
@@ -24,19 +33,15 @@
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="work-with-me-tab" data-bs-toggle="tab" data-bs-target="#work-with-me-tab-pane" type="button" role="tab" aria-controls="work-with-me-tab-pane" aria-selected="false">Work With Me</button>
         </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-pane" type="button" role="tab" aria-controls="contact-pane" aria-selected="false">Contact</button>
-        </li>
     </ul>
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
         <div class="tab-pane fade" id="projects-tab-pane" role="tabpanel" aria-labelledby="projects-tab" tabindex="0">...</div>
         <div class="tab-pane fade" id="about-tab-pane" role="tabpanel" aria-labelledby="about-tab" tabindex="0">...</div>
         <div class="tab-pane fade" id="work-with-me-tab-pane" role="tabpanel" aria-labelledby="work-with-me-tab" tabindex="0">...</div>
-<!--No content showing?-->
-        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
     </div>
 
+<!--Navbar 2?-->
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
           <h5 class="text-white h4">Collapsed content</h5>
@@ -51,6 +56,7 @@
         </div>
       </nav>
 
+<!--Navbar 3?-->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
@@ -76,6 +82,7 @@
                 <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
+            
           </div>
         </div>
       </nav>
