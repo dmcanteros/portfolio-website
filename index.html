@@ -8,6 +8,7 @@
     <title>Daphane Canteros</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" /> 
 </head>
 <body>
 <!--Header-->
@@ -16,12 +17,12 @@
       <nav class="navbar navbar-expand-md bg-body-tertiary">
 <!--Logo-->
         <div class="container-fluid">
-          <a class="navbar-brand" href="#" style="font-size: 2rem;">D.C</a>
+          <a class="navbar-brand fs-2" href="#" style="color:#55C9DF;"><strong>d.c</strong></a>
 <!--Hamburger menu-->
 &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
 &emsp14;&emsp14;&emsp14;
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon navbar-text"></span>
+            <span class="navbar-toggler-icon navbar-text justify-content-end"></span>
           </button>
 <!--Nav bar-->
           <div class="collapse navbar-collapse container-fluid" id="navbarNav">&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
@@ -30,16 +31,16 @@
             &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
             <ul class="navbar-nav nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                  <button class="nav-link active text-white-50 bg-dark" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
               </li>
               <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects-tab-pane" type="button" role="tab" aria-controls="projects-tab-pane" aria-selected="false">Projects</button>
+                  <button class="nav-link text-white-50 bg-dark" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects-tab-pane" type="button" role="tab" aria-controls="projects-tab-pane" aria-selected="false">Projects</button>
               </li>
               <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="false">About</button>
+                  <button class="nav-link text-white-50 bg-dark" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="false">About</button>
               </li>
               <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="work-with-me-tab" data-bs-toggle="tab" data-bs-target="#work-with-me-tab-pane" type="button" role="tab" aria-controls="work-with-me-tab-pane" aria-selected="false">Work With Me</button>
+                  <button class="nav-link text-white-50 bg-dark" id="work-with-me-tab" data-bs-toggle="tab" data-bs-target="#work-with-me-tab-pane" type="button" role="tab" aria-controls="work-with-me-tab-pane" aria-selected="false">Work With Me</button>
               </li>
             </ul>
           </div>
@@ -48,14 +49,32 @@
       </nav>
     </ul>
 <!--Tab content-->
-    <div class="tab-content bg-light" id="myTabContent">
+    <div class="tab-content " id="myTabContent" style="color:#E8E6D9;">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">Hello...</div>
         <div class="tab-pane fade" id="projects-tab-pane" role="tabpanel" aria-labelledby="projects-tab" tabindex="0">Hi...</div>
         <div class="tab-pane fade" id="about-tab-pane" role="tabpanel" aria-labelledby="about-tab" tabindex="0">Hey...</div>
         <div class="tab-pane fade" id="work-with-me-tab-pane" role="tabpanel" aria-labelledby="work-with-me-tab" tabindex="0">Hola...</div>
     </div>
 </div>
+<!--Footer-->
+<row class="container-fluid p-0">
+  <nav class="navbar fixed-bottom bg-body-tertiary navbar-dark bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-text" style="font-size: 14px;">
+        <p>Copyright &copy; 2023 <strong>Daphane Canteros</strong> <i class='bx bx-envelope' style="color:#55C9DF; font-size: 1.7rem;"></i> dc@daphanecanteros.com
+          <i class='bx bxl-linkedin' style="color:#55C9DF; font-size: 1.7rem;"></i>
+          <i class='bx bxl-github' style="color:#55C9DF; font-size: 1.7rem;"></i>
+          <i class='bx bxl-dribbble' style="color:#55C9DF; font-size: 1.7rem;"></i>
+          <i class='bx bxl-twitter' style="color:#55C9DF; font-size: 1.7rem;"></i>
+          <i class='bx bxl-facebook-circle' style="color:#55C9DF; font-size: 1.7rem;"></i>
+          <i class='bx bxl-instagram' style="color:#55C9DF; font-size: 1.7rem;"></i> 
+        </p>
+      </span>
+    </div>
+  </nav>
+</row>
 
+    <script src="js/bootstrap.bundle.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

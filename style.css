@@ -6,6 +6,8 @@ body {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+/* Background color */
 .tab-content {
-    height: 50rem;
+    height: 35rem;
+    background-color: #202020;
 }
