@@ -9,7 +9,7 @@ body {
 }
 /* Background color */
 .tab-content {
-    height: 30rem;
+    height: 50rem;
     background-color: #202020;
 }
 /* Home */
@@ -19,12 +19,12 @@ body {
     border-radius: 15px;
     border: 1px solid rgba(255,255,255,0.3);
     background: rgba(255,255,255,0.1);
+    height: 15rem;
 }
-
-
 /* Responsive Design */
-@media (min-width: 540px) {
-    .card {
-        height: 15rem;
+@media (max-width: 576px) {
+    #intro {
+        margin: 1rem;
+        padding: 0;
     }
 }
