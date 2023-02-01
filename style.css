@@ -7,10 +7,15 @@ body {
     box-sizing: border-box;
     background-color: #202020;
 }
-/* Background color */
+/* Tab content container */
 .tab-content {
-    height: 50rem;
+    height: 30rem;
     background-color: #202020;
+}
+#intro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 /* Home */
 .card {
@@ -25,6 +30,6 @@ body {
 @media (max-width: 576px) {
     #intro {
         margin: 1rem;
-        padding: 0;
+        padding-top: 20px;
     }
 }
