@@ -11,59 +11,51 @@
 </head>
 <body>
 <!--Header-->
-<div class="container-fluid p-0">
-    <ul class="nav nav-tabs navbar navbar-dark bg-dark justify-content-center sticky-top" id="myTab" role="tablist">
-      <nav class="navbar navbar-expand-md bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0">
+  <div class="container-fluid">
 <!--Logo-->
-        <div class="container-fluid">
-          <a class="navbar-brand fs-2" href="#" style="color:#55C9DF;"><strong>d.c</strong></a>
+  <a class="navbar-brand" href="#" id="logo"><strong>d.c</strong></a>
 <!--Hamburger menu-->
-&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
-&emsp14;&emsp14;&emsp14;
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon navbar-text justify-content-end"></span>
-          </button>
-<!--Nav bar-->
-          <div class="collapse navbar-collapse container-fluid" id="navbarNav">&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
-            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
-            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
-            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
-            <ul class="navbar-nav nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                  <button class="nav-link active text-white-50 bg-dark" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                  <button class="nav-link text-white-50 bg-dark" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects-tab-pane" type="button" role="tab" aria-controls="projects-tab-pane" aria-selected="false">Projects</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                  <button class="nav-link text-white-50 bg-dark" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="false">About</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                  <button class="nav-link text-white-50 bg-dark" id="work-with-me-tab" data-bs-toggle="tab" data-bs-target="#work-with-me-tab-pane" type="button" role="tab" aria-controls="work-with-me-tab-pane" aria-selected="false">Work With Me</button>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </nav>
-    </ul>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+<!--Nav tabs-->
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0 navbar-dark bg-dark sticky-top" id="myTab" role="tablist" style="border-radius: 5px;">
+        <li class="nav-item">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active text-white-50 bg-dark" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link text-white-50 bg-dark" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects-tab-pane" type="button" role="tab" aria-controls="projects-tab-pane" aria-selected="false">Projects</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link text-white-50 bg-dark" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="false">About</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link text-white-50 bg-dark" id="work-with-me-tab" data-bs-toggle="tab" data-bs-target="#work-with-me-tab-pane" type="button" role="tab" aria-controls="work-with-me-tab-pane" aria-selected="false">Work With Me</button>
+        </li>
+    </div>
+  </div>
+  </nav>
 <!--Tab content-->
     <div class="tab-content" id="myTabContent" style="color:#E8E6D9;">
 <!--Home-->
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-          <div class="container text-center py-5">
+          <div class="container py-5">
             <div class="row" id="intro">
               <div class="col-sm-8 card" data-tilt>
                 <div class="position-relative top-50 start-50 translate-middle row" id="textBox">
-                  <div style="color: #E8E6D9;">Hi, I am</div>
-                  <h1 id="name">DAPHANE CANTEROS</h1>  
-                  <row><span class="type pb-3">
+                  <div class="text-end px-5" style="color: #E8E6D9; background-color: aquamarine;">Hi, I am</div>
+                  <h1 class="text-center" id="name" style="background-color: rgb(127, 255, 161);">DAPHANE CANTEROS</h1>  
+                  <row><span class="type pb-4" style="background-color: rgb(255, 182, 127);"> 
                     <span>
                       <span style="font-size: 25px; color: #E8E6D9;"><strong>Front-End Web Developer</strong></span>
                       <span style="font-size: 25px; color: #E8E6D9;"><strong>Lifelong Learner</strong></span>
                     </span>
                   </span></row>
-                  <p class="text-white-50" id="desc">Developed useful projects to showcase innovative ideas, problem-solving, and abstract thinking skills that provide long-term practical solutions.</p>
+                  <p class="text-white-50 text-center px-5" id="desc" style="background-color: rgb(142, 127, 255);">Developed useful projects to showcase innovative ideas, problem-solving, and abstract thinking skills that provide long-term practical solutions.</p>
+                  <button class="btn btn-outline-success" type="submit">Search</button>
                 </div>
               </div>
 
@@ -96,7 +88,6 @@
     <div class="row-md-2 text-white-50 bg-dark" style="text-align: center; font-size: 13px;">
       <p style="padding-top: 4px;">Copyright &copy; 2023&nbsp;&nbsp;<strong>Daphane Canteros</strong></p>
     </div>
-
   </div>
 </div>
     <script src="js/bootstrap.bundle.js"></script>
