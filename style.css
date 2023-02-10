@@ -34,7 +34,7 @@ body {
     height: 27rem;
 }
 #name {
-    font-size: 5.5rem;
+    font-size: 6.5rem;
     font-family: 'Anton';
     color: transparent;
     -webkit-text-stroke: 1px #55C9DF;
@@ -44,14 +44,13 @@ body {
     display:inline-block;
     vertical-align: bottom;
     white-space: nowrap;
-    /* Left spacing? */
-    padding-left: 2em;
 }
 .type > span {
     display:grid;
     overflow: hidden;
     height:2.1em;
 }
+/* Adjust typing animation? */
 .type span span {
   width:0%;
   max-width:max-content;
