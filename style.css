@@ -50,7 +50,6 @@ body {
     overflow: hidden;
     height:2.1em;
 }
-/* Adjust typing animation? */
 .type span span {
   width:0%;
   max-width:max-content;
