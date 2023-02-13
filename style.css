@@ -15,9 +15,8 @@ body {
     -webkit-text-stroke: .1px #55C9DF;
 }
 /* Tab content container */
-/* In progress? */
 .tab-content {
-    height: 45rem;
+    height: 30rem;
     background-color: #202020;
 }
 /* Home */
@@ -38,7 +37,7 @@ body {
     height: 27rem;
 }
 #name {
-    font-size: 6.5rem;
+    font-size: 4.7rem;
     font-family: 'Anton';
     color: transparent;
     -webkit-text-stroke: 1px #55C9DF;
@@ -82,13 +81,16 @@ body {
 /* Responsive Design -------------------------------
 If the screen size is < or = to 720px (medium) */
 @media (max-width: 720px) {
+    .tab-content {
+        height: 35rem;
+    }
     #spacing {
-        margin-top: 2em;
+        margin-top: 3em;
     }
     .card {
         height: 21rem;
     }
     #name {
-        font-size: 86px;
+        font-size: 80px;
     }
 }
