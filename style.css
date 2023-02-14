@@ -16,7 +16,7 @@ body {
 }
 /* Tab content container */
 .tab-content {
-    height: 30rem;
+    height: 40rem;
     background-color: #202020;
 }
 /* Home */
@@ -78,19 +78,40 @@ body {
 @keyframes m{
     100% {transform:translateY(-300%)}
 }
-/* Responsive Design -------------------------------
-If the screen size is < or = to 720px (medium) */
-@media (max-width: 720px) {
+/* Responsive Design (medium) ---------------
+@media (max-width: 768px) {
+     styles for screens with a width of 768 pixels or less 
     .tab-content {
-        height: 35rem;
+        height: 40rem;
     }
     #spacing {
         margin-top: 3em;
     }
     .card {
-        height: 21rem;
+        height: 27rem;
     }
     #name {
         font-size: 80px;
     }
+}
+/* Small ----------------------------------------------------
+@media (max-width: 576px) {
+     styles for screens with a width of 576 pixels or less 
+    .tab-content {
+        height: 40rem;
+    }
+    #spacing {
+        margin-top: 3em;
+    }
+    .card {
+        height: 24rem;
+    }
+    #name {
+        font-size: 75px;
+    }
+} 
+/* Responsive Design --------------------------------------------------*/
+/* 466px is the minimum responsive screen size, > 466px are responsive */
+@media screen and (max-width: 466px) {
+
 }
