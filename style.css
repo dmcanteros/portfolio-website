@@ -35,9 +35,10 @@ body {
     border: 1px solid rgba(255,255,255,0.3);
     background: rgba(255,255,255,0.1);
     height: 27rem;
+    padding: 40px;
 }
 #name {
-    font-size: 4.7rem;
+    font-size: 4.8rem;
     font-family: 'Anton';
     color: transparent;
     -webkit-text-stroke: 1px #55C9DF;
@@ -47,11 +48,12 @@ body {
     display:inline-block;
     vertical-align: bottom;
     white-space: nowrap;
+    font-size: 25px;
 }
 .type > span {
     display:grid;
     overflow: hidden;
-    height:2.1em;
+    height: 1.7em;
 }
 .type span span {
   width:0%;
@@ -69,7 +71,7 @@ body {
     display:inline-block;
 }
 @keyframes t{
-    90%,100% {width:100%}
+    50%,100% {width:100%}
 }
 @keyframes c{
     0%,100%{box-shadow:5px 0 0 #0000}
@@ -78,40 +80,65 @@ body {
 @keyframes m{
     100% {transform:translateY(-300%)}
 }
-/* Responsive Design (medium) ---------------
-@media (max-width: 768px) {
-     styles for screens with a width of 768 pixels or less 
+/* Responsive Design ------------------------------------*/
+/* 412px is the minimum unresponsive mobile screen size */
+@media screen and (max-width: 412px) {
     .tab-content {
-        height: 40rem;
+        height: 45rem;
     }
     #spacing {
         margin-top: 3em;
     }
     .card {
-        height: 27rem;
+        padding: 20px;
     }
     #name {
-        font-size: 80px;
+        font-size: 4rem;
+    }
+    .type {
+        font-size: 23px;
+    }
+    .type > span {
+        height: 1.6em;
     }
 }
-/* Small ----------------------------------------------------
-@media (max-width: 576px) {
-     styles for screens with a width of 576 pixels or less 
+@media screen and (max-width: 320px) {
     .tab-content {
-        height: 40rem;
+        height: 45rem;
     }
     #spacing {
         margin-top: 3em;
     }
     .card {
-        height: 24rem;
+        padding: 20px;
     }
     #name {
-        font-size: 75px;
+        font-size: 4rem;
     }
-} 
-/* Responsive Design --------------------------------------------------*/
-/* 466px is the minimum responsive screen size, > 466px are responsive */
-@media screen and (max-width: 466px) {
-
+    .type {
+        font-size: 18px;
+    }
+    .type > span {
+        height: 1.5em;
+    }
+}
+@media screen and (max-width: 280px) {
+    .tab-content {
+        height: 45rem;
+    }
+    #spacing {
+        margin-top: 3em;
+    }
+    .card {
+        padding: 20px;
+    }
+    #name {
+        font-size: 3.6rem;
+    }
+    .type {
+        font-size: 16px;
+    }
+    .type > span {
+        height: 1.4em;
+    }
 }
