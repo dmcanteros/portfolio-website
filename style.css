@@ -20,7 +20,7 @@ body {
     background-color: #202020;
 }
 /* Home -----------------------*/
-#spacing {
+#home-margin {
     margin-top: 5em;
 }
 #intro {
@@ -81,6 +81,10 @@ body {
     100% {transform:translateY(-300%)}
 }
 /* Home arrow --------------------------*/
+#call-to-action-padding {
+    padding-left: 2em;
+    padding-right: 0;
+}
 .arrow span {
     display: inline-block;
     width: 30px; 
@@ -90,6 +94,8 @@ body {
     border-radius: 3px;
     margin: -10px; 
     animation: scroll 2s infinite;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .arrow span:nth-child(2) {
     animation-delay: -.2s;
@@ -111,12 +117,17 @@ body {
     }
 }
 /* Responsive Design ------------------------------------*/
+@media screen and (max-width: 990px) {
+    #call-to-action-padding {
+        padding-left: 0;
+    }
+}
 /* 412px is the minimum unresponsive mobile screen size */
 @media screen and (max-width: 412px) {
     .tab-content {
         height: 45rem;
     }
-    #spacing {
+    #home-margin {
         margin-top: 3em;
     }
     .card {
@@ -136,7 +147,7 @@ body {
     .tab-content {
         height: 45rem;
     }
-    #spacing {
+    #home-margin {
         margin-top: 3em;
     }
     .card {
@@ -156,7 +167,7 @@ body {
     .tab-content {
         height: 45rem;
     }
-    #spacing {
+    #home-margin {
         margin-top: 3em;
     }
     .card {
