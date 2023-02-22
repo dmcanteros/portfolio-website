@@ -14,10 +14,13 @@ body {
     color: transparent;
     -webkit-text-stroke: .1px #55C9DF;
 }
-/* Tab content container --------------*/
-.tab-content {
+/* Tab content container -------*/
+#home-tab-pane {
     height: 35rem;
     background-color: #202020;
+}
+#projects-tab-pane {
+    height: 500rem;
 }
 /* Home -----------------------*/
 #home-margin {
@@ -113,7 +116,7 @@ body {
     }
 }
 /* Projects ---------------*/
-
+/* In progress? */
 
 /* Responsive Design ------------------*/
 @media screen and (max-width: 991.5px) {
@@ -121,11 +124,12 @@ body {
         height: 51rem;
     }
 }
-@media screen and (max-width: 767.5px) {
-    .stack {
-        /* In progress? */
-        margin-bottom: 10px;
-      }
+/* Resizing "Tech Stack" title into smaller font */
+@media screen and (max-width: 456.5px) {
+    /* In progress? Responsive font size */
+    h1 .tech-stack {
+        font-size: 5px;
+    }
 }
 /* 412px is the minimum unresponsive mobile screen size */
 @media screen and (max-width: 412px) {
