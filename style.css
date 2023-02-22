@@ -112,11 +112,20 @@ body {
         transform: rotate(45deg) translate(20px,20px);
     }
 }
+/* Projects ---------------*/
+
+
 /* Responsive Design ------------------*/
 @media screen and (max-width: 991.5px) {
     .tab-content {
         height: 51rem;
     }
+}
+@media screen and (max-width: 767.5px) {
+    .stack {
+        /* In progress? */
+        margin-bottom: 10px;
+      }
 }
 /* 412px is the minimum unresponsive mobile screen size */
 @media screen and (max-width: 412px) {
