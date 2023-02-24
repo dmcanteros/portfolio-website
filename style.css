@@ -20,6 +20,7 @@ body {
     background-color: #202020;
 }
 #projects-tab-pane {
+    /* In progress? */
     height: 500rem;
 }
 /* Home -----------------------*/
@@ -115,20 +116,18 @@ body {
         transform: rotate(45deg) translate(20px,20px);
     }
 }
-/* Projects ---------------*/
-/* In progress? */
-
+/* Projects ---------*/
+.tech-stack {
+    font-size: 4.8rem;
+    font-family: 'Anton';
+    color: transparent;
+    -webkit-text-stroke: 1px #C2C4C8;
+}
 /* Responsive Design ------------------*/
 @media screen and (max-width: 991.5px) {
+    /* In progress? */
     .tab-content {
         height: 51rem;
-    }
-}
-/* Resizing "Tech Stack" title into smaller font */
-@media screen and (max-width: 456.5px) {
-    /* In progress? Responsive font size */
-    h1 .tech-stack {
-        font-size: 5px;
     }
 }
 /* 412px is the minimum unresponsive mobile screen size */
@@ -190,5 +189,33 @@ body {
     }
     .type > span {
         height: 1.4em;
+    }
+}
+/* These section is for specified responsive element resizing only
+Refer to the comments ------------------------------------------*/
+/* Resizing "Tech Stack" title into smaller font */
+@media screen and (max-width: 456.5px) {
+    .tech-stack {
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 360px) {
+    .tech-stack {
+        font-size: 3.9rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .tech-stack {
+        font-size: 3.4rem;
+    }
+    .card {
+        padding-top: 80%;
+        padding-bottom: 80%;
+    }
+}
+@media screen and (max-width: 280px) {
+    .card {
+        padding-top: 110%;
+        padding-bottom: 110%;
     }
 }
