@@ -23,15 +23,7 @@ body {
     /* In progress? */
     height: 500rem;
 }
-/* Home -----------------------*/
-#home-margin {
-    margin-top: 5em;
-}
-#intro {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
+/* Cards -------------------------------------*/
 .card {
     color: #fff;
     box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
@@ -41,11 +33,74 @@ body {
     height: 27rem;
     padding: 40px;
 }
+#card-projects {
+    color: #fff;
+    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.1);
+    height: 27rem;
+    padding: 40px;
+}
+/* Modify "h1" titles -----------------*/
 #name {
     font-size: 4.8rem;
     font-family: 'Anton';
     color: transparent;
     -webkit-text-stroke: 1px #55C9DF;
+}
+#tech-stack {
+    font-size: 4.8rem;
+    font-family: 'Anton';
+    color: transparent;
+    -webkit-text-stroke: 1px #C2C4C8;
+}
+#projects {
+    font-size: 4.8rem;
+    font-family: 'Anton';
+    color: transparent;
+    -webkit-text-stroke: 1px #55C9DF;
+}
+/* Arrow ------------------------------*/
+.arrow span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-bottom: -10px;
+    border-bottom: 5px solid #55C9DF;
+    border-right: 5px solid #55C9DF;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    animation: scroll 2s infinite;
+}
+.arrow span:nth-child(2) {
+    animation-delay: -.2s;
+}
+.arrow span:nth-child(3) {
+    animation-delay: -.4s;
+}
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+/* Home -----------------------------*/
+#home-margin {
+    margin-top: 5em;
+}
+#intro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 /* Infinite typing animation ---------*/
 .type {
@@ -84,48 +139,8 @@ body {
 @keyframes m{
     100% {transform:translateY(-300%)}
 }
-/* Arrow ------------------------------*/
-.arrow span {
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin: auto;
-    margin-bottom: -10px;
-    border-bottom: 5px solid #55C9DF;
-    border-right: 5px solid #55C9DF;
-    border-radius: 3px;
-    transform: rotate(45deg);
-    animation: scroll 2s infinite;
-}
-.arrow span:nth-child(2) {
-    animation-delay: -.2s;
-}
-.arrow span:nth-child(3) {
-    animation-delay: -.4s;
-}
-@keyframes scroll {
-    0% {
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
-}
-/* Projects ---------*/
-.tech-stack {
-    font-size: 4.8rem;
-    font-family: 'Anton';
-    color: transparent;
-    -webkit-text-stroke: 1px #C2C4C8;
-}
 /* Responsive Design ------------------*/
 @media screen and (max-width: 991.5px) {
-    /* In progress? */
     .tab-content {
         height: 51rem;
     }
@@ -195,17 +210,17 @@ body {
 Refer to the comments ------------------------------------------*/
 /* Resizing "Tech Stack" title into smaller font */
 @media screen and (max-width: 456.5px) {
-    .tech-stack {
+    #tech-stack {
         font-size: 4rem;
     }
 }
 @media screen and (max-width: 360px) {
-    .tech-stack {
+    #tech-stack {
         font-size: 3.9rem;
     }
 }
 @media screen and (max-width: 320px) {
-    .tech-stack {
+    #tech-stack {
         font-size: 3.4rem;
     }
     .card {
@@ -217,5 +232,26 @@ Refer to the comments ------------------------------------------*/
     .card {
         padding-top: 110%;
         padding-bottom: 110%;
+    }
+}
+/* Resizing "Projects" title into smaller font */
+@media screen and (max-width: 1199.5px) {
+    #projects {
+        font-size: 4.3rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    #projects {
+        font-size: 4.5rem;
+    }
+    #card-projects {
+        /* In progress */
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+@media screen and (max-width: 280px) {
+    #projects {
+        font-size: 3.7rem;
     }
 }
