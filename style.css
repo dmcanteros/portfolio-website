@@ -24,7 +24,7 @@ body {
     height: 500rem;
 }
 /* Cards -------------------------------------*/
-.card {
+#card-home {
     color: #fff;
     box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
@@ -33,14 +33,23 @@ body {
     height: 27rem;
     padding: 40px;
 }
-#card-projects {
+#card-tech-stack {
     color: #fff;
     box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     border: 1px solid rgba(255,255,255,0.3);
     background: rgba(255,255,255,0.1);
     height: 27rem;
-    padding: 40px;
+    padding: 30px;
+}
+#card-projects {
+    color: #fff;
+    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.1);
+    height: 20rem;
+    padding: 30px;
 }
 /* Modify "h1" titles -----------------*/
 #name {
@@ -139,13 +148,16 @@ body {
 @keyframes m{
     100% {transform:translateY(-300%)}
 }
-/* Responsive Design ------------------*/
+/* Responsive Design (Home) -----------*/
 @media screen and (max-width: 991.5px) {
     .tab-content {
         height: 51rem;
     }
+        #name {
+        font-size: 5rem;
+    }
 }
-/* 412px is the minimum unresponsive mobile screen size */
+/* (Home) 412px is the minimum unresponsive mobile screen size */
 @media screen and (max-width: 412px) {
     .tab-content {
         height: 52rem;
@@ -153,11 +165,11 @@ body {
     #home-margin {
         margin-top: 3em;
     }
-    .card {
+    #card-home {
         padding: 20px;
     }
     #name {
-        font-size: 4rem;
+        font-size: 5rem;
     }
     .type {
         font-size: 23px;
@@ -173,7 +185,7 @@ body {
     #home-margin {
         margin-top: 3em;
     }
-    .card {
+    #card-home {
         padding: 20px;
     }
     #name {
@@ -193,7 +205,7 @@ body {
     #home-margin {
         margin-top: 3em;
     }
-    .card {
+    #card-home {
         padding: 20px;
     }
     #name {
@@ -221,17 +233,21 @@ Refer to the comments ------------------------------------------*/
 }
 @media screen and (max-width: 320px) {
     #tech-stack {
-        font-size: 3.4rem;
+        font-size: 4rem;
     }
-    .card {
-        padding-top: 80%;
-        padding-bottom: 80%;
+    #card-tech-stack {
+        padding-top: 90%;
+        padding-bottom: 90%;
     }
 }
 @media screen and (max-width: 280px) {
-    .card {
-        padding-top: 110%;
-        padding-bottom: 110%;
+    #tech-stack {
+        font-size: 3.5rem;
+        padding: 0;
+    }
+    #card-tech-stack {
+        padding-top: 100%;
+        padding-bottom: 105%;
     }
 }
 /* Resizing "Projects" title into smaller font */
@@ -242,16 +258,12 @@ Refer to the comments ------------------------------------------*/
 }
 @media screen and (max-width: 320px) {
     #projects {
-        font-size: 4.5rem;
-    }
-    #card-projects {
-        /* In progress */
-        padding-top: 10%;
-        padding-bottom: 10%;
+        font-size: 4rem;
     }
 }
 @media screen and (max-width: 280px) {
     #projects {
-        font-size: 3.7rem;
+        font-size: 3.5rem;
+        padding: 0;
     }
 }
