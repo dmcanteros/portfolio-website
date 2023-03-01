@@ -165,16 +165,16 @@ body {
 }
 /* Responsive Design (Home) -----------*/
 @media screen and (max-width: 991.5px) {
-    .tab-content {
+    #home-tab-pane {
         height: 51rem;
     }
-        #name {
+    #name {
         font-size: 5rem;
     }
 }
 /* (Home) 412px is the minimum unresponsive mobile screen size */
 @media screen and (max-width: 412px) {
-    .tab-content {
+    #home-tab-pane {
         height: 52rem;
     }
     #home-margin {
@@ -194,7 +194,7 @@ body {
     }
 }
 @media screen and (max-width: 320px) {
-    .tab-content {
+    #home-tab-pane {
         height: 52rem;
     }
     #home-margin {
@@ -214,7 +214,7 @@ body {
     }
 }
 @media screen and (max-width: 280px) {
-    .tab-content {
+    #home-tab-pane {
         height: 55rem;
     }
     #home-margin {
