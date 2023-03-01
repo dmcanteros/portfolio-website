@@ -51,6 +51,15 @@ body {
     height: 20rem;
     padding: 30px;
 }
+#card-cert {
+    color: #fff;
+    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.1);
+    height: 20rem;
+    padding: 30px;
+}
 /* Modify "h1" titles -----------------*/
 #name {
     font-size: 4.8rem;
@@ -65,6 +74,12 @@ body {
     -webkit-text-stroke: 1px #C2C4C8;
 }
 #projects {
+    font-size: 4.8rem;
+    font-family: 'Anton';
+    color: transparent;
+    -webkit-text-stroke: 1px #55C9DF;
+}
+#cert {
     font-size: 4.8rem;
     font-family: 'Anton';
     color: transparent;
