@@ -39,7 +39,8 @@ body {
     border-radius: 15px;
     border: 1px solid rgba(255,255,255,0.3);
     background: rgba(255,255,255,0.1);
-    height: 27rem;
+    height: 30rem;
+    width: 30rem;
     padding: 30px;
 }
 #card-projects {
@@ -241,14 +242,19 @@ Refer to the comments ------------------------------------------*/
         font-size: 4rem;
     }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380.5px) {
     #tech-stack {
-        font-size: 3.9rem;
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width: 360.5px) {
+    #tech-stack {
+        font-size: 3.5rem;
     }
 }
 @media screen and (max-width: 320px) {
     #tech-stack {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     #card-tech-stack {
         padding-top: 90%;
@@ -280,5 +286,16 @@ Refer to the comments ------------------------------------------*/
     #projects {
         font-size: 3.5rem;
         padding: 0;
+    }
+}
+/* Resizing "Certificates" title into smaller font */
+@media screen and (max-width: 1399.5px) {
+    #cert {
+        font-size: 4.3rem;
+    }
+}
+@media screen and (max-width: 1199.5px) {
+    #cert {
+        font-size: 3.5rem;
     }
 }
