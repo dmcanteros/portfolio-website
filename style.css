@@ -165,7 +165,8 @@ body {
 @keyframes m{
     100% {transform:translateY(-300%)}
 }
-/* Responsive Design (Home) -----------*/
+/* Responsive Design --------------------------------------------
+(Home) --------------------------------------------------------*/
 @media screen and (max-width: 1199.5px) {
     #home-tab-pane {
         height: 51rem;
@@ -239,8 +240,8 @@ body {
         height: 1.4em;
     }
 }
-/* These section is for specified responsive element resizing only
-Refer to the comments ------------------------------------------*/
+/* Responsive Design --------------------------------
+(Projects) ----------------------------------------*/
 /* Resizing "Tech Stack" title into smaller font */
 @media screen and (max-width: 767.5px) {
     #tech-stack {
@@ -262,5 +263,86 @@ Refer to the comments ------------------------------------------*/
 @media screen and (max-width: 767.5px) {
     #cert {
         font-size: 3.5rem;
+    }
+}
+/* (Projects) tab-pane ------------------------------*/
+@media screen and (max-width: 1396px) {
+    #projects-tab-pane {
+        height: 237rem;
+    }
+}
+@media screen and (max-width: 1199.5px) {
+    #projects-tab-pane {
+        height: 228rem;
+    }
+}
+@media screen and (max-width: 991.5px) {
+    #projects-tab-pane {
+        height: 303rem;
+    }
+}
+@media screen and (max-width: 767.5px) {
+    #projects-tab-pane {
+        height: 308rem;
+    }
+}
+@media screen and (max-width: 712px) {
+    #projects-tab-pane {
+        height: 303rem;
+    }
+}
+@media screen and (max-width: 576.5px) {
+    #projects-tab-pane {
+        height: 280rem;
+    }
+}
+@media screen and (max-width: 540px) {
+    #projects-tab-pane {
+        height: 281rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    #projects-tab-pane {
+        height: 270rem;
+    }
+}
+@media screen and (max-width: 462px) {
+    #projects-tab-pane {
+        height: 264rem;
+    }
+}
+@media screen and (max-width: 414.5px) {
+    #projects-tab-pane {
+        height: 260rem;
+    }
+}
+@media screen and (max-width: 394px) {
+    #projects-tab-pane {
+        height: 263rem;
+    }
+}
+@media screen and (max-width: 375.5px) {
+    #projects-tab-pane {
+        height: 266rem;
+    }
+}
+@media screen and (max-width: 357.5px) {
+    #projects-tab-pane {
+        height: 270rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    #projects-tab-pane {
+        height: 267rem;
+    }
+}
+@media screen and (max-width: 300px) {
+    #projects-tab-pane {
+        height: 272rem;
+    }
+}
+@media screen and (max-width: 280px) {
+    #projects-tab-pane {
+        height: 270rem;
     }
 }
