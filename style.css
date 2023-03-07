@@ -66,6 +66,16 @@ body {
     width: 30rem;
     padding: 30px;
 }
+#card-about {
+    color: #fff;
+    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.1);
+    height: 40rem;
+    width: 35rem;
+    padding: 30px;
+}
 /* Modify "h1" titles -----------------*/
 #name {
     font-size: 5rem;
