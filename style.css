@@ -22,6 +22,10 @@ body {
 #projects-tab-pane {
     height: 250rem;
 }
+#about-tab-pane {
+    /* In progress? Resize tab height */
+    height: 60rem;
+}
 /* Cards -------------------------------------*/
 #card-home {
     color: #fff;
