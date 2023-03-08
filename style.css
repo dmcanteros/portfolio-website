@@ -24,7 +24,7 @@ body {
 }
 #about-tab-pane {
     /* In progress? Resize tab height */
-    height: 60rem;
+    height: 120rem;
 }
 /* Cards -------------------------------------*/
 #card-home {
@@ -72,8 +72,8 @@ body {
     border-radius: 15px;
     border: 1px solid rgba(255,255,255,0.3);
     background: rgba(255,255,255,0.1);
-    height: 40rem;
-    width: 35rem;
+    height: 45rem;
+    width: 30rem;
     padding: 30px;
 }
 /* Modify "h1" titles -----------------*/
