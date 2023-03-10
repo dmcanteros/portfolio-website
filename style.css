@@ -376,6 +376,7 @@ body {
 }
 /* Responsive Design --------------------------------
 (About) ----------------------------------------*/
+/* TODO: Responsive grid for social icons */
 @media screen and (max-width: 991.5px) {
     #card-about {
         height: 52rem;
