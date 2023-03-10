@@ -138,6 +138,14 @@ body {
         transform: rotate(45deg) translate(20px,20px);
     }
 }
+/* Images ---------------------------*/
+.about-photo {
+    color: #fff;
+    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.1);
+}
 /* Home -----------------------------*/
 #home-margin {
     margin-top: 5em;
@@ -374,5 +382,63 @@ body {
     }
     #about {
         font-size: 4.4rem;
+    }
+}
+@media screen and (max-width: 767.5px) {
+    #about-tab-pane {
+        height: 100rem;
+    }
+    #card-about {
+        height: 45rem;
+    }
+    #about {
+        font-size: 4.4rem;
+    }
+}
+@media screen and (max-width: 690.5px) {
+    #about-tab-pane {
+        height: 95rem;
+    }
+}
+@media screen and (max-width: 600.5px) {
+    #about-tab-pane {
+        height: 91rem;
+    }
+}
+@media screen and (max-width: 550.5px) {
+    #about-tab-pane {
+        height: 88rem;
+    }
+}
+@media screen and (max-width: 550.5px) {
+    #about-tab-pane {
+        height: 85rem;
+    }
+}
+@media screen and (max-width: 478.5px) {
+    #about-tab-pane {
+        height: 86rem;
+    }
+    #card-about {
+        height: 48rem;
+    }
+    #about {
+        font-size: 4.2rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    #card-about {
+        height: 50rem;
+    }
+    #about {
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 420px) {
+    #card-about {
+        height: 50rem;
+    }
+    #about {
+        font-size: 4rem;
     }
 }
