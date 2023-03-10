@@ -23,8 +23,7 @@ body {
     height: 250rem;
 }
 #about-tab-pane {
-    /* In progress? Resize tab height */
-    height: 120rem;
+    height: 60rem;
 }
 /* Cards -------------------------------------*/
 #card-home {
@@ -96,6 +95,12 @@ body {
     -webkit-text-stroke: 1px #55C9DF;
 }
 #cert {
+    font-size: 4.8rem;
+    font-family: 'Anton';
+    color: transparent;
+    -webkit-text-stroke: 1px #55C9DF;
+}
+#about {
     font-size: 4.8rem;
     font-family: 'Anton';
     color: transparent;
@@ -279,7 +284,8 @@ body {
         font-size: 3.5rem;
     }
 }
-/* (Projects) tab-pane ------------------------------*/
+/* (Projects) tab-pane ------------------------------
+----------------------------------------------------*/
 @media screen and (max-width: 1396px) {
     #projects-tab-pane {
         height: 237rem;
@@ -358,5 +364,15 @@ body {
 @media screen and (max-width: 280px) {
     #projects-tab-pane {
         height: 270rem;
+    }
+}
+/* Responsive Design --------------------------------
+(About) ----------------------------------------*/
+@media screen and (max-width: 991.5px) {
+    #card-about {
+        height: 52rem;
+    }
+    #about {
+        font-size: 4.4rem;
     }
 }
