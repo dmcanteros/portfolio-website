@@ -23,7 +23,7 @@ body {
     height: 250rem;
 }
 #about-tab-pane {
-    height: 60rem;
+    height: 59rem;
 }
 /* Cards -------------------------------------*/
 #card-home {
@@ -146,9 +146,15 @@ body {
     border: 1px solid rgba(255,255,255,0.3);
     background: rgba(255,255,255,0.1);
 }
-/* Home -----------------------------*/
+/* Margin -----------------------------*/
 #home-margin {
     margin-top: 5em;
+}
+#projects-margin {
+    margin-top: 5em;
+}
+#about-margin {
+    margin-top: 4em;
 }
 #intro {
     margin-left: auto;
@@ -376,10 +382,10 @@ body {
 }
 /* Responsive Design --------------------------------
 (About) ----------------------------------------*/
-/* TODO: Responsive grid for social icons */
+/* TODO: Finalize responsive in all screen sizes */
 @media screen and (max-width: 991.5px) {
     #card-about {
-        height: 52rem;
+        height: 50rem;
     }
     #about {
         font-size: 4.4rem;
@@ -387,33 +393,25 @@ body {
 }
 @media screen and (max-width: 767.5px) {
     #about-tab-pane {
-        height: 100rem;
+        height: 98rem;
     }
     #card-about {
-        height: 45rem;
-    }
-    #about {
-        font-size: 4.4rem;
+        height: 44rem;
     }
 }
 @media screen and (max-width: 690.5px) {
     #about-tab-pane {
-        height: 95rem;
+        height: 94rem;
     }
 }
 @media screen and (max-width: 600.5px) {
     #about-tab-pane {
-        height: 91rem;
+        height: 90rem;
     }
 }
 @media screen and (max-width: 550.5px) {
     #about-tab-pane {
-        height: 88rem;
-    }
-}
-@media screen and (max-width: 550.5px) {
-    #about-tab-pane {
-        height: 85rem;
+        height: 87rem;
     }
 }
 @media screen and (max-width: 478.5px) {
@@ -427,7 +425,7 @@ body {
         font-size: 4.2rem;
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 451.5px) {
     #card-about {
         height: 50rem;
     }
@@ -435,11 +433,76 @@ body {
         font-size: 4rem;
     }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 420.5px) {
+    #about-tab-pane {
+        height: 89rem;
+    }
     #card-about {
-        height: 50rem;
+        height: 54rem;
+    }
+}
+@media screen and (max-width: 400.5px) {
+    #about-tab-pane {
+        height: 89rem;
+    }
+    #card-about {
+        height: 56rem;
+    }
+}
+@media screen and (max-width: 380.5px) {
+    #about-tab-pane {
+        height: 90rem;
+    }
+    #card-about {
+        height: 58rem;
     }
     #about {
-        font-size: 4rem;
+        font-size: 3.9rem;
+    }
+}
+@media screen and (max-width: 362.5px) {
+    #about-tab-pane {
+        height: 94rem;
+    }
+    #card-about {
+        height: 63rem;
+    }
+    #about {
+        font-size: 3.7rem;
+    }
+}
+@media screen and (max-width: 348px) {
+    #card-about {
+        height: 64rem;
+    }
+    #about {
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width: 336px) {
+    #card-about {
+        height: 65rem;
+    }
+    #about {
+        font-size: 3.4rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    #about-tab-pane {
+        height: 97rem;
+    }
+    #card-about {
+        height: 69rem;
+    }
+    #about {
+        font-size: 3.2rem;
+    }
+}
+@media screen and (max-width: 280px) {
+    #about-tab-pane {
+        height: 112rem;
+    }
+    #card-about {
+        height: 85rem;
     }
 }
