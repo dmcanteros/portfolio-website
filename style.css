@@ -382,7 +382,12 @@ body {
 }
 /* Responsive Design --------------------------------
 (About) ----------------------------------------*/
-/* TODO: Finalize responsive in all screen sizes */
+/* Responsive in all screen sizes --------------*/
+@media screen and (max-width: 1366.5px) {
+    #about-tab-pane {
+        height: 52rem;
+    }
+}
 @media screen and (max-width: 991.5px) {
     #card-about {
         height: 50rem;
@@ -462,10 +467,10 @@ body {
 }
 @media screen and (max-width: 362.5px) {
     #about-tab-pane {
-        height: 94rem;
+        height: 90rem;
     }
     #card-about {
-        height: 63rem;
+        height: 58rem;
     }
     #about {
         font-size: 3.7rem;
@@ -487,22 +492,22 @@ body {
         font-size: 3.4rem;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320.5px) {
     #about-tab-pane {
-        height: 97rem;
+        height: 93rem;
     }
     #card-about {
-        height: 69rem;
+        height: 65rem;
     }
     #about {
         font-size: 3.2rem;
     }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 281px) {
     #about-tab-pane {
-        height: 112rem;
+        height: 105rem;
     }
     #card-about {
-        height: 85rem;
+        height: 77rem;
     }
 }
