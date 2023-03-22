@@ -25,6 +25,10 @@ body {
 #about-tab-pane {
     height: 59rem;
 }
+#work-with-me-tab-pane {
+    /* TODO: Finalize */
+    height: 59rem;
+}
 /* Cards -------------------------------------*/
 #card-home {
     color: #fff;
