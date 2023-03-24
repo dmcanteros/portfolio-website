@@ -354,24 +354,39 @@
           
           <div class="container-md" id="work-with-me-margin">
             <div class="row justify-content-center" id="intro">
-              <div class="container-md text-center border">
+              <div class="container-md text-center">
                 <div class="row justify-content-evenly">
                   <div class="col-md-6 m-3" id="card-linkedin" data-tilt>
-                    <!--Linkedin-------------------------------------------------------------------->
-                      
-
+                    <!--Linkedin------------------------------------------------------------------->
+                    <i class='bx bxl-linkedin px-2' style="color:#55C9DF; font-size: 2.5rem;"></i>
+                    <p class="text-light mt-1 social">Daphane Canteros</p>
+                    <!--Button-->
+                    <button class="container-fluid btn btn-outline-success mb-3" type="submit">View Profile</button>
                   </div>
                   <div class="col-md-6 m-3" id="card-email" data-tilt>
                     <!--Email--------------------------------------------------------------------->
                     <i class='bx bx-envelope px-2' style="color:#55C9DF; font-size: 2.5rem;"></i>
-                    <p class="text-light">dc@daphanecanteros.dev</p>
+                    <p class="text-light mt-1 social">dc@daphanecanteros.dev</p>
                     <!--Button-->
                     <button class="container-fluid btn btn-outline-success mb-3" type="submit">Send Email</button>
                   </div>
                 </div>
                 <!--Form-------->
-                <div class="row">
-                  <div class="col m-3 border">.col-6<br>Form</div>
+
+                <div class="row justify-content-center">
+                  <div class="col-md-6 m-3 form">
+                    <!--TODO: Input text should be in dark mode-->
+                    <div class="form-floating mb-3 text-bg-dark bg-dark text-white-50">
+                      <input type="name" class="form-control" id="floatingInput" placeholder="First Name, Last Name" required>
+                      <label for="floatingInput text-bg-dark bg-dark text-white-50">Name</label>
+                    </div>
+                    <div class="form-floating text-bg-dark bg-dark text-white-50" required>
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput text-bg-dark bg-dark text-white-50">Email</label>
+                    </div>
+
+
+                  </div>
                 </div>
               </div>
 
