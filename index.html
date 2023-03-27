@@ -371,19 +371,25 @@
                     <button class="container-fluid btn btn-outline-success mb-3" type="submit">Send Email</button>
                   </div>
                   <!--Form-------->
-                  <div class="col-lg-6 form">
+                  <div class="col-lg-6 form text-bg-dark">
                     <h1 class="text-center" id="name">Say Hi!</h1>
                     <p class="card-text mt-2 text-white-50">I am beyond grateful to work with you.</p>
                     <br>
                     <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="color: black; background-color: gray;">
-                      <label for="floatingInput" style="color: black; background-color: whitesmoke;">Email address</label>
+                      <input type="name" class="form-control text-bg-dark" id="floatingInput" placeholder="First Name, Last Name" value="" required>
+                      <label for="floatingInput" class="text-white-50">Full Name</label>
+                      <!--TODO: Finalized invalid feedback-->
+                      <div class="invalid-feedback">
+                        Please provide your fullname.
+                      </div>
                     </div>
                     <div class="form-floating">
                       <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                       <label for="floatingPassword">Password</label>
                     </div>
-
+                    <div class="col-md-12">
+                      <button class="container-fluid btn btn-outline-success" type="submit">Send</button>
+                    </div>
                 </div>
                 <!--Form-------->
 
