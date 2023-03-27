@@ -26,8 +26,8 @@ body {
     height: 59rem;
 }
 #work-with-me-tab-pane {
-    /* TODO: Finalize */
-    height: 100rem;
+    /* TODO: Make tab pane responsive when extending the text-area */
+    height: 66rem;
 }
 /* Cards -------------------------------------*/
 #card-home {
@@ -548,7 +548,13 @@ body {
 /* Responsive Design ------------------------------------
 (Work With Me) ----------------------------------------*/
 @media screen and (max-width: 281px) {
-    .social {
+    #work-with-me-tab-pane {
+        height: 80rem;
+    }
+    .size {
+        font-size: 13px;
+    }
+    #floatingInput {
         font-size: 13px;
     }
 }
