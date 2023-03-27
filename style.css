@@ -290,7 +290,7 @@ body {
         height: 1.5em;
     }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 280.5px) {
     #home-tab-pane {
         height: 55rem;
     }
@@ -539,10 +539,10 @@ body {
 }
 @media screen and (max-width: 281px) {
     #about-tab-pane {
-        height: 105rem;
+        height: 90rem;
     }
     #card-about {
-        height: 77rem;
+        height: 64rem;
     }
 }
 /* Responsive Design ------------------------------------
