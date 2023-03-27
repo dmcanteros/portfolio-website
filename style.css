@@ -547,6 +547,7 @@ body {
 }
 /* Responsive Design ------------------------------------
 (Work With Me) ----------------------------------------*/
+/* TODO: Make tab pane responsive for all screen sizes */
 @media screen and (max-width: 281px) {
     #work-with-me-tab-pane {
         height: 80rem;
