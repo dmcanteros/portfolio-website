@@ -239,6 +239,11 @@ body {
         height: 51rem;
     }
 }
+@media screen and (max-width: 1024.5px) {
+    #home-tab-pane {
+        height: 35rem;
+    }
+}
 @media screen and (max-width: 506px) {
     #name {
         font-size: 4.5rem;
@@ -292,13 +297,14 @@ body {
 }
 @media screen and (max-width: 280.5px) {
     #home-tab-pane {
-        height: 55rem;
+        height: 50rem;
     }
     #home-margin {
         margin-top: 3em;
     }
     #card-home {
         padding: 20px;
+        height: 24rem;
     }
     .type {
         font-size: 16px;
@@ -320,16 +326,47 @@ body {
         height: 30rem;
     }
 }
+@media screen and (max-width: 280.5px) {
+    #card-tech-stack {
+        height: 29rem;
+    }
+}
 /* Resizing "Projects" title into smaller font */
 @media screen and (max-width: 767.5px) {
     #projects {
         font-size: 3.5rem;
     }
 }
+@media screen and (max-width: 414.5px) {
+    #card-projects {
+        height: 17rem;
+    }
+}
+@media screen and (max-width: 360.5px) {
+    #card-projects {
+        height: 18rem;
+    }
+}
+
 /* Resizing "Certificates" title into smaller font */
 @media screen and (max-width: 767.5px) {
     #cert {
         font-size: 3.5rem;
+    }
+}
+@media screen and (max-width: 414.5px) {
+    #card-cert {
+        height: 18rem;
+    }
+}
+@media screen and (max-width: 360.5px) {
+    #card-cert {
+        height: 17rem;
+    }
+}
+@media screen and (max-width: 320.5px) {
+    #card-cert {
+        height: 19rem;
     }
 }
 /* (Projects) tab-pane ------------------------------
@@ -381,7 +418,7 @@ body {
 }
 @media screen and (max-width: 414.5px) {
     #projects-tab-pane {
-        height: 260rem;
+        height: 255rem;
     }
 }
 @media screen and (max-width: 394px) {
@@ -391,7 +428,12 @@ body {
 }
 @media screen and (max-width: 375.5px) {
     #projects-tab-pane {
-        height: 266rem;
+        height: 262rem;
+    }
+}
+@media screen and (max-width: 360.5px) {
+    #projects-tab-pane {
+        height: 260rem;
     }
 }
 @media screen and (max-width: 357.5px) {
@@ -409,9 +451,9 @@ body {
         height: 272rem;
     }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 280.5px) {
     #projects-tab-pane {
-        height: 270rem;
+        height: 248rem;
     }
 }
 /* Responsive Design --------------------------------
@@ -542,12 +584,32 @@ body {
         height: 90rem;
     }
     #card-about {
-        height: 64rem;
+        height: 60rem;
     }
 }
 /* Responsive Design ------------------------------------
 (Work With Me) ----------------------------------------*/
-/* TODO: Make tab pane responsive for all screen sizes */
+/* All screen sizes should be responsive */
+@media screen and (max-width: 540.5px) {
+    #work-with-me-tab-pane {
+        height: 81rem;
+    }
+}
+@media screen and (max-width: 414.5px) {
+    #work-with-me-tab-pane {
+        height: 83rem;
+    }
+}
+@media screen and (max-width: 360.5px) {
+    #work-with-me-tab-pane {
+        height: 82rem;
+    }
+}
+@media screen and (max-width: 320.5px) {
+    #work-with-me-tab-pane {
+        height: 80rem;
+    }
+}
 @media screen and (max-width: 281px) {
     #work-with-me-tab-pane {
         height: 80rem;
