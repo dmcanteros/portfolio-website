@@ -1,27 +1,46 @@
-// The green line below is hidden in live server
-import * as THREE from /* 'https://unpkg.com/three/build/three.module.js'; */
+  const canvas = document.querySelector('#myCanvas');
+  const renderer = new THREE.WebGLRenderer({canvas});
 
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+  const fov = 75;
+  const aspect = 2;  // the canvas default
+  const near = 0.1;
+  const far = 5;
+  const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+  camera.position.z = 2;
 
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize( window.innerWidth, window.innerHeight );
-document.body.appendChild( renderer.domElement );
+  const scene = new THREE.Scene();
 
-const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-const cube = new THREE.Mesh( geometry, material );
-scene.add( cube );
+  const boxWidth = 1;
+  const boxHeight = 1;
+  const boxDepth = 1;
+  const geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth);
 
-camera.position.z = 5;
+  const material = new THREE.MeshBasicMaterial({color: 0x44aa88});  // greenish blue
 
-function animate() {
-	requestAnimationFrame( animate );
+  const cube = new THREE.Mesh(geometry, material);
+  scene.add(cube);
 
-	cube.rotation.x += 0.01;
-	cube.rotation.y += 0.01;
+  function render(time) {
+    time *= 0.001;  // convert time to seconds
 
-	renderer.render( scene, camera );
-}
+    cube.rotation.x = time;
+    cube.rotation.y = time;
 
-animate();
+    renderer.render(scene, camera);
+
+    requestAnimationFrame(render);
+  }
+  requestAnimationFrame(render);
+
+  // TODO: Resize according to screen size
+  // When you remove the syntax below, the cube's size is able to adjust based on the screen size
+  function resize() {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    renderer.setSize(width, height);
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+  }
+
+  window.addEventListener('resize', resize);
+  resize();

@@ -8,10 +8,34 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" /> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+<!--Logo------------------------------------------------------------>
+    <a class="navbar-brand" href="#home-tab-pane" id="logo"><strong>d.c</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active text-white-50 bg-dark size" id="home-tab" aria-current="page" href="#">Home</a>
+        <a class="nav-link text-white-50 bg-dark size" id="projects-tab" href="#">Projects</a>
+        <a class="nav-link text-white-50 bg-dark size" id="about-tab" href="#">About</a>
+        <a class="nav-link text-white-50 bg-dark size" id="work-with-me-tab" href="#">Work With Me</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" style="height: 100rem;">
+<canvas id="myCanvas"></canvas>
+</div>
+
 <!--Header--------------------------------------------------->
-<nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0">
+<nav class="navbar navbar-expand-lg bg-body-tertiary m-0" style="padding-top: 100px;">
   <div class="container-fluid">
 <!--Logo------------------------------------------------------------>
   <a class="navbar-brand" href="#home-tab-pane" id="logo"><strong>d.c</strong></a>
