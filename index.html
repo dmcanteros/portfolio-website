@@ -22,17 +22,18 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active text-white-50 bg-dark size" id="home-tab" aria-current="page" href="#">Home</a>
-        <a class="nav-link text-white-50 bg-dark size" id="projects-tab" href="#">Projects</a>
+        <a class="nav-link text-white-50 bg-dark size" id="projects-tab" href="#scroll-projects">Projects</a>
         <a class="nav-link text-white-50 bg-dark size" id="about-tab" href="#">About</a>
         <a class="nav-link text-white-50 bg-dark size" id="work-with-me-tab" href="#">Work With Me</a>
       </div>
     </div>
   </div>
 </nav>
-<div class="container-fluid" style="height: 1000rem;">
+<div class="container-fluid" style="height: 430rem;"> <!--This section is for container adjustment-->
   <!--Three.js background------->
   <canvas id="myCanvas"></canvas>
-  <!--Home section---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--Home section----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
   <div class="container-md" id="home-margin">
     <div class="row justify-content-center" id="intro">
       <div class="col-lg-6 g-1" id="card-home" data-tilt>
@@ -67,7 +68,8 @@
           </button>
         </div>
       </div>
-  <!--Projects Nav----------------------------------------------------->
+  <!--Projects section------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------->
       <!--Arrow-------------------------------------------------------->
       <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
         <span></span>
@@ -307,8 +309,112 @@
         </div>
       </div>
 
+      <!--Arrow-------------------------------------------------------->
+      <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div> 
 
+  <!--About section--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+      <div class="col-8 col-md-5 g-md-1 container-fluid p-4">
+        <!--My photo--------------------------------------------------------------------->
+        <img src="images\me.jpg" class="about-photo img-fluid" alt="..." style="border-radius: 15px;">
+      </div>
+
+      <div class="col-12 col-md-7 p-4 g-md-1 container-fluid">
+        <div class="row justify-content-center" id="intro">
+          <!--About me----------------------------------->
+          <div class="col-lg-6" id="card-about" data-tilt>
+            <div class="position-relative top-50 start-50 translate-middle" id="textBox">
+              <h1 class="text-center" id="about">About Me</h1> 
+              <p class="text-white-50 mt-4 mb-0 text-start size" id="desc">I am Daphane Canteros. You can call me <strong>Daph</strong>. Building simple websites with WordPress and Wix sparked my interest in Front-End Web Development.</p>
+              <p class="text-white-50 mt-4 mb-0 text-start size" id="desc">The desire to learn how to build UI based on a desired output continuously drove me to learn as much as I could. This is when I began studying <strong>JavaScript</strong> and <strong>HTML/CSS.</strong></p>
+              <p class="text-white-50 mt-4 mb-0 text-start size" id="desc">After learning the fundamentals, I applied <strong>React</strong>, <strong>Tailwind</strong>, <strong>Bootstrap</strong>, and <strong>Node.js</strong>. I developed these passion projects during my self-learning journey.</p>
+              <p class="text-white-50 mt-4 mb-0 text-start size" id="desc">My goal is to be part of a competitive and collaborative team that builds and tests a functional system that adds value to clients.</p>
+              <!--Button----------------------------------------->
+              <div class="row justify-content-center pt-5">
+                <div class="col-md-6 col-sm-12 mb-3 mb-md-0 text-center">
+                  <a href="#work-with-me-tab-pane" class="container-fluid btn btn-success size">Work With Me</a>
+                </div>
+                <div class="col-md-6 col-sm-12 text-center">
+                  <a href="#projects-tab-pane" class="container-fluid btn btn-outline-success size">See Projects</a>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Arrow-------------------------------------------------------->
+      <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       
+  <!--Work With Me section-----------------------------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------------------------------------->  
+      <div class="container-md text-center">
+        <div class="row justify-content-evenly">
+          <div class="col-md-6 m-3" id="card-linkedin" data-tilt>
+            <!--Linkedin------------------------------------------------------------------->
+            <i class='bx bxl-linkedin px-2' style="color:#55C9DF; font-size: 2.5rem;"></i>
+            <p class="text-light mt-1 size">Daphane Canteros</p>
+            <!--Button-->
+            <button class="container-fluid btn btn-outline-success mb-3 size" type="submit">
+              <a href="https://www.linkedin.com/in/daphane-canteros-993a63152/">View Profile</a>
+            </button>
+          </div>
+          <div class="col-md-6 m-3" id="card-email" data-tilt>
+            <!--Email--------------------------------------------------------------------->
+            <i class='bx bx-envelope px-2' style="color:#55C9DF; font-size: 2.5rem;"></i>
+            <p class="text-light mt-1 size">dc@daphanecanteros.dev</p>
+            <!--Button-->
+            <button class="container-fluid btn btn-outline-success mb-3 size" type="submit">
+              <a href="mailto:canterosdaphanemara@gmail.com" target="_blank">Send Email</a>
+            </button>
+          </div>
+          <!--Form--------------------------------------------------------------------------------------->
+          <div class="col-lg-6 form text-bg-dark gy-5">
+            <h1 class="text-center" id="name">Say Hi!</h1>
+            <p class="card-text mt-2 text-white-50 size">I am beyond grateful to work with you.</p>
+            <br>
+            <div class="form-floating mb-3">
+              <input type="name" class="form-control text-bg-dark" id="floatingInput" placeholder="First Name, Last Name" value="" required>
+              <label for="floatingInput" class="text-white-50 size">Full Name</label>
+              <!--TODO: Finalized invalid feedback-->
+              <div class="invalid-feedback">
+                Please enter your fullname.
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control text-bg-dark" id="floatingInput" placeholder="sample@email.com" value="" required>
+              <label for="floatingInput" class="text-white-50 size">Email</label>
+              <!--TODO: Finalized invalid feedback-->
+              <div class="invalid-feedback">
+                Please provide a valid email.
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control text-bg-dark" id="floatingInput" placeholder="Company" value="">
+              <label for="floatingInput" class="text-white-50 size">Company</label>
+            </div>
+            <!--Text area------------------>
+            <div class="form-floating mb-5">
+              <textarea class="form-control text-bg-dark size" placeholder="Leave your message here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2" class="text-white-50 size">Leave your message here</label>
+            </div>
+            <div class="col-md-12">
+              <button type="button" class="container-fluid btn btn-success size" type="submit">Send Your Message</button>
+            <!--TODO: Popover must show after hitting submit-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--End of content------------------------------------------------------------------------------------------------------------------------------------------->
     </div>   
   </div>
 </div>
@@ -624,6 +730,8 @@
                 </div>
               </div>
 
+
+              
             </div>
           </div>
         </div>
