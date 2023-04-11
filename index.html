@@ -8,447 +8,437 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" /> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
-  <div class="container-fluid">
-<!--Logo--------------------------------------------------------------------------->
-    <a class="navbar-brand" href="#scroll-home" id="logo"><strong>d.c</strong></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-<!--Nav bar----------------------------------------------------------------------------------------------------->    
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active text-white-50 bg-dark size" id="home-tab" aria-current="page" href="#scroll-home">Home</a>
-        <a class="nav-link text-white-50 bg-dark size" id="projects-tab" href="#scroll-projects">Projects</a>
-        <a class="nav-link text-white-50 bg-dark size" id="about-tab" href="#scroll-about">About</a>
-        <a class="nav-link text-white-50 bg-dark size" id="work-with-me-tab" href="#scroll-work-with-me">Work With Me</a>
+  <!--stars animation background-->
+  <section class="background">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </section> 
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+    <!--logo----------------------------------------------------------------------->
+      <a class="navbar-brand" href="#scroll-home" id="logo"><strong>d.c</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <!--nav bar menu----------------------------------------------->    
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active text-white-50 bg-dark size" id="home-tab" aria-current="page" href="#scroll-home">Home</a>
+          <a class="nav-link text-white-50 bg-dark size" id="projects-tab" href="#scroll-projects">Projects</a>
+          <a class="nav-link text-white-50 bg-dark size" id="about-tab" href="#scroll-about">About</a>
+          <a class="nav-link text-white-50 bg-dark size" id="work-with-me-tab" href="#scroll-work-with-me">Work With Me</a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-<section class="background">
-  <div id="stars"></div>
-  <div id="stars2"></div>
-  <div id="stars3"></div>
-  <div id="title">
-    <span>PURE CSS</span>
-    <br>
-    <span>PARALLAX PIXED BACKGROUND</span>
-  
-<div class="container-fluid" style="height: 415rem;"> <!--This section is for container adjustment-->
-  <!--Three.js background------->
+  </nav>
 
-  <!--Home section----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-  <div class="container-md" id="home-margin" id="scroll-home">
-    <div class="row justify-content-center" id="intro">
-      <div class="col-lg-6 g-1" id="card-home" data-tilt>
-        <div class="position-relative top-50 start-50 translate-middle" id="textBox">
-          <div class="text-end me-2" style="color: #E8E6D9;">Hi, I am</div>
-          <h1 class="text-center" id="name">Daphane Canteros</h1>  
-          <span class="type p-1">
-            <span>
-              <span style="color: #E8E6D9;"><strong>Front-End Web Developer</strong></span>
-              <span style="color: #E8E6D9;"><strong>Lifelong Learner</strong></span>
-              <span style="color: #E8E6D9;"><strong>Purpose-Driven</strong></span>
+  <div class="container-fluid" style="height: 415rem;"> <!--this section is for container height adjustment-->
+    <!--home section----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="container-md" id="home-margin" id="scroll-home">
+      <div class="row justify-content-center" id="intro">
+        
+        <div class="col-lg-6 g-1" id="card-home" data-tilt>
+          <div class="position-relative top-50 start-50 translate-middle" id="textBox">
+            <div class="text-end me-2" style="color: #E8E6D9;">Hi, I am</div>
+            <h1 class="text-center" id="name">Daphane Canteros</h1>  
+            <span class="type p-1">
+              <span>
+                <span style="color: #E8E6D9;"><strong>Front-End Web Developer</strong></span>
+                <span style="color: #E8E6D9;"><strong>Lifelong Learner</strong></span>
+                <span style="color: #E8E6D9;"><strong>Purpose-Driven</strong></span>
+              </span>
             </span>
-          </span>
-          <p class="text-white-50 mt-4 ms-1 mb-0 size" id="desc">Developed useful projects to showcase innovative ideas, problem-solving, and abstract thinking skills that provide long-term practical solutions.</p>
+            <p class="text-white-50 mt-4 ms-1 mb-0 size" id="desc">Developed useful projects to showcase innovative ideas, problem-solving, and abstract thinking skills that provide long-term practical solutions.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 mx-5" id="call-to-action-padding">
+          <!--arrow-------------------------------------------------------->
+          <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!--buttons------------->
+          <div class="col-md-12">
+            <div class="text-center">
+              <a href="#scroll-projects" class="container-fluid btn btn-outline-success mb-3 size" type="submit">See Projects</a>
+            </div>
+            <div class="text-center">
+              <a href="#scroll-work-with-me" class="container-fluid btn btn-success size" type="submit">Work With Me</a>
+            </div>
+          </div>
+        </div>
+
+    <!--projects section------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------->
+    <!--Arrow-------------------------------------------------------->
+    <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="col-lg-4 container-md-6 col-sm-4 g-1" id="card-tech-stack" data-tilt>
+      <div class="position-relative top-50 start-50 translate-middle" id="textBox">
+      <!--tech stack-------------------------------------------------------------->
+        <h1 class="text-center mt-3 mb-4" id="tech-stack">Tech Stack</h1>  
+        <!--icons--------------------------------------------------------------------------->
+        <div class="container text-center">
+          <div class="row row-cols-2 row-cols-lg-3 row-cols-md-3 g-lg-3 g-md-3">
+            <div class="col p-1 size">
+              <i class='bx bxl-javascript' style="color:#55C9DF; font-size: 2.5rem;"></i>
+              <p class="text-light">JavaScript</p>
+            </div>
+            <div class="col p-1 size">
+              <i class='bx bxl-tailwind-css' style="color:#55C9DF; font-size: 2.5rem;"></i>
+              <p class="text-light">Tailwind</p>
+            </div>
+            <div class="col p-1 size">
+              <i class='bx bxl-bootstrap' style="color:#55C9DF; font-size: 2.5rem;"></i>
+              <p class="text-light">Bootstrap</p>
+            </div>
+            <div class="col p-1 size">
+              <i class='bx bxl-css3' style="color:#55C9DF; font-size: 2.5rem;"></i>
+              <p class="text-light">CSS</p>
+            </div>
+            <div class="col p-1 size">
+              <i class='bx bxl-html5' style="color:#55C9DF; font-size: 2.5rem;"></i>
+              <p class="text-light">HTML</p>
+            </div>
+            <div class="col p-1 size">
+              <i class='bx bxl-github' style="color:#55C9DF; font-size: 2.5rem;"></i>
+              <p class="text-light">GitHub</p>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div class="col-lg-3 mx-5" id="call-to-action-padding">
-      <!--Arrow---------------------------------------------------------->
-        <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      <!--Buttons------------->
+    <!--arrow-------------------------------------------------------->
+    <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="col-md-4 col-sm-4 g-1" id="card-projects" data-tilt>
+      <div class="position-relative top-50 start-50 translate-middle" id="textBox">
+        <h1 class="text-center" id="projects">Projects</h1>
+        <p class="text-white-50 mt-4 mb-4 text-center size" id="desc">These are the passion projects I have built to hone relevant skills.</p>
+        <!--button------------>
         <div class="col-md-12">
           <div class="text-center">
-            <a href="#scroll-projects" class="container-fluid btn btn-outline-success mb-3 size" type="submit">See Projects</a>
+            <a href="#scroll-work-with-me" class="container-fluid btn btn-outline-success size" type="submit">Work With Me</a>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!--arrow-------------------------------------------------------->
+    <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="row row-cols-1 row-cols-lg-2 g-1" id="scroll-projects">
+      <!--projects i've built-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+      <div class="col">
+        <div class="card mx-1 mb-4">
+          <!--TODO: insert image logo or prototype----------------------->
+          <img src="images\background.png" class="card-img-top" alt="...">
+          <div class="card-body text-bg-dark">
+            <h5 class="card-title"><strong>Project 1</strong></h5>
+            <p class="card-text text-white-50 size">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <!--button----------------------------------------->
+            <div class="row text-center" style="display: flex;">
+              <div class="col-6">
+                <a href="https://github.com/daphcanteros/portfolio" class="container-fluid btn btn btn-success size"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
+              </div>
+              <div class="col-6">
+                <a href="https://dcdevcreations.wixsite.com/webdesigner" class="container-fluid btn btn-outline-success size"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mx-1 mb-4">
+          <img src="images\background.png" class="card-img-top" alt="...">
+          <div class="card-body text-bg-dark">
+            <h5 class="card-title"><strong>Project 2</strong></h5>
+            <p class="card-text text-white-50 size">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <!--button----------------------------------------->
+            <div class="row text-center" style="display: flex;">
+              <div class="col-6">
+                <a href="https://github.com/daphcanteros/portfolio" class="container-fluid btn btn btn-success size"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
+              </div>
+              <div class="col-6">
+                <a href="https://dcdevcreations.wixsite.com/webdesigner" class="container-fluid btn btn-outline-success size"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mx-1 mb-4">
+          <img src="images\background.png" class="card-img-top" alt="...">
+          <div class="card-body text-bg-dark">
+            <h5 class="card-title"><strong>Project 3</strong></h5>
+            <p class="card-text text-white-50 size">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <!--button----------------------------------------->
+            <div class="row text-center" style="display: flex;">
+              <div class="col-6">
+                <a href="https://github.com/daphcanteros/portfolio" class="container-fluid btn btn btn-success size"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
+              </div>
+              <div class="col-6">
+                <a href="https://dcdevcreations.wixsite.com/webdesigner" class="container-fluid btn btn-outline-success size"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mx-1 mb-4">
+          <img src="images\background.png" class="card-img-top" alt="...">
+          <div class="card-body text-bg-dark">
+            <h5 class="card-title"><strong>Project 4</strong></h5>
+            <p class="card-text text-white-50 size">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <!--button----------------------------------------->
+            <div class="row text-center" style="display: flex;">
+              <div class="col-6">
+                <a href="https://github.com/daphcanteros/portfolio" class="container-fluid btn btn btn-success size"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
+              </div>
+              <div class="col-6">
+                <a href="https://dcdevcreations.wixsite.com/webdesigner" class="container-fluid btn btn-outline-success size"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--arrow-------------------------------------------------------->
+    <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div> 
+
+    <div class="col-md-4 col-sm-4 g-1" id="card-cert" data-tilt>
+      <div class="position-relative top-50 start-50 translate-middle" id="textBox">
+        <h1 class="text-center" id="cert">Certificates</h1>
+        <p class="text-white-50 mt-4 mb-4 text-center size" id="desc">These are the certificates I earned through self-learning journey.</p>
+        <!--button------------>
+        <div class="col-md-12">
           <div class="text-center">
-            <a href="#scroll-work-with-me" class="container-fluid btn btn-success size" type="submit">Work With Me</a>
+            <a href="#scroll-work-with-me" class="container-fluid btn btn-outline-success size" type="submit">Work With Me</a>
           </div>
         </div>
       </div>
-  <!--Projects section------------------------------------------------------------------------
-  ------------------------------------------------------------------------------------------->
-      <!--Arrow-------------------------------------------------------->
-      <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+    </div>
 
-      <div class="col-lg-4 container-md-6 col-sm-4 g-1" id="card-tech-stack" data-tilt>
-        <div class="position-relative top-50 start-50 translate-middle" id="textBox">
-      <!--Tech Stack------------------------------------------------------------------>
-          <h1 class="text-center mt-3 mb-4" id="tech-stack">Tech Stack</h1>  
-          <!--Icons--------------------------------------------------------------------------->
-          <div class="container text-center">
-            <div class="row row-cols-2 row-cols-lg-3 row-cols-md-3 g-lg-3 g-md-3">
-              <div class="col p-1 size">
-                <i class='bx bxl-javascript' style="color:#55C9DF; font-size: 2.5rem;"></i>
-                <p class="text-light">JavaScript</p>
+    <!--arrow-------------------------------------------------------->
+    <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div> 
+
+    <!--certificates---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Certificate #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-bg-dark">
+            <!--cert # 1 info------------->
+            <div class="card text-bg-dark">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Community Name</strong></h5>
+                <p class="card-text text-white-50 size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
-              <div class="col p-1 size">
-                <i class='bx bxl-tailwind-css' style="color:#55C9DF; font-size: 2.5rem;"></i>
-                <p class="text-light">Tailwind</p>
-              </div>
-              <div class="col p-1 size">
-                <i class='bx bxl-bootstrap' style="color:#55C9DF; font-size: 2.5rem;"></i>
-                <p class="text-light">Bootstrap</p>
-              </div>
-              <div class="col p-1 size">
-                <i class='bx bxl-css3' style="color:#55C9DF; font-size: 2.5rem;"></i>
-                <p class="text-light">CSS</p>
-              </div>
-              <div class="col p-1 size">
-                <i class='bx bxl-html5' style="color:#55C9DF; font-size: 2.5rem;"></i>
-                <p class="text-light">HTML</p>
-              </div>
-              <div class="col p-1 size">
-                <i class='bx bxl-github' style="color:#55C9DF; font-size: 2.5rem;"></i>
-                <p class="text-light">GitHub</p>
-              </div>
+              <!--TODO: insert certificate-------------------------------->
+              <img src="images\background.png" class="card-img-bottom" alt="...">
             </div>
           </div>
         </div>
       </div>
-
-      <!--Arrow-------------------------------------------------------->
-      <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <div class="col-md-4 col-sm-4 g-1" id="card-projects" data-tilt>
-        <div class="position-relative top-50 start-50 translate-middle" id="textBox">
-          <h1 class="text-center" id="projects">Projects</h1>
-          <p class="text-white-50 mt-4 mb-4 text-center size" id="desc">These are the passion projects I have built to hone relevant skills.</p>
-          <!--Button------------>
-          <div class="col-md-12">
-            <div class="text-center">
-              <a href="#scroll-work-with-me" class="container-fluid btn btn-outline-success size" type="submit">Work With Me</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--Arrow-------------------------------------------------------->
-      <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <div class="row row-cols-1 row-cols-lg-2 g-1" id="scroll-projects">
-      <!--Projects I've built-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-        <div class="col">
-          <div class="card mx-1 mb-4">
-            <!--In progress? Sample image only----------------------------->
-            <img src="images\background.png" class="card-img-top" alt="...">
-            <div class="card-body text-bg-dark">
-              <h5 class="card-title"><strong>Project 1</strong></h5>
-              <p class="card-text text-white-50 size">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <!--Button----------------------------------------->
-                <div class="row text-center" style="display: flex;">
-                  <div class="col-6">
-                    <a href="https://github.com/daphcanteros/portfolio" class="container-fluid btn btn btn-success size"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
-                  </div>
-                  <div class="col-6">
-                    <a href="https://dcdevcreations.wixsite.com/webdesigner" class="container-fluid btn btn-outline-success size"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card mx-1 mb-4">
-            <img src="images\background.png" class="card-img-top" alt="...">
-            <div class="card-body text-bg-dark">
-              <h5 class="card-title"><strong>Project 2</strong></h5>
-              <p class="card-text text-white-50 size">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <!--Button----------------------------------------->
-              <div class="row text-center" style="display: flex;">
-                <div class="col-6">
-                  <a href="https://github.com/daphcanteros/portfolio" class="container-fluid btn btn btn-success size"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
-                </div>
-                <div class="col-6">
-                  <a href="https://dcdevcreations.wixsite.com/webdesigner" class="container-fluid btn btn-outline-success size"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
-                </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Certificate #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-bg-dark">
+            <!--cert # 2 info------------->
+            <div class="card text-bg-dark">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Community Name</strong></h5>
+                <p class="card-text text-white-50 size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
+              <img src="images\background.png" class="card-img-bottom" alt="...">
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card mx-1 mb-4">
-            <img src="images\background.png" class="card-img-top" alt="...">
-            <div class="card-body text-bg-dark">
-              <h5 class="card-title"><strong>Project 3</strong></h5>
-              <p class="card-text text-white-50 size">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <!--Button----------------------------------------->
-              <div class="row text-center" style="display: flex;">
-                <div class="col-6">
-                  <a href="https://github.com/daphcanteros/portfolio" class="container-fluid btn btn btn-success size"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
-                </div>
-                <div class="col-6">
-                  <a href="https://dcdevcreations.wixsite.com/webdesigner" class="container-fluid btn btn-outline-success size"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
-                </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            WordPress and SEO
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-bg-dark">
+            <!--cert # 3 info------------->
+            <div class="card text-bg-dark">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Virtual Assistant Training Philippines</strong></h5>
+                <p class="card-text text-white-50 size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
+              <img src="cert\VA-SMM.jpg" class="card-img-bottom" alt="...">
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card mx-1 mb-4">
-            <img src="images\background.png" class="card-img-top" alt="...">
-            <div class="card-body text-bg-dark">
-              <h5 class="card-title"><strong>Project 4</strong></h5>
-              <p class="card-text text-white-50 size">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <!--Button----------------------------------------->
-              <div class="row text-center" style="display: flex;">
-                <div class="col-6">
-                  <a href="https://github.com/daphcanteros/portfolio" class="container-fluid btn btn btn-success size"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
-                </div>
-                <div class="col-6">
-                  <a href="https://dcdevcreations.wixsite.com/webdesigner" class="container-fluid btn btn-outline-success size"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
-                </div>
+      </div>
+    </div>
+
+    <!--arrow-------------------------------------------------------->
+    <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div> 
+
+    <!--about section--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="col-8 col-md-5 g-md-1 container-fluid p-4" id="scroll-about">
+      <!--my photo--------------------------------------------------------------------------------->
+      <img src="images\me.jpg" class="about-photo img-fluid" alt="..." style="border-radius: 15px;">
+    </div>
+
+    <div class="col-12 col-md-7 p-4 g-md-1 container-fluid">
+      <div class="row justify-content-center" id="intro">
+        <!--about me----------------------------------->
+        <div class="col-lg-6" id="card-about" data-tilt>
+          <div class="position-relative top-50 start-50 translate-middle" id="textBox">
+            <h1 class="text-center" id="about">About Me</h1> 
+            <p class="text-white-50 mt-4 mb-0 text-start size" id="desc">I am Daphane Canteros. You can call me <strong>Daph</strong>. Building simple websites with WordPress and Wix sparked my interest in Front-End Web Development.</p>
+            <p class="text-white-50 mt-4 mb-0 text-start size" id="desc">The desire to learn how to build UI based on a desired output continuously drove me to learn as much as I could. This is when I began studying <strong>JavaScript</strong> and <strong>HTML/CSS.</strong></p>
+            <p class="text-white-50 mt-4 mb-0 text-start size" id="desc">After learning the fundamentals, I applied <strong>React</strong>, <strong>Tailwind</strong>, <strong>Bootstrap</strong>, and <strong>Node.js</strong>. I developed these passion projects during my self-learning journey.</p>
+            <p class="text-white-50 mt-4 mb-0 text-start size" id="desc">My goal is to be part of a competitive and collaborative team that builds and tests a functional system that adds value to clients.</p>
+            <!--button----------------------------------------->
+            <div class="row justify-content-center pt-5">
+              <div class="col-md-6 col-sm-12 mb-3 mb-md-0 text-center">
+                <a href="#scroll-work-with-me" class="container-fluid btn btn-success size">Work With Me</a>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--Arrow-------------------------------------------------------->
-      <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div> 
-
-      <div class="col-md-4 col-sm-4 g-1" id="card-cert" data-tilt>
-        <div class="position-relative top-50 start-50 translate-middle" id="textBox">
-          <h1 class="text-center" id="cert">Certificates</h1>
-          <p class="text-white-50 mt-4 mb-4 text-center size" id="desc">These are the certificates I earned through self-learning journey.</p>
-          <!--Button------------>
-          <div class="col-md-12">
-            <div class="text-center">
-              <a href="#scroll-work-with-me" class="container-fluid btn btn-outline-success size" type="submit">Work With Me</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--Arrow-------------------------------------------------------->
-      <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div> 
-
-      <!--Certificates---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Certificate #1
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body text-bg-dark" >
-              <!--Cert # 1 info------------->
-              <div class="card text-bg-dark">
-                <div class="card-body">
-                  <h5 class="card-title"><strong>Community Name</strong></h5>
-                  <p class="card-text text-white-50 size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                <!--In progress? Sample image only-------------------------------->
-                <img src="images\background.png" class="card-img-bottom" alt="...">
+              <div class="col-md-6 col-sm-12 text-center">
+                <a href="#scroll-projects" class="container-fluid btn btn-outline-success size">See Projects</a>
               </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Certificate #2
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body text-bg-dark">
-              <!--Cert # 2 info------------->
-              <div class="card text-bg-dark">
-                <div class="card-body">
-                  <h5 class="card-title"><strong>Community Name</strong></h5>
-                  <p class="card-text text-white-50 size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                <img src="images\background.png" class="card-img-bottom" alt="...">
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              WordPress and SEO
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body text-bg-dark">
-              <!--Cert # 3 info------------->
-              <div class="card text-bg-dark">
-                <div class="card-body">
-                  <h5 class="card-title"><strong>Virtual Assistant Training Philippines</strong></h5>
-                  <p class="card-text text-white-50 size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                <img src="cert\VA-SMM.jpg" class="card-img-bottom" alt="...">
-              </div>
-
-            </div>
+            </div> 
           </div>
         </div>
       </div>
+    </div>
 
-      <!--Arrow-------------------------------------------------------->
-      <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div> 
-
-  <!--About section--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-      <div class="col-8 col-md-5 g-md-1 container-fluid p-4" id="scroll-about">
-        <!--My photo--------------------------------------------------------------------->
-        <img src="images\me.jpg" class="about-photo img-fluid" alt="..." style="border-radius: 15px;">
-      </div>
-
-      <div class="col-12 col-md-7 p-4 g-md-1 container-fluid">
-        <div class="row justify-content-center" id="intro">
-          <!--About me----------------------------------->
-          <div class="col-lg-6" id="card-about" data-tilt>
-            <div class="position-relative top-50 start-50 translate-middle" id="textBox">
-              <h1 class="text-center" id="about">About Me</h1> 
-              <p class="text-white-50 mt-4 mb-0 text-start size" id="desc">I am Daphane Canteros. You can call me <strong>Daph</strong>. Building simple websites with WordPress and Wix sparked my interest in Front-End Web Development.</p>
-              <p class="text-white-50 mt-4 mb-0 text-start size" id="desc">The desire to learn how to build UI based on a desired output continuously drove me to learn as much as I could. This is when I began studying <strong>JavaScript</strong> and <strong>HTML/CSS.</strong></p>
-              <p class="text-white-50 mt-4 mb-0 text-start size" id="desc">After learning the fundamentals, I applied <strong>React</strong>, <strong>Tailwind</strong>, <strong>Bootstrap</strong>, and <strong>Node.js</strong>. I developed these passion projects during my self-learning journey.</p>
-              <p class="text-white-50 mt-4 mb-0 text-start size" id="desc">My goal is to be part of a competitive and collaborative team that builds and tests a functional system that adds value to clients.</p>
-              <!--Button----------------------------------------->
-              <div class="row justify-content-center pt-5">
-                <div class="col-md-6 col-sm-12 mb-3 mb-md-0 text-center">
-                  <a href="#scroll-work-with-me" class="container-fluid btn btn-success size">Work With Me</a>
-                </div>
-                <div class="col-md-6 col-sm-12 text-center">
-                  <a href="#scroll-projects" class="container-fluid btn btn-outline-success size">See Projects</a>
-                </div>
-              </div> 
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--Arrow-------------------------------------------------------->
-      <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+    <!--arrow-------------------------------------------------------->
+    <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
       
-  <!--Work With Me section-----------------------------------------------------------------------------------------------------------------
-  ---------------------------------------------------------------------------------------------------------------------------------------->  
-      <div class="container-md text-center" id="scroll-work-with-me">
-        <div class="row justify-content-evenly">
-          <div class="col-md-6 m-3" id="card-linkedin" data-tilt>
-            <!--Linkedin------------------------------------------------------------------->
-            <i class='bx bxl-linkedin px-2' style="color:#55C9DF; font-size: 2.5rem;"></i>
-            <p class="text-light mt-1 size">Daphane Canteros</p>
-            <!--Button-->
-            <div class="text-center">
-              <a href="https://www.linkedin.com/in/daphane-canteros-993a63152/" class="container-fluid btn btn-outline-success mb-3 size" type="submit">View Profile</a>
+    <!--work with me section-----------------------------------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------------------------------------------------------->  
+    <div class="container-md text-center" id="scroll-work-with-me">
+      <div class="row justify-content-evenly">
+        <div class="col-md-6 m-3" id="card-linkedin" data-tilt>
+          <!--linkedin------------------------------------------------------------------->
+          <i class='bx bxl-linkedin px-2' style="color:#55C9DF; font-size: 2.5rem;"></i>
+          <p class="text-light mt-1 size">Daphane Canteros</p>
+          <!--button-->
+          <div class="text-center">
+            <a href="https://www.linkedin.com/in/daphane-canteros-993a63152/" class="container-fluid btn btn-outline-success mb-3 size" type="submit">View Profile</a>
+          </div>
+        </div>
+        <div class="col-md-6 m-3" id="card-email" data-tilt>
+          <!--email--------------------------------------------------------------------->
+          <i class='bx bx-envelope px-2' style="color:#55C9DF; font-size: 2.5rem;"></i>
+          <p class="text-light mt-1 size">dc@daphanecanteros.dev</p>
+          <!--button-->
+          <div class="text-center">
+            <a href="mailto:canterosdaphanemara@gmail.com" class="container-fluid btn btn-outline-success mb-3 size" type="submit" target="_blank">Send Email</a>
+          </div>
+        </div>
+        <!--form--------------------------------------------------------------------------------------->
+        <div class="col-lg-6 form text-bg-dark gy-5">
+          <h1 class="text-center" id="name">Say Hi!</h1>
+          <p class="card-text mt-2 text-white-50 size">I am beyond grateful to work with you.</p>
+          <br>
+          <div class="form-floating mb-3">
+            <input type="name" class="form-control text-bg-dark" id="floatingInput" placeholder="First Name, Last Name" value="" required>
+            <label for="floatingInput" class="text-white-50 size">Full Name</label>
+            <!--TODO: finalized invalid feedback-->
+            <div class="invalid-feedback">
+              Please enter your fullname.
             </div>
           </div>
-          <div class="col-md-6 m-3" id="card-email" data-tilt>
-            <!--Email--------------------------------------------------------------------->
-            <i class='bx bx-envelope px-2' style="color:#55C9DF; font-size: 2.5rem;"></i>
-            <p class="text-light mt-1 size">dc@daphanecanteros.dev</p>
-            <!--Button-->
-            <div class="text-center">
-              <a href="mailto:canterosdaphanemara@gmail.com" class="container-fluid btn btn-outline-success mb-3 size" type="submit" target="_blank">Send Email</a>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control text-bg-dark" id="floatingInput" placeholder="sample@email.com" value="" required>
+            <label for="floatingInput" class="text-white-50 size">Email</label>
+            <!--TODO: finalized invalid feedback-->
+            <div class="invalid-feedback">
+              Please provide a valid email.
             </div>
           </div>
-          <!--Form--------------------------------------------------------------------------------------->
-          <div class="col-lg-6 form text-bg-dark gy-5">
-            <h1 class="text-center" id="name">Say Hi!</h1>
-            <p class="card-text mt-2 text-white-50 size">I am beyond grateful to work with you.</p>
-            <br>
-            <div class="form-floating mb-3">
-              <input type="name" class="form-control text-bg-dark" id="floatingInput" placeholder="First Name, Last Name" value="" required>
-              <label for="floatingInput" class="text-white-50 size">Full Name</label>
-              <!--TODO: Finalized invalid feedback-->
-              <div class="invalid-feedback">
-                Please enter your fullname.
-              </div>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control text-bg-dark" id="floatingInput" placeholder="sample@email.com" value="" required>
-              <label for="floatingInput" class="text-white-50 size">Email</label>
-              <!--TODO: Finalized invalid feedback-->
-              <div class="invalid-feedback">
-                Please provide a valid email.
-              </div>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control text-bg-dark" id="floatingInput" placeholder="Company" value="">
-              <label for="floatingInput" class="text-white-50 size">Company</label>
-            </div>
-            <!--Text area------------------>
-            <div class="form-floating mb-5">
-              <textarea class="form-control text-bg-dark size" placeholder="Leave your message here" id="floatingTextarea2" style="height: 100px"></textarea>
-              <label for="floatingTextarea2" class="text-white-50 size">Leave your message here</label>
-            </div>
-            <div class="col-md-12">
-              <button type="button" class="container-fluid btn btn-success size" type="submit">Send Your Message</button>
-            <!--TODO: Popover must show after hitting submit-->
-            </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control text-bg-dark" id="floatingInput" placeholder="Company" value="">
+            <label for="floatingInput" class="text-white-50 size">Company</label>
+          </div>
+          <!--text area------------------>
+          <div class="form-floating mb-5">
+            <textarea class="form-control text-bg-dark size" placeholder="Leave your message here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2" class="text-white-50 size">Leave your message here</label>
+          </div>
+          <div class="col-md-12">
+            <!--TODO: popover must show after hitting submit-->
+            <button type="button" class="container-fluid btn btn-success size" type="submit">Send Your Message</button>
           </div>
         </div>
       </div>
+    </div>
 
-<!--End of content------------------------------------------------------------------------------------------------------------------------------------------->
     </div>   
   </div>
 </div>
-
-</div>
-</section>
-<!--Footer-----------------------------------------------------------------------------------
+<!--end of content------------------------------------------------------------------------------------------------------------------------------------------->
+<!--footer-----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------->
 <div class="row text-center fixed-bottom bg-dark mb-0 p-2">
   <div class="col-sm-6">
-      <i class='bx bxl-linkedin px-2' style="color:#55C9DF; font-size: 1.7rem;"></i>
-      <i class='bx bxl-github px-2' style="color:#55C9DF; font-size: 1.7rem;"></i>
-      <i class='bx bxl-dribbble px-2' style="color:#55C9DF; font-size: 1.7rem;"></i>
-      <i class='bx bxl-twitter px-2' style="color:#55C9DF; font-size: 1.7rem;"></i>
-      <i class='bx bxl-facebook-circle px-2' style="color:#55C9DF; font-size: 1.7rem;"></i>
-      <i class='bx bxl-instagram px-2' style="color:#55C9DF; font-size: 1.7rem;"></i> 
+    <i class='bx bxl-linkedin px-2' style="color:#55C9DF; font-size: 1.7rem;"></i>
+    <i class='bx bxl-github px-2' style="color:#55C9DF; font-size: 1.7rem;"></i>
+    <i class='bx bxl-dribbble px-2' style="color:#55C9DF; font-size: 1.7rem;"></i>
+    <i class='bx bxl-twitter px-2' style="color:#55C9DF; font-size: 1.7rem;"></i>
+    <i class='bx bxl-facebook-circle px-2' style="color:#55C9DF; font-size: 1.7rem;"></i>
+    <i class='bx bxl-instagram px-2' style="color:#55C9DF; font-size: 1.7rem;"></i> 
   </div>
   <div class="col-sm-6 text-white-50 mt-2" style="font-size: 13px;">
     <strong>Daphane Canteros</strong> &copy; 2023
   </div>
 </div>
-</div>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="vanilla-tilt.js"></script>
-    <script type="module" src="/main.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="vanilla-tilt.js"></script>
 </body>
 </html>
