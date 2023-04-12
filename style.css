@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* stars animation background --------------------------------------------------*/
 .background {
     position: fixed;
     height: 100%;
@@ -7,7 +8,6 @@
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     z-index: -10;
 }
-
 #stars {
     width: 1px;
     height: 1px;
@@ -581,28 +581,12 @@ body {
     box-sizing: border-box;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
-/* Logo -------------------------------*/
+/* logo -------------------------------*/
 #logo {
     font-size: 25px;
     font-family: 'Anton';
     color: transparent;
     -webkit-text-stroke: .1px #55C9DF;
-}
-/* Tab content container -------*/
-#home-tab-pane {
-    /* TODO: Adjust content container */
-    height: 100rem;
-    background-color: #202020;
-}
-#projects-tab-pane {
-    height: 250rem;
-}
-#about-tab-pane {
-    height: 59rem;
-}
-#work-with-me-tab-pane {
-    /* TODO: Make tab pane responsive when extending the text-area */
-    height: 66rem;
 }
 /* Cards -------------------------------------*/
 #card-home {
