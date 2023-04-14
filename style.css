@@ -916,28 +916,7 @@ body {
 
 /* end of modified code----------------------------------------- */
 /* code below are subject to modify and remove */
-
-
-
-
-
-
-@media screen and (max-width: 1199.5px) {
-    #home-tab-pane {
-        height: 51rem;
-    }
-}
-@media screen and (max-width: 1024.5px) {
-    #home-tab-pane {
-        height: 35rem;
-    }
-}
-
-/* (Home) 418.5px is the minimum unresponsive mobile screen size */
 @media screen and (max-width: 418.5px) {
-    #home-tab-pane {
-        height: 52rem;
-    }
     .type {
         font-size: 23px;
     }
@@ -945,25 +924,13 @@ body {
         height: 1.6em;
     }
 }
-
-
-    #home-tab-pane {
-        height: 52rem;
-    }
-
     .type {
         font-size: 18px;
     }
     .type > span {
         height: 1.5em;
     }
-
 @media screen and (max-width: 280.5px) {
-    #home-tab-pane {
-        height: 50rem;
-    }
-
-
     .type {
         font-size: 16px;
     }
@@ -971,180 +938,6 @@ body {
         height: 1.4em;
     }
 }
-
-
-
-/* (Projects) tab-pane ------------------------------
-----------------------------------------------------*/
-@media screen and (max-width: 1396px) {
-    #projects-tab-pane {
-        height: 237rem;
-    }
-}
-@media screen and (max-width: 1199.5px) {
-    #projects-tab-pane {
-        height: 228rem;
-    }
-}
-@media screen and (max-width: 991.5px) {
-    #projects-tab-pane {
-        height: 303rem;
-    }
-}
-@media screen and (max-width: 767.5px) {
-    #projects-tab-pane {
-        height: 308rem;
-    }
-}
-@media screen and (max-width: 712px) {
-    #projects-tab-pane {
-        height: 303rem;
-    }
-}
-@media screen and (max-width: 576.5px) {
-    #projects-tab-pane {
-        height: 280rem;
-    }
-}
-@media screen and (max-width: 540px) {
-    #projects-tab-pane {
-        height: 281rem;
-    }
-}
-@media screen and (max-width: 500px) {
-    #projects-tab-pane {
-        height: 270rem;
-    }
-}
-@media screen and (max-width: 462px) {
-    #projects-tab-pane {
-        height: 264rem;
-    }
-}
-@media screen and (max-width: 414.5px) {
-    #projects-tab-pane {
-        height: 255rem;
-    }
-}
-@media screen and (max-width: 394px) {
-    #projects-tab-pane {
-        height: 263rem;
-    }
-}
-@media screen and (max-width: 375.5px) {
-    #projects-tab-pane {
-        height: 262rem;
-    }
-}
-@media screen and (max-width: 360.5px) {
-    #projects-tab-pane {
-        height: 260rem;
-    }
-}
-@media screen and (max-width: 357.5px) {
-    #projects-tab-pane {
-        height: 270rem;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    #projects-tab-pane {
-        height: 272rem;
-    }
-}
-@media screen and (max-width: 280.5px) {
-    #projects-tab-pane {
-        height: 248rem;
-    }
-}
-/* Responsive Design --------------------------------
-(About) ----------------------------------------*/
-/* Responsive in all screen sizes --------------*/
-@media screen and (max-width: 1366.5px) {
-    #about-tab-pane {
-        height: 52rem;
-    }
-}
-
-@media screen and (max-width: 767.5px) {
-    #about-tab-pane {
-        height: 98rem;
-    }
-
-}
-@media screen and (max-width: 690.5px) {
-    #about-tab-pane {
-        height: 94rem;
-    }
-}
-@media screen and (max-width: 600.5px) {
-    #about-tab-pane {
-        height: 90rem;
-    }
-}
-@media screen and (max-width: 550.5px) {
-    #about-tab-pane {
-        height: 87rem;
-    }
-}
-@media screen and (max-width: 478.5px) {
-    #about-tab-pane {
-        height: 86rem;
-    }
-
-
-}
-
-@media screen and (max-width: 420.5px) {
-    #about-tab-pane {
-        height: 89rem;
-    }
-
-}
-@media screen and (max-width: 400.5px) {
-    #about-tab-pane {
-        height: 89rem;
-    }
-
-}
-@media screen and (max-width: 380.5px) {
-    #about-tab-pane {
-        height: 90rem;
-    }
-
-
-}
-@media screen and (max-width: 362.5px) {
-    #about-tab-pane {
-        height: 90rem;
-    }
-
-
-}
-
-
-
-/* Responsive Design ------------------------------------
-(Work With Me) ----------------------------------------*/
-/* All screen sizes should be responsive */
-@media screen and (max-width: 540.5px) {
-    #work-with-me-tab-pane {
-        height: 81rem;
-    }
-}
-@media screen and (max-width: 414.5px) {
-    #work-with-me-tab-pane {
-        height: 83rem;
-    }
-}
-@media screen and (max-width: 360.5px) {
-    #work-with-me-tab-pane {
-        height: 82rem;
-    }
-}
-
-
-
     #floatingInput {
         font-size: 13px;
     }
