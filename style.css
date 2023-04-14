@@ -582,7 +582,7 @@ body {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 .web-height {
-    height: 388rem; /* here's to adjust web container height */
+    height: 377rem; /* here's to adjust web container height */
 }
 /* logo -------------------------------*/
 #logo {
@@ -602,29 +602,25 @@ body {
     padding: 30px;
 }
 #card-home { 
-    height: 27rem;
+    height: 22rem;
 }
 #card-tech-stack {
-    height: 25rem;
-    width: 30rem;
+    height: 24rem;
+    width: 28rem;
 }
 #card-projects {
-    height: 20rem;
+    height: 18rem;
     width: 23rem;
 }
 #card-cert {
-    height: 20rem;
-    width: 30rem;
+    height: 18rem;
+    width: 29rem;
 }
 #card-about {
-    height: 42rem;
+    height: 40rem;
     width: 30rem;
 }
-#card-linkedin {
-    height: 12rem;
-    width: 19rem;
-}
-#card-email {
+#card-linkedin, #card-email {
     height: 12rem;
     width: 19rem;
 }
@@ -639,13 +635,8 @@ body {
 #fullname, #name, #tech-stack, #projects, #cert, #about {
     font-family: 'Anton';
     color: transparent;
-
 }
-#fullname {
-    font-size: 5rem;
-    -webkit-text-stroke: 1px #55C9DF;
-}
-#name {
+#fullname, #name {
     font-size: 5rem;
     -webkit-text-stroke: 1px #55C9DF;
 }
@@ -653,15 +644,7 @@ body {
     font-size: 4.8rem;
     -webkit-text-stroke: 1px #C2C4C8;
 }
-#projects {
-    font-size: 4.8rem;
-    -webkit-text-stroke: 1px #55C9DF;
-}
-#cert {
-    font-size: 4.8rem;
-    -webkit-text-stroke: 1px #55C9DF;
-}
-#about {
+#projects, #cert, #about {
     font-size: 4.8rem;
     -webkit-text-stroke: 1px #55C9DF;
 }
@@ -753,6 +736,30 @@ body {
 }
 /* responsive screen sizes from widest to smallest  ------------------------
 --------------------------------------------------------------------------*/
+/* 4k - 2560px -----------------------------------------------------------*/
+@media screen and (max-width: 2561px) {
+    .web-height {
+        height: 378rem;
+    }
+}
+/* laptop - 1024px -------------------------------------------------------*/
+@media screen and (max-width: 1025px) {
+    #card-home { 
+        height: 26rem;
+    }
+    .web-height {
+        height: 367rem;
+    }
+}
+/* tablet - 768px --------------------------------------------------------*/
+@media screen and (max-width: 769px) {
+    #card-about {
+        height: 49rem;
+    }
+    .web-height {
+        height: 378rem;
+    }
+}
 /* mobile large - 425px --------------------------------------------------*/
 @media screen and (max-width: 426px) {
     #home-margin {
@@ -780,7 +787,7 @@ body {
         padding: 20px;
     }
     .web-height {
-        height: 403.5rem;
+        height: 400rem;
     }
 }
 /* mobile medium - 375px -------------------------------------------------*/
@@ -790,6 +797,9 @@ body {
     }
     #fullname, #tech-stack, #projects, #about, #name {
         font-size: 4rem;
+    }
+    #card-home {
+        height: 26rem;
     }
     #card-tech-stack {
         height: 26rem;
@@ -813,7 +823,7 @@ body {
         padding: 20px;
     }
     .web-height {
-        height: 417rem;
+        height: 412rem;
     }
 }
 /* mobile small - 320px --------------------------------------------------*/
@@ -823,6 +833,9 @@ body {
     }
     #fullname, #tech-stack, #projects, #about, #name {
         font-size: 3.5rem;
+    }
+    #card-home {
+        height: 25rem;
     }
     #card-tech-stack {
         height: 29rem;
@@ -849,7 +862,7 @@ body {
         padding: 20px;
     }
     .web-height {
-        height: 415rem;
+        height: 414rem;
     }
 }
 @media screen and (max-width: 281px) {
