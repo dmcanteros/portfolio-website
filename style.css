@@ -753,6 +753,36 @@ body {
 }
 /* responsive screen sizes from widest to smallest  ------------------------
 --------------------------------------------------------------------------*/
+/* mobile large - 425px --------------------------------------------------*/
+@media screen and (max-width: 426px) {
+    #home-margin {
+        padding-top: 7em;
+    }
+    #fullname, #tech-stack, #projects, #about, #name, #cert {
+        font-size: 4rem;
+    }
+    #card-home {
+        height: 24rem;
+        padding: 15px;
+    }
+    #card-tech-stack {
+        height: 26rem;
+    }
+    #card-projects, #card-cert {
+        height: 17rem;
+    }
+    #card-about {
+        height: 54rem;
+        padding: 20px;
+    }
+    #card-linkedin, #card-email {
+        height: 10.5rem;
+        padding: 20px;
+    }
+    .web-height {
+        height: 403.5rem;
+    }
+}
 /* mobile medium - 375px -------------------------------------------------*/
 @media screen and (max-width: 376px) {
     #home-margin {
