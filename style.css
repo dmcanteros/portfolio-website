@@ -591,75 +591,42 @@ body {
     color: transparent;
     -webkit-text-stroke: .1px #55C9DF;
 }
-/* cards -------------------------------------*/
-#card-home {
-    color: #fff;
-    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.3);
-    background: rgba(255,255,255,0.1);
-    height: 27rem;
-    padding: 30px;
-}
-#card-tech-stack {
-    color: #fff;
-    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.3);
-    background: rgba(255,255,255,0.1);
-    height: 25rem;
-    width: 30rem;
-    padding: 30px;
-}
-#card-projects {
-    color: #fff;
-    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.3);
-    background: rgba(255,255,255,0.1);
-    height: 20rem;
-    width: 23rem;
-    padding: 30px;
-}
-#card-cert {
-    color: #fff;
-    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.3);
-    background: rgba(255,255,255,0.1);
-    height: 20rem;
-    width: 30rem;
-    padding: 30px;
-}
-#card-about {
-    color: #fff;
-    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.3);
-    background: rgba(255,255,255,0.1);
-    height: 42rem;
-    width: 30rem;
-    padding: 30px;
-}
-#card-linkedin {
-    color: #fff;
-    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.3);
-    background: rgba(255,255,255,0.1);
-    height: 12rem;
-    width: 19rem;
-    padding: 30px;
-}
+/* cards ---------------------------------------------------------------------------*/
+#card-home, #card-tech-stack, #card-projects, #card-cert, #card-about, #card-linkedin, 
 #card-email {
     color: #fff;
     box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     border: 1px solid rgba(255,255,255,0.3);
     background: rgba(255,255,255,0.1);
+    padding: 30px;
+}
+#card-home { 
+    height: 27rem;
+}
+#card-tech-stack {
+    height: 25rem;
+    width: 30rem;
+}
+#card-projects {
+    height: 20rem;
+    width: 23rem;
+}
+#card-cert {
+    height: 20rem;
+    width: 30rem;
+}
+#card-about {
+    height: 42rem;
+    width: 30rem;
+}
+#card-linkedin {
     height: 12rem;
     width: 19rem;
-    padding: 30px;
+}
+#card-email {
+    height: 12rem;
+    width: 19rem;
 }
 .form {
     color: #fff;
