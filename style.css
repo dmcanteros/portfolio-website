@@ -582,7 +582,7 @@ body {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 .web-height {
-    height: 423rem;
+    height: 388rem; /* here's to adjust web container height */
 }
 /* logo -------------------------------*/
 #logo {
@@ -751,65 +751,86 @@ body {
 @keyframes m{
     100% {transform:translateY(-308%)}
 }
-/* responsive design from smallest to widest screen ------------------------
+/* responsive screen sizes from widest to smallest  ------------------------
 --------------------------------------------------------------------------*/
+/* mobile small - 320px --------------------------------------------------*/
+@media screen and (max-width: 321px) {
+    #home-margin {
+        padding-top: 7em;
+    }
+    #fullname, #tech-stack, #projects, #about, #name {
+        font-size: 3.5rem;
+    }
+    #card-tech-stack {
+        height: 29rem;
+        padding: 12px;
+    }
+    .size {
+        font-size: 15px;
+    }
+    #card-projects {
+        height: 17rem;
+    }
+    #cert {
+        font-size: 2.7rem; /* smaller than usual because text is too long */
+    }
+    #card-cert {
+        height: 16rem;
+    }
+    #card-about {
+        height: 74rem;
+        padding: 20px;
+    }
+    #card-linkedin, #card-email {
+        height: 10.5rem;
+        padding: 20px;
+    }
+    .web-height {
+        height: 415rem;
+    }
+}
 @media screen and (max-width: 281px) {
     #card-home {
         padding: 20px;
         height: 23rem;
     }
-    #fullname {
+    #fullname, #tech-stack, #projects, #about, #name  {
         font-size: 3rem;
     }
     #home-margin {
         padding-top: 7em;
     }
-    #tech-stack {
-        font-size: 3rem;
-    }
-    .size {
+    .size, .form-floating label {
         font-size: 13px;
     }
     #card-tech-stack {
         height: 27rem;
         padding: 20px;
     }
-    #projects {
-        font-size: 3rem;
-    }
     #card-projects {
         height: 15rem;
         padding: 20px;
     }
     #cert {
-        font-size: 2.5rem; /* smaller than usual because text is too long */
+        font-size: 2.4rem; /* smaller than usual because text is too long */
     }
     #card-cert {
         height: 15rem;
         padding: 20px;
     }
-    #about {
-        font-size: 3rem;
-    }
     #card-about {
         height: 70rem;
         padding: 20px;
     }
-    #card-linkedin {
+    #card-linkedin, #card-email {
         height: 10rem;
         padding: 20px;
-    }
-    #card-email {
-        height: 10rem;
-        padding: 20px;
-    }
-    #name {
-        font-size: 3rem;
     }
     .web-height {
-        height: 402rem;
+        height: 401rem;
     }
 }
+
 
 
 
@@ -849,7 +870,7 @@ body {
     }
 }
 
-@media screen and (max-width: 320px) {
+
     #home-tab-pane {
         height: 52rem;
     }
@@ -860,7 +881,7 @@ body {
     .type > span {
         height: 1.5em;
     }
-}
+
 @media screen and (max-width: 280.5px) {
     #home-tab-pane {
         height: 50rem;
@@ -949,11 +970,7 @@ body {
         height: 270rem;
     }
 }
-@media screen and (max-width: 320px) {
-    #projects-tab-pane {
-        height: 267rem;
-    }
-}
+
 @media screen and (max-width: 300px) {
     #projects-tab-pane {
         height: 272rem;
@@ -1029,19 +1046,8 @@ body {
 
 }
 
-@media screen and (max-width: 320.5px) {
-    #about-tab-pane {
-        height: 93rem;
-    }
 
 
-}
-@media screen and (max-width: 281px) {
-    #about-tab-pane {
-        height: 90rem;
-    }
-
-}
 /* Responsive Design ------------------------------------
 (Work With Me) ----------------------------------------*/
 /* All screen sizes should be responsive */
@@ -1060,17 +1066,9 @@ body {
         height: 82rem;
     }
 }
-@media screen and (max-width: 320.5px) {
-    #work-with-me-tab-pane {
-        height: 80rem;
-    }
-}
-@media screen and (max-width: 281px) {
-    #work-with-me-tab-pane {
-        height: 80rem;
-    }
+
+
 
     #floatingInput {
         font-size: 13px;
     }
-}
