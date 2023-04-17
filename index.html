@@ -27,19 +27,19 @@
     <!--nav bar menu----------------------------------------------->    
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active text-white-50 bg-dark size" id="home-tab" aria-current="page" href="#scroll-home">Home</a>
-          <a class="nav-link text-white-50 bg-dark size" id="projects-tab" href="#scroll-projects">Projects</a>
-          <a class="nav-link text-white-50 bg-dark size" id="about-tab" href="#scroll-about">About</a>
-          <a class="nav-link text-white-50 bg-dark size" id="work-with-me-tab" href="#scroll-work-with-me">Work With Me</a>
+          <a class="nav-link active text-white-50 bg-dark size nav-design" id="home-tab" aria-current="page" href="#scroll-home">Home</a>
+          <a class="nav-link text-white-50 bg-dark size nav-design" id="projects-tab" href="#scroll-projects">Projects</a>
+          <a class="nav-link text-white-50 bg-dark size nav-design" id="about-tab" href="#scroll-about">About</a>
+          <a class="nav-link text-white-50 bg-dark size nav-design" id="work-with-me-tab" href="#scroll-work-with-me">Work With Me</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <div class="container-fluid web-height"> <!--this section is for container height adjustment-->
+  <div class="container-fluid web-height" id="scroll-home"> <!--this section is for container height adjustment-->
     <!--home section----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <div class="container-md" id="home-margin" id="scroll-home">
+    <div class="container-md" id="home-margin">
       <div class="row justify-content-center" id="intro">
         
         <div class="col-lg-6 g-1" id="card-home" data-tilt>
@@ -141,13 +141,13 @@
     </div>
 
     <!--arrow-------------------------------------------------------->
-    <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
+    <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;" id="scroll-projects">
       <span></span>
       <span></span>
       <span></span>
     </div>
 
-    <div class="row row-cols-1 row-cols-lg-2 g-1 justify-content-center" id="scroll-projects"> <!--div is placed in the center due to its singularity-->
+    <div class="row row-cols-1 row-cols-lg-2 g-1 justify-content-center"> <!--div is placed in the center due to its singularity-->
       <!--projects i've built-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
       <div class="col">
         <div class="card mx-1 mb-4">
@@ -352,7 +352,7 @@
     </div>
 
     <!--arrow-------------------------------------------------------->
-    <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
+    <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;" id="scroll-work-with-me">
       <span></span>
       <span></span>
       <span></span>
@@ -360,7 +360,7 @@
       
     <!--work with me section-----------------------------------------------------------------------------------------------------------------
     ---------------------------------------------------------------------------------------------------------------------------------------->  
-    <div class="container-md text-center" id="scroll-work-with-me">
+    <div class="container-md text-center">
       <div class="row justify-content-evenly">
         <div class="col-md-6 m-3" id="card-linkedin" data-tilt>
           <!--linkedin------------------------------------------------------------------->
