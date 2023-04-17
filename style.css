@@ -742,6 +742,20 @@ body {
         height: 378rem;
     }
 }
+/* chromebook 2.0 ---------------------------------------------------------*/
+@media screen and (max-width: 1367px) {
+    #card-home {
+        padding: 18px;
+        height: 26rem;
+    }
+}
+/* chromebook ------------------------------------------------------------*/
+@media screen and (max-width: 1300px) {
+    #card-home {
+        padding: 18px;
+        height: 26rem;
+    }
+}
 /* laptop - 1024px -------------------------------------------------------*/
 @media screen and (max-width: 1025px) {
     #card-home { 
@@ -751,6 +765,18 @@ body {
         height: 367rem;
     }
 }
+/* kindle fire hdx -------------------------------------------------------*/
+@media screen and (max-width: 800px) {
+    #card-home { 
+        height: 20rem;
+    }
+    #card-about {
+        height: 49rem;
+    }
+    .web-height {
+        height: 382rem;
+    }
+}
 /* tablet - 768px --------------------------------------------------------*/
 @media screen and (max-width: 769px) {
     #card-about {
@@ -758,6 +784,23 @@ body {
     }
     .web-height {
         height: 378rem;
+    }
+}
+/* galaxy tab s4 ---------------------------------------------------------*/
+@media screen and (max-width: 712px) {
+    #card-home { 
+        height: 18rem;
+    }
+    #card-tech-stack {
+        height: 27rem;
+        width: 25rem;
+    }
+    #card-about {
+        height: 43rem;
+        padding: 20px;
+    }
+    .web-height {
+        height: 423rem;
     }
 }
 /* mobile large - 425px --------------------------------------------------*/
@@ -815,7 +858,7 @@ body {
         height: 17rem;
     }
     #card-about {
-        height: 66rem;
+        height: 65rem;
         padding: 20px;
     }
     #card-linkedin, #card-email {
@@ -823,7 +866,13 @@ body {
         padding: 20px;
     }
     .web-height {
-        height: 412rem;
+        height: 410rem;
+    }
+}
+/* galaxy note 3 ---------------------------------------------------------*/
+@media screen and (max-width: 360px) {
+    .web-height {
+        height: 416rem;
     }
 }
 /* mobile small - 320px --------------------------------------------------*/
@@ -835,10 +884,10 @@ body {
         font-size: 3.5rem;
     }
     #card-home {
-        height: 25rem;
+        height: 24rem;
     }
     #card-tech-stack {
-        height: 29rem;
+        height: 24rem;
         padding: 12px;
     }
     .size {
@@ -854,15 +903,15 @@ body {
         height: 16rem;
     }
     #card-about {
-        height: 74rem;
-        padding: 20px;
+        height: 66rem;
+        padding: 19px;
     }
     #card-linkedin, #card-email {
         height: 10.5rem;
         padding: 20px;
     }
     .web-height {
-        height: 414rem;
+        height: 404rem;
     }
 }
 @media screen and (max-width: 281px) {
