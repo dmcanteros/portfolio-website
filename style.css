@@ -584,10 +584,6 @@ body {
 .nav-design:hover {
     text-decoration: 3px underline #198754;
 }
-/* TODO: focus style after being clicked */
-.nav-design:active {
-    text-decoration: 3px underline #198754;
-}
 .web-height {
     height: 377rem; /* here's to adjust web container height */
 }
