@@ -413,24 +413,28 @@
             <textarea class="form-control text-bg-dark size" placeholder="Leave your message here" id="floatingTextarea2" style="height: 100px"></textarea>
             <label for="floatingTextarea2" class="text-white-50 size">Leave your message here</label>
           </div>
-
-          <br> <!--TODO: delete when done-->
+          <!--TODO: popover must show after hitting submit
+          <div class="col-md-12">
+            <button type="button" class="container-fluid btn btn-success size" type="submit">Send Your Message</button>
+          </div>-->
           <!-- Button trigger modal -->
-          <button type="button" class="container-fluid btn btn-success size" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button>     
+          <button type="button" class="container-fluid btn btn-success size" data-bs-toggle="modal" data-bs-target="#exampleModal">Send Your Message</button>     
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <div class="modal-header bg-dark">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    <!--logo------------------------------------------------->
+                    <a class="navbar-brand" id="logo"><strong>d.c</strong></a>
+                  </h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                  ...
+                <div class="modal-body text-light size" style="background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);">
+                  Thank you! Your message has been sent successfully.
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-footer bg-dark">
+                  <button type="button" class="container-fluid btn btn-outline-success size" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
