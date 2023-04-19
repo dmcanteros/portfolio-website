@@ -585,7 +585,8 @@ body {
     text-decoration: 3px underline #198754;
 }
 .web-height {
-    height: 377rem; /* here's to adjust web container height */
+    /* TODO: finalized web-height per screen size and make an allowance when extending the text area */
+    height: 399rem; /* here's to adjust web container height */
 }
 /* logo -------------------------------*/
 #logo {
@@ -986,6 +987,7 @@ body {
         height: 403rem;
     }
 }
+/* galaxy fold ----------------------------------------------------------*/
 @media screen and (max-width: 281px) {
     #card-home {
         padding: 20px;

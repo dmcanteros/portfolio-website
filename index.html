@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" /> 
 </head>
 <body>
   <!--stars animation background-->
@@ -159,10 +160,11 @@
             <!--button----------------------------------------->
             <div class="row text-center" style="display: flex;">
               <div class="col-6">
-                <a href="#" class="container-fluid btn btn btn-success size" target="_blank"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
+                <!--TODO: input links for 2 buttons to direct to another webpage-->
+                <a class="container-fluid btn btn btn-success size" target="_blank"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
               </div>
               <div class="col-6">
-                <a href="#" class="container-fluid btn btn-outline-success size" target="_blank"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
+                <a class="container-fluid btn btn-outline-success size" target="_blank"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
               </div>
             </div>
           </div>
@@ -253,7 +255,7 @@
 
     <!--certificates---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
+      <div class="accordion-item visually-hidden">
         <h2 class="accordion-header" id="headingOne">
           <button class="accordion-button text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             HTML, CSS and JavaScript Fundamentals
@@ -293,12 +295,12 @@
         </div>
       </div>
       <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <h2 class="accordion-header" id="headingThree"> <!--TODO: put "collapsed" in button class="" if you want to hide this element-->
+          <button class="accordion-button text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
             WordPress and SEO
           </button>
         </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
           <div class="accordion-body text-bg-dark">
             <!--cert # 3 info------------->
             <div class="card text-bg-dark">
@@ -334,11 +336,11 @@
           <div class="position-relative top-50 start-50 translate-middle" id="textBox">
             <h1 class="text-center" id="about">About Me</h1> 
             <p class="text-light mt-4 mb-0 text-start size" id="desc">I am Daphane Canteros. You can call me <strong>Daph</strong>. Building simple websites with WordPress and Wix sparked my interest in Front-End Web Development.</p>
-            <p class="text-light mt-4 mb-0 text-start size" id="desc">The desire to learn how to build UI based on a desired output continuously drove me to learn as much as I could. This is when I began studying <strong>JavaScript</strong> and <strong>HTML/CSS.</strong></p>
+            <p class="text-light mt-4 mb-0 text-start size" id="desc">The desire to learn how to build UI based on a desired output continuously drove me to learn as much as I could. This is when I began studying <strong>HTML/CSS</strong> and <strong>JavaScript</strong>.</p>
             <p class="text-light mt-4 mb-0 text-start size" id="desc">After learning the fundamentals, I applied <strong>React</strong>, <strong>Tailwind</strong>, <strong>Bootstrap</strong>, and <strong>Node.js</strong>. I developed these passion projects during my learning journey.</p>
-            <p class="text-light mt-4 mb-0 text-start size" id="desc">My goal is to be part of a competitive and collaborative team that builds and tests a functional system that adds value to clients.</p>
+            <p class="text-light mt-4 mb-0 text-start size" id="desc">My goal is to be part of a competitive and collaborative team that builds, tests, and maintains functional systems that solve problems and add value to clients.</p>
             <!--button----------------------------------------->
-            <div class="row justify-content-center pt-5">
+            <div class="row justify-content-center pt-4">
               <div class="col-md-6 col-sm-12 mb-3 mb-md-0 text-center">
                 <a href="#scroll-work-with-me" class="container-fluid btn btn-success size">Work With Me</a>
               </div>
@@ -368,7 +370,7 @@
           <p class="text-light mt-1 size">Daphane Canteros</p>
           <!--button-->
           <div class="text-center">
-            <a href="https://www.linkedin.com/in/daphane-canteros-993a63152/" class="container-fluid btn btn-outline-success mb-3 size" type="submit">View Profile</a>
+            <a href="https://www.linkedin.com/in/daphane-canteros-993a63152/" class="container-fluid btn btn-outline-success mb-3 size" type="submit" target="_blank">View Profile</a>
           </div>
         </div>
         <div class="col-md-6 m-3" id="card-email" data-tilt>
@@ -377,6 +379,7 @@
           <p class="text-light mt-1 size">dc@daphanecanteros.dev</p>
           <!--button-->
           <div class="text-center">
+            <!--TODO: change email address to dc@daphanecanteros.dev-->
             <a href="mailto:canterosdaphanemara@gmail.com" class="container-fluid btn btn-outline-success mb-3 size" type="submit" target="_blank">Send Email</a>
           </div>
         </div>
@@ -410,10 +413,29 @@
             <textarea class="form-control text-bg-dark size" placeholder="Leave your message here" id="floatingTextarea2" style="height: 100px"></textarea>
             <label for="floatingTextarea2" class="text-white-50 size">Leave your message here</label>
           </div>
-          <div class="col-md-12">
-            <!--TODO: popover must show after hitting submit-->
-            <button type="button" class="container-fluid btn btn-success size" type="submit">Send Your Message</button>
+
+          <br> <!--TODO: delete when done-->
+          <!-- Button trigger modal -->
+          <button type="button" class="container-fluid btn btn-success size" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button>     
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -437,8 +459,8 @@
     <strong>Daphane Canteros</strong> &copy; 2023
   </div>
 </div>
-<script src="js/bootstrap.bundle.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script src="vanilla-tilt.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
