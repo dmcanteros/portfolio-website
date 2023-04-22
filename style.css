@@ -698,6 +698,11 @@ body {
 .cert:hover {
     opacity: 1.0;
 }
+.carousel-caption {
+    position: absolute;
+    background-color: #323232;
+    height: 20vh;
+}
 /* margin -----------------------------*/
 #home-margin {
     padding-top: 9em;
