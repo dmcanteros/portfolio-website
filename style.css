@@ -693,20 +693,28 @@ body {
     background: rgba(255,255,255,0.1);
 }
 .cert {
+    overflow: hidden;
+    color: #fff;
+    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.1);
+}
+.carousel-item:hover {
+    transform: translateY(-160px); /* if gusto mo pa taasan yung hover description upward */
+    cursor: pointer;
+    transition: 0.4s;
     opacity: 0.5;
 }
-.cert:hover {
-    opacity: 1.0;
-}
-/* TODO: carousel hover cert info */
 .carousel-caption {
-    position: absolute;
-    background-color: #323232;
-    height: 17vh;
-    z-index: 1;
+    transform: translateY(140px); /* if gusto mo kapalan yung margin top ng description */
     width: 100%;
     margin-inline-start: -15%;
-    margin-bottom: -20px;
+    margin-bottom: -20px;  
+    color: white;
+}
+
+.carousel-caption h5 {
+    
 }
 /* margin -----------------------------*/
 #home-margin {
