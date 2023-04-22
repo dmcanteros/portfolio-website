@@ -297,65 +297,46 @@
     </div> 
 
     <!--certificates---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item visually-hidden">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            HTML, CSS and JavaScript Fundamentals
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body text-bg-dark">
-            <!--cert # 1 info------------->
-            <div class="card text-bg-dark">
-              <div class="card-body">
-                <h5 class="card-title"><strong>STI College</strong></h5>
-                <p class="card-text text-white-50 size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-              <!--TODO: insert certificate-------------------------------->
-              <img src="images\background.png" class="card-img-bottom" alt="...">
-            </div>
+    <div id="carouselExampleInterval" class="carousel slide carousel-dark container-md" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner cert" style="border-radius: 15px;">
+        <!--cert 1------------------------------------------------>
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="cert\VA-SMM.jpg" class="d-block w-100" alt="cert">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>HTML, CSS and JavaScript Fundamentals - STI College</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <!--cert 2---------------------------------------->
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="cert\VA-SMM.jpg" class="d-block w-100" alt="cert">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>HTML, CSS and JavaScript Fundamentals - STI College</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <!--cert 3---------------->
+        <div class="carousel-item">
+          <img src="cert\VA-SMM.jpg" class="d-block w-100" alt="cert">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>WordPress and SEO - Virtual Assistant Training Philippines</h5>
+            <p>This was the time I discovered my interest in Website Creation.</p>
           </div>
         </div>
       </div>
-      <div class="accordion-item visually-hidden">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Certificate #2
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body text-bg-dark">
-            <!--cert # 2 info------------->
-            <div class="card text-bg-dark">
-              <div class="card-body">
-                <h5 class="card-title"><strong>Domestika</strong></h5>
-                <p class="card-text text-white-50 size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-              <img src="images\background.png" class="card-img-bottom" alt="...">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree"> <!--TODO: put "collapsed" in button class="" if you want to hide this element-->
-          <button class="accordion-button text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-            WordPress and SEO
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body text-bg-dark">
-            <!--cert # 3 info------------->
-            <div class="card text-bg-dark">
-              <div class="card-body">
-                <h5 class="card-title"><strong>Virtual Assistant Training Philippines</strong></h5>
-                <p class="card-text text-white-50 size">This was the time I discovered my interest in Website Creation.</p>
-              </div>
-              <img src="cert\VA-SMM.jpg" class="card-img-bottom" alt="...">
-            </div>
-          </div>
-        </div>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <!--arrow-------------------------------------------------------->
@@ -456,7 +437,7 @@
 <!--footer-----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------->
 <div class="row text-center fixed-bottom bg-dark mb-0 p-2">
-  <div class="col-sm-6">
+  <div class="col-sm-6 size">
     <i class='bx bxl-linkedin px-2' style="color:#55C9DF; font-size: 1.7rem;"></i>
     <i class='bx bxl-github px-2' style="color:#55C9DF; font-size: 1.7rem;"></i>
     <i class='bx bxl-dribbble px-2' style="color:#55C9DF; font-size: 1.7rem;"></i>
