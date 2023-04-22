@@ -698,10 +698,15 @@ body {
 .cert:hover {
     opacity: 1.0;
 }
+/* TODO: carousel hover cert info */
 .carousel-caption {
     position: absolute;
     background-color: #323232;
-    height: 20vh;
+    height: 17vh;
+    z-index: 1;
+    width: 100%;
+    margin-inline-start: -15%;
+    margin-bottom: -20px;
 }
 /* margin -----------------------------*/
 #home-margin {
