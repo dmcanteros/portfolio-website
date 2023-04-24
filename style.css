@@ -763,12 +763,18 @@ body {
         padding: 18px;
         height: 26rem;
     }
+    .web-height {
+        height: 358rem;
+    }
 }
 /* chromebook ------------------------------------------------------------*/
 @media screen and (max-width: 1300px) {
     #card-home {
         padding: 18px;
         height: 26rem;
+    }
+    .web-height {
+        height: 358rem;
     }
 }
 /* laptop - 1024px -------------------------------------------------------*/
@@ -789,7 +795,7 @@ body {
         height: 49rem;
     }
     .web-height {
-        height: 382rem;
+        height: 365rem;
     }
 }
 /* ipad air --------------------------------------------------------------*/
@@ -801,7 +807,7 @@ body {
         height: 49rem;
     }
     .web-height {
-        height: 382rem;
+        height: 365rem;
     }
 }
 /* kindle fire hdx -------------------------------------------------------*/
@@ -813,7 +819,7 @@ body {
         height: 49rem;
     }
     .web-height {
-        height: 382rem;
+        height: 364rem;
     }
 }
 /* tablet - 768px --------------------------------------------------------*/
@@ -828,7 +834,7 @@ body {
 /* galaxy tab s4 ---------------------------------------------------------*/
 @media screen and (max-width: 712px) {
     #card-home { 
-        height: 18rem;
+        height: 19rem;
     }
     #card-tech-stack {
         height: 27rem;
@@ -839,7 +845,7 @@ body {
         padding: 20px;
     }
     .web-height {
-        height: 423rem;
+        height: 415rem;
     }
 }
 /* surface duo -----------------------------------------------------------*/
@@ -851,7 +857,7 @@ body {
         height: 44rem;
     }
     .web-height {
-        height: 416rem;
+        height: 399rem;
     }
 }
 /* mobile large - 425px --------------------------------------------------*/
@@ -890,6 +896,12 @@ body {
         height: 410rem;
     }
 }
+/* samsung galaxy s20 ultra ----------------------------------------------*/
+@media screen and (max-width: 413px) {
+    .web-height {
+        height: 382rem;
+    }
+}
 /* pixel 5 ---------------------------------------------------------------*/
 @media screen and (max-width: 394px) {
     #card-home {
@@ -897,6 +909,9 @@ body {
     }
     #card-about {
         height: 55rem;
+    }
+    .web-height {
+        height: 383rem;
     }
 }
 /* iphone 12 pro ---------------------------------------------------------*/
@@ -907,11 +922,14 @@ body {
     #card-about {
         height: 57rem;
     }
+    #cert {
+        font-size: 3.8rem; /* smaller than usual because text is too long */
+    }
     .web-height {
-        height: 407rem;
+        height: 384rem;
     }
 }
-/* mobile medium - 375px -------------------------------------------------*/
+/* mobile medium - 375px / iphone se --------------------------------------*/
 @media screen and (max-width: 376px) {
     #home-margin {
         padding-top: 7em;
@@ -933,10 +951,10 @@ body {
         font-size: 3.4rem; /* smaller than usual because text is too long */
     }
     #card-cert {
-        height: 17rem;
+        height: 16rem;
     }
     #card-about {
-        height: 66rem;
+        height: 65rem;
         padding: 20px;
     }
     #card-linkedin, #card-email {
@@ -950,16 +968,22 @@ body {
 /* galaxy note 3 / samsung galaxy s8+ ------------------------------------*/
 @media screen and (max-width: 360px) {
     .web-height {
-        height: 416rem;
+        height: 390rem;
     }
     #card-home {
         height: 25rem;
     }
+    #card-projects {
+        height: 18rem;
+    }
     #card-about {
         height: 66rem;
     }
+    #card-cert {
+        height: 17rem;
+    }
 }
-/* mobile small - 320px --------------------------------------------------*/
+/* mobile small - 320px / galaxy s9+ ------------------------------------*/
 @media screen and (max-width: 321px) {
     #home-margin {
         padding-top: 7em;
@@ -968,10 +992,10 @@ body {
         font-size: 3.5rem;
     }
     #card-home {
-        height: 25rem;
+        height: 23rem;
     }
     #card-tech-stack {
-        height: 29rem;
+        height: 25rem;
         padding: 12px;
     }
     .size {
@@ -981,7 +1005,7 @@ body {
         height: 17rem;
     }
     #card-about {
-        height: 72rem;
+        height: 68rem;
         padding: 19px;
     }
     #cert {
@@ -995,7 +1019,7 @@ body {
         padding: 20px;
     }
     .web-height {
-        height: 387rem;
+        height: 379rem;
     }
 }
 /* galaxy fold ----------------------------------------------------------*/
@@ -1046,6 +1070,6 @@ body {
         font-size: 13px;
     }
     .web-height {
-        height: 397rem;
+        height: 368rem;
     }
 }
