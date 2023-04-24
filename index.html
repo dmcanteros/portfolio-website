@@ -359,7 +359,7 @@
           </div>
         </div>
         <!--form--------------------------------------------------------------------------------------->
-        <div class="col-lg-6 form text-bg-dark gy-5">
+        <div class="col-lg-6 form text-bg-dark gy-5"> <!--TODO: unfinished code-->
           <h1 class="text-center" id="name">Say Hi!</h1>
           <p class="card-text mt-2 text-light size">I am beyond grateful to work with you.</p>
           <br>
@@ -379,6 +379,7 @@
               Please provide a valid email.
             </div>
           </div>
+          <form onsubmit="sendEmail(); reset(); return false;">
           <div class="form-floating mb-3">
             <input type="text" class="form-control text-bg-dark" id="floatingInput" placeholder="Company" value="">
             <label for="floatingInput" class="text-white-50 size">Company</label>
@@ -414,6 +415,7 @@
               </div>
             </div>
           </div>
+        </form>
 
         </div>
       </div>
@@ -441,5 +443,21 @@
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script src="vanilla-tilt.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "canterosdaphanemara@gmail.com",
+        Password : "Tokyo@0411",
+        To : 'canterosdaphanemara@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "This is the subject", // can be modified
+        Body : "And this is the body" // can be modified
+    }).then(
+      message => alert(message)
+    );
+  }
+</script>
 </body>
 </html>
