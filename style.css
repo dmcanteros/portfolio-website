@@ -686,35 +686,27 @@ body {
 }
 /* images ----------------------------------*/
 .about-photo {
-    color: #fff;
-    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.3);
-    background: rgba(255,255,255,0.1);
 }
 .cert {
     overflow: hidden;
+}
+.about-photo, .cert {
     color: #fff;
     box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255,255,255,0.3);
     background: rgba(255,255,255,0.1);
 }
 .carousel-item:hover {
-    transform: translateY(-160px); /* if gusto mo pa taasan yung hover description upward */
+    transform: translateY(-140px); /* carousel-caption text alignment */
     cursor: pointer;
     transition: 0.4s;
-    opacity: 0.5;
 }
 .carousel-caption {
-    transform: translateY(140px); /* if gusto mo kapalan yung margin top ng description */
+    transform: translateY(110px); /* adjust width of container */
     width: 100%;
     margin-inline-start: -15%;
     margin-bottom: -20px;  
-    color: white;
-}
-
-.carousel-caption h5 {
-    
 }
 /* margin -----------------------------*/
 #home-margin {
