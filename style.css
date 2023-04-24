@@ -697,17 +697,6 @@ body {
     border: 1px solid rgba(255,255,255,0.3);
     background: rgba(255,255,255,0.1);
 }
-.carousel-item:hover {
-    transform: translateY(-140px); /* carousel-caption text alignment */
-    cursor: pointer;
-    transition: 0.4s;
-}
-.carousel-caption {
-    transform: translateY(110px); /* adjust width of container */
-    width: 100%;
-    margin-inline-start: -15%;
-    margin-bottom: -20px;  
-}
 /* margin -----------------------------*/
 #home-margin {
     padding-top: 9em;
@@ -759,7 +748,13 @@ body {
 /* 4k - 2560px -----------------------------------------------------------*/
 @media screen and (max-width: 2561px) {
     .web-height {
-        height: 378rem;
+        height: 372rem;
+    }
+}
+/* laptop large - 1440px --------------------------------------------------*/
+@media screen and (max-width: 1440px) {
+    .web-height {
+        height: 372rem;
     }
 }
 /* chromebook 2.0 ---------------------------------------------------------*/
@@ -782,7 +777,7 @@ body {
         height: 26rem;
     }
     .web-height {
-        height: 367rem;
+        height: 347rem;
     }
 }
 /* surface pro 7 ---------------------------------------------------------*/
@@ -827,7 +822,7 @@ body {
         height: 49rem;
     }
     .web-height {
-        height: 382rem;
+        height: 364rem;
     }
 }
 /* galaxy tab s4 ---------------------------------------------------------*/
@@ -886,7 +881,7 @@ body {
         padding: 20px;
     }
     .web-height {
-        height: 400rem;
+        height: 381rem;
     }
 }
 /* iphone xr -------------------------------------------------------------*/
@@ -938,10 +933,10 @@ body {
         font-size: 3.4rem; /* smaller than usual because text is too long */
     }
     #card-cert {
-        height: 16rem;
+        height: 17rem;
     }
     #card-about {
-        height: 65rem;
+        height: 66rem;
         padding: 20px;
     }
     #card-linkedin, #card-email {
@@ -949,7 +944,7 @@ body {
         padding: 20px;
     }
     .web-height {
-        height: 412rem;
+        height: 388rem;
     }
 }
 /* galaxy note 3 / samsung galaxy s8+ ------------------------------------*/
@@ -973,10 +968,10 @@ body {
         font-size: 3.5rem;
     }
     #card-home {
-        height: 23rem;
+        height: 25rem;
     }
     #card-tech-stack {
-        height: 24rem;
+        height: 29rem;
         padding: 12px;
     }
     .size {
@@ -985,22 +980,22 @@ body {
     #card-projects {
         height: 17rem;
     }
+    #card-about {
+        height: 72rem;
+        padding: 19px;
+    }
     #cert {
         font-size: 2.7rem; /* smaller than usual because text is too long */
     }
     #card-cert {
         height: 16rem;
     }
-    #card-about {
-        height: 66rem;
-        padding: 19px;
-    }
     #card-linkedin, #card-email {
         height: 10.5rem;
         padding: 20px;
     }
     .web-height {
-        height: 403rem;
+        height: 387rem;
     }
 }
 /* galaxy fold ----------------------------------------------------------*/
