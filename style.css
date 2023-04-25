@@ -586,7 +586,7 @@ body {
 }
 .web-height {
     /* TODO: finalized web-height per screen size and make an allowance when extending the text area */
-    height: 410rem; /* here's to adjust web container height */
+    height: 1000px; /* here's to adjust web container height - original: height: 410rem; */
 }
 /* logo -------------------------------*/
 #logo {
