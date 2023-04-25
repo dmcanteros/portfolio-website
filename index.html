@@ -46,7 +46,7 @@
         <div class="col-lg-6 g-1" id="card-home" data-tilt>
           <div class="position-relative top-50 start-50 translate-middle" id="textBox">
             <div class="text-end me-2" style="color: #E8E6D9;">Hi, I am</div>
-            <h1 class="text-center" id="fullname">Daphane Canteros</h1>  
+            <h1 class="text-center" id="myname">Daphane Canteros</h1>  
             <span class="type p-1">
               <span>
                 <span style="color: #E8E6D9;"><strong>Aspiring Front-End Web Developer</strong></span>
@@ -359,49 +359,54 @@
           </div>
         </div>
         <!--form--------------------------------------------------------------------------------------->
-        <div class="col-lg-6 form text-bg-dark gy-5"> <!--TODO: unfinished code-->
-          <h1 class="text-center" id="name">Say Hi!</h1>
+        <!--TODO: hidden content - put js in contact form-->
+        <!--
+        <div class="col-lg-6 form text-bg-dark gy-5"> 
+          <h1 class="text-center" id="get-in-touch">Say Hi!</h1>
           <p class="card-text mt-2 text-light size">I am beyond grateful to work with you.</p>
           <br>
           <div class="form-floating mb-3">
             <input type="name" class="form-control text-bg-dark" id="floatingInput" placeholder="First Name, Last Name" value="" required>
-            <label for="floatingInput" class="text-white-50 size">Full Name</label>
+            <label for="floatingInput" class="text-white-50 size">Full Name</label>-->
             <!--TODO: finalized invalid feedback-->
-            <div class="invalid-feedback">
+            <!--<div class="invalid-feedback">
               Please enter your fullname.
             </div>
           </div>
           <div class="form-floating mb-3">
             <input type="email" class="form-control text-bg-dark" id="floatingInput" placeholder="sample@email.com" value="" required>
-            <label for="floatingInput" class="text-white-50 size">Email</label>
+            <label for="floatingInput" class="text-white-50 size">Email</label>-->
             <!--TODO: finalized invalid feedback-->
-            <div class="invalid-feedback">
+            <!--<div class="invalid-feedback">
               Please provide a valid email.
             </div>
           </div>
-          <form onsubmit="sendEmail(); reset(); return false;">
+          <form>
           <div class="form-floating mb-3">
             <input type="text" class="form-control text-bg-dark" id="floatingInput" placeholder="Company" value="">
             <label for="floatingInput" class="text-white-50 size">Company</label>
-          </div>
+          </div>-->
           <!--text area------------------>
+          <!--
           <div class="form-floating mb-5">
             <textarea class="form-control text-bg-dark size" placeholder="Leave your message here" id="floatingTextarea2" style="height: 100px"></textarea>
             <label for="floatingTextarea2" class="text-white-50 size">Leave your message here</label>
-          </div>
-          <!--TODO: popover must show after hitting submit
+          </div>-->
+          <!--TODO: modal must show after hitting submit
           <div class="col-md-12">
             <button type="button" class="container-fluid btn btn-success size" type="submit">Send Your Message</button>
           </div>-->
-          <!-- Button trigger modal -->
-          <button type="button" class="container-fluid btn btn-success size" data-bs-toggle="modal" data-bs-target="#exampleModal">Send Your Message</button>     
+          <!-- Button trigger modal --><!--
+          <button type="button" class="container-fluid btn btn-success size" data-bs-toggle="modal" data-bs-target="#exampleModal">Send Your Message</button>-->  
           <!-- Modal -->
+          <!--
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header bg-dark">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">-->
                     <!--logo------------------------------------------------->
+                    <!--
                     <a class="navbar-brand" id="logo"><strong>d.c</strong></a>
                   </h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -415,20 +420,10 @@
               </div>
             </div>
           </div>
-        </form>
 
-        </div>
+        </div>-->
       </div>
     </div>
-
-
-    <br><br><br><br><br>
-        <div class="container">
-          <form> 
-            <h3>GET IN TOUCH</h3>
-            <input type="text" id="name" placeholder="Your Name" required>
-          </form>
-        </div>
 
     </div>   
   </div>
@@ -452,21 +447,5 @@
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script src="vanilla-tilt.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-  function sendEmail(){
-    Email.send({
-        Host : "smtp.gmail.com",
-        Username : "canterosdaphanemara@gmail.com",
-        Password : "Tokyo@0411",
-        To : 'canterosdaphanemara@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "This is the subject", // can be modified
-        Body : "And this is the body" // can be modified
-    }).then(
-      message => alert(message)
-    );
-  }
-</script>
 </body>
 </html>
