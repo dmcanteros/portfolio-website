@@ -743,6 +743,9 @@ body {
 @keyframes m{
     100% {transform:translateY(-308%)}
 }
+.social a {
+    text-decoration: none;
+}
 /* responsive screen sizes from widest to smallest  ------------------------
 --------------------------------------------------------------------------*/
 /* 4k - 2560px -----------------------------------------------------------*/
