@@ -35,8 +35,8 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active text-white-50 bg-dark size nav-design" id="home-tab" aria-current="page" href="#home">Home</a>
-          <a class="nav-link text-white-50 bg-dark size nav-design" id="projects-tab" href="#projects">Projects</a>
           <a class="nav-link text-white-50 bg-dark size nav-design" id="about-tab" href="#about">About</a>
+          <a class="nav-link text-white-50 bg-dark size nav-design" id="myprojects-tab" href="#myprojects">Projects</a>
           <a class="nav-link text-white-50 bg-dark size nav-design" id="contact-tab" href="#contact">Contact</a>
         </div>
       </div>
@@ -75,7 +75,7 @@
           <div class="col-md-12">
             <div class="row justify-content-center mb-3">
               <div class="col-md-6 col-sm-12 mb-3 mb-md-0 text-center">
-                <a href="#projects" class="container-fluid btn btn-outline-success size">See Projects</a>
+                <a href="#myprojects" class="container-fluid btn btn-outline-success size">See Projects</a>
               </div>
               <div class="col-md-6 col-sm-12 text-center">
                 <!--TODO: download resume-->
@@ -88,8 +88,44 @@
           </div>
         </div>
 
-    <!--projects section------------------------------------------------------------------------
-    ------------------------------------------------------------------------------------------->
+    <!--Arrow-------------------------------------------------------->
+    <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!--about section--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="col-8 col-md-5 g-md-1 container-fluid p-4" id="about">
+      <!--my photo--------------------------------------------------------------------------------->
+      <img src="images\me.jpg" class="about-photo img-fluid" alt="..." style="border-radius: 15px;">
+    </div>
+
+    <div class="col-12 col-md-7 p-4 g-md-1 container-fluid">
+      <div class="row justify-content-center" id="intro">
+        <!--about me----------------------------------->
+        <div class="col-lg-6" id="card-about" data-tilt>
+          <div class="position-relative top-50 start-50 translate-middle" id="textBox">
+            <h1 class="text-center" id="about">About Me</h1> 
+            <p class="text-light mt-4 mb-0 text-start size" id="desc">I am Daphane Canteros. You can call me <strong>Daph</strong>. Building simple websites with WordPress and Wix sparked my interest in Front-End Web Development.</p>
+            <p class="text-light mt-4 mb-0 text-start size" id="desc">The desire to learn how to build UI based on a desired output continuously drove me to learn as much as I could. This is when I began studying <strong>HTML/CSS</strong> and <strong>JavaScript</strong>.</p>
+            <p class="text-light mt-4 mb-0 text-start size" id="desc">After learning the fundamentals, I applied <strong>React</strong>, <strong>Tailwind</strong>, <strong>Bootstrap</strong>, and <strong>Node.js</strong>. I developed these passion projects during my learning journey.</p>
+            <p class="text-light mt-4 mb-0 text-start size" id="desc">My goal is to be part of a competitive and collaborative team that builds, tests, and maintains functional systems that solve problems and add value to clients.</p>
+            <!--button----------------------------------------->
+            <div class="row justify-content-center pt-4">
+              <div class="col-md-6 col-sm-12 mb-3 mb-md-0 text-center">
+                <a href="#contact" class="container-fluid btn btn-success size">Contact Me</a>
+              </div>
+              <div class="col-md-6 col-sm-12 text-center">
+                <a href="#myprojects" class="container-fluid btn btn-outline-success size">See Projects</a>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--Arrow-------------------------------------------------------->
     <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
       <span></span>
@@ -140,6 +176,8 @@
       <span></span>
     </div>
 
+    <!--projects section-------------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------------------------------->
     <div class="col-md-4 col-sm-4 g-1" id="card-projects" data-tilt>
       <div class="position-relative top-50 start-50 translate-middle" id="textBox">
         <h1 class="text-center" id="projects">Projects</h1>
@@ -153,8 +191,8 @@
       </div>
     </div>
 
-    <!--arrow-------------------------------------------------------->
-    <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;" id="scroll-projects">
+    <!--arrow------------------------------------------------------------------------>
+    <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;" id="myprojects">
       <span></span>
       <span></span>
       <span></span>
@@ -184,7 +222,7 @@
       </div>
       <div class="col visually-hidden"> <!--project 2 has been hidden-->
         <div class="card mx-1 mb-4">
-          <img src="images\background.png" class="card-img-top" alt="...">
+          <img src="images\d.c.png" class="card-img-top" alt="...">
           <div class="card-body text-bg-dark">
             <h5 class="card-title"><strong>Project 2</strong></h5>
             <p class="card-text text-white-50 size">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -194,7 +232,7 @@
                 <a href="https://github.com/daphcanteros/portfolio" class="container-fluid btn btn btn-success size" target="_blank"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
               </div>
               <div class="col-6">
-                <a href="https://dcdevcreations.wixsite.com/webdesigner" class="container-fluid btn btn-outline-success size" target="_blank"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
+                <a href="#" class="container-fluid btn btn-outline-success size" target="_blank"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
               </div>
             </div>
           </div>
@@ -202,7 +240,7 @@
       </div>
       <div class="col visually-hidden"> <!--project 3 has been hidden-->
         <div class="card mx-1 mb-4">
-          <img src="images\background.png" class="card-img-top" alt="...">
+          <img src="images\d.c.png" class="card-img-top" alt="...">
           <div class="card-body text-bg-dark">
             <h5 class="card-title"><strong>Project 3</strong></h5>
             <p class="card-text text-white-50 size">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -212,7 +250,7 @@
                 <a href="https://github.com/daphcanteros/portfolio" class="container-fluid btn btn btn-success size" target="_blank"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
               </div>
               <div class="col-6">
-                <a href="https://dcdevcreations.wixsite.com/webdesigner" class="container-fluid btn btn-outline-success size" target="_blank"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
+                <a href="#" class="container-fluid btn btn-outline-success size" target="_blank"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
               </div>
             </div>
           </div>
@@ -220,7 +258,7 @@
       </div>
       <div class="col visually-hidden"> <!--project 4 has been hidden-->
         <div class="card mx-1 mb-4">
-          <img src="images\background.png" class="card-img-top" alt="...">
+          <img src="images\d.c.png" class="card-img-top" alt="...">
           <div class="card-body text-bg-dark">
             <h5 class="card-title"><strong>Project 4</strong></h5>
             <p class="card-text text-white-50 size">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -230,7 +268,7 @@
                 <a href="https://github.com/daphcanteros/portfolio" class="container-fluid btn btn btn-success size" target="_blank"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
               </div>
               <div class="col-6">
-                <a href="https://dcdevcreations.wixsite.com/webdesigner" class="container-fluid btn btn-outline-success size" target="_blank"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
+                <a href="#" class="container-fluid btn btn-outline-success size" target="_blank"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
               </div>
             </div>
           </div>
@@ -244,44 +282,6 @@
       <span></span>
       <span></span>
     </div> 
-
-    <!--about section--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <div class="col-8 col-md-5 g-md-1 container-fluid p-4" id="about">
-      <!--my photo--------------------------------------------------------------------------------->
-      <img src="images\me.jpg" class="about-photo img-fluid" alt="..." style="border-radius: 15px;">
-    </div>
-
-    <div class="col-12 col-md-7 p-4 g-md-1 container-fluid">
-      <div class="row justify-content-center" id="intro">
-        <!--about me----------------------------------->
-        <div class="col-lg-6" id="card-about" data-tilt>
-          <div class="position-relative top-50 start-50 translate-middle" id="textBox">
-            <h1 class="text-center" id="about">About Me</h1> 
-            <p class="text-light mt-4 mb-0 text-start size" id="desc">I am Daphane Canteros. You can call me <strong>Daph</strong>. Building simple websites with WordPress and Wix sparked my interest in Front-End Web Development.</p>
-            <p class="text-light mt-4 mb-0 text-start size" id="desc">The desire to learn how to build UI based on a desired output continuously drove me to learn as much as I could. This is when I began studying <strong>HTML/CSS</strong> and <strong>JavaScript</strong>.</p>
-            <p class="text-light mt-4 mb-0 text-start size" id="desc">After learning the fundamentals, I applied <strong>React</strong>, <strong>Tailwind</strong>, <strong>Bootstrap</strong>, and <strong>Node.js</strong>. I developed these passion projects during my learning journey.</p>
-            <p class="text-light mt-4 mb-0 text-start size" id="desc">My goal is to be part of a competitive and collaborative team that builds, tests, and maintains functional systems that solve problems and add value to clients.</p>
-            <!--button----------------------------------------->
-            <div class="row justify-content-center pt-4">
-              <div class="col-md-6 col-sm-12 mb-3 mb-md-0 text-center">
-                <a href="#contact" class="container-fluid btn btn-success size">Contact Me</a>
-              </div>
-              <div class="col-md-6 col-sm-12 text-center">
-                <a href="#projects" class="container-fluid btn btn-outline-success size">See Projects</a>
-              </div>
-            </div> 
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--arrow-------------------------------------------------------->
-    <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
 
     <div class="col-md-4 col-sm-4 g-1" id="card-cert" data-tilt>
       <div class="position-relative top-50 start-50 translate-middle" id="textBox">

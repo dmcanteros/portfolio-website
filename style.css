@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 /* stars animation background --------------------------------------------------*/
 .background {
+    z-index: -1;
     position: fixed;
     height: 100%;
     width: 100%;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    z-index: -10;
 }
 #stars {
     width: 1px;
