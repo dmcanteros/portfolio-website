@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daphane Canteros</title>
+    <link rel="icon" href="images\mylogo.png">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" /> 
@@ -42,7 +43,7 @@
       </div>
     </div>
   </nav>
-
+  
   <div class="container-fluid web-height" id="home"> <!--this section is for container height adjustment-->
     <!--home section----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -94,9 +95,9 @@
       <span></span>
       <span></span>
     </div>
-
-    <!--about section--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    <!--about section-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
     <div class="col-8 col-md-5 g-md-1 container-fluid p-4" id="about">
       <!--my photo--------------------------------------------------------------------------------->
       <img src="images\me.jpg" class="about-photo img-fluid" alt="..." style="border-radius: 15px;">
@@ -126,7 +127,7 @@
       </div>
     </div>
 
-    <!--Arrow-------------------------------------------------------->
+    <!--arrow-------------------------------------------------------->
     <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;">
       <span></span>
       <span></span>
@@ -191,7 +192,7 @@
       </div>
     </div>
 
-    <!--arrow------------------------------------------------------------------------>
+    <!--arrow---------------------------------------------------------------------->
     <div class="arrow" style="padding-bottom: 5em; padding-top: 2em;" id="myprojects">
       <span></span>
       <span></span>
@@ -200,9 +201,8 @@
 
     <div class="row row-cols-1 row-cols-lg-2 g-1 justify-content-center"> <!--div is placed in the center due to its singularity-->
       <!--projects i've built-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-      <div class="col">
-        <div class="card mx-1 mb-4">
-          <!--TODO: insert image logo or prototype----------------------->
+      <div class="col visually-hidden">
+        <div class="card mx-1 mb-4"> <!--project 1 has been hidden-->
           <img src="images\d.c.png" class="card-img-top" alt="...">
           <div class="card-body text-bg-dark">
             <h5 class="card-title"><strong>First Project</strong></h5>
@@ -232,17 +232,37 @@
                 <a href="https://github.com/daphcanteros/portfolio" class="container-fluid btn btn btn-success size" target="_blank"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
               </div>
               <div class="col-6">
-                <a href="#" class="container-fluid btn btn-outline-success size" target="_blank"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
+                <a href="https://dcdevcreations.wixsite.com/webdesigner" class="container-fluid btn btn-outline-success size" target="_blank"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col visually-hidden"> <!--project 3 has been hidden-->
+      <div class="col"> 
         <div class="card mx-1 mb-4">
-          <img src="images\d.c.png" class="card-img-top" alt="...">
+        <!--image size: 940px width / 788px height-->
+          <img src="images\todo-app.png" class="card-img-top" alt="...">
           <div class="card-body text-bg-dark">
-            <h5 class="card-title"><strong>Project 3</strong></h5>
+            <h5 class="card-title"><strong>ToDo App</strong></h5>
+            <p class="card-text text-white-50 size">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <!--button----------------------------------------->
+            <div class="row text-center" style="display: flex;">
+              <div class="col-6">
+                <a href="https://github.com/daphcanteros/todo-app" class="container-fluid btn btn btn-success size" target="_blank"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
+              </div>
+              <div class="col-6">
+                <a href="https://daphcanteros.github.io/todo-app/" class="container-fluid btn btn-outline-success size" target="_blank"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col"> 
+        <div class="card mx-1 mb-4">
+        <!--TODO: insert image logo or prototype----------------------->
+          <img src="images\portfolio.png" class="card-img-top" alt="...">
+          <div class="card-body text-bg-dark">
+            <h5 class="card-title"><strong>Portfolio</strong></h5>
             <p class="card-text text-white-50 size">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             <!--button----------------------------------------->
             <div class="row text-center" style="display: flex;">
@@ -250,25 +270,7 @@
                 <a href="https://github.com/daphcanteros/portfolio" class="container-fluid btn btn btn-success size" target="_blank"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
               </div>
               <div class="col-6">
-                <a href="#" class="container-fluid btn btn-outline-success size" target="_blank"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col visually-hidden"> <!--project 4 has been hidden-->
-        <div class="card mx-1 mb-4">
-          <img src="images\d.c.png" class="card-img-top" alt="...">
-          <div class="card-body text-bg-dark">
-            <h5 class="card-title"><strong>Project 4</strong></h5>
-            <p class="card-text text-white-50 size">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <!--button----------------------------------------->
-            <div class="row text-center" style="display: flex;">
-              <div class="col-6">
-                <a href="https://github.com/daphcanteros/portfolio" class="container-fluid btn btn btn-success size" target="_blank"><i class='bx bxl-github px-2' style="font-size: 1rem;"></i>GitHub</a>
-              </div>
-              <div class="col-6">
-                <a href="#" class="container-fluid btn btn-outline-success size" target="_blank"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
+                <a href="https://daphanecanteros.dev/" class="container-fluid btn btn-outline-success size" target="_blank"><i class='bx bx-globe px-2' style="font-size: 1rem;"></i>Live Demo</a>
               </div>
             </div>
           </div>
@@ -360,8 +362,7 @@
           <p class="text-light mt-1 size">dc@daphanecanteros.dev</p>
           <!--button-->
           <div class="text-center">
-            <!--TODO: change email address to dc@daphanecanteros.dev-->
-            <a href="mailto:canterosdaphanemara@gmail.com" class="container-fluid btn btn-outline-success mb-3 size" type="submit" target="_blank">Send Email</a>
+            <a href="mailto:dc@daphanecanteros.dev" class="container-fluid btn btn-outline-success mb-3 size" type="submit" target="_blank">Send Email</a>
           </div>
         </div>
         <!--form--------------------------------------------------------------------------------------->
@@ -419,7 +420,7 @@
     </a>
   </div>
   <div class="col-sm-6 text-white-50 mt-2" style="font-size: 13px;">
-    <strong>Daphane Canteros</strong> &copy; 2023
+    &copy; 2023&nbsp;&nbsp;<strong>Daphane Canteros</strong>
   </div>
 </div>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>

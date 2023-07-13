@@ -969,7 +969,7 @@ body {
     }
 }
 /* galaxy note 3 / samsung galaxy s8+ ------------------------------------*/
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 361px) {
     .web-height {
         height: 390rem;
     }
@@ -977,7 +977,7 @@ body {
         height: 25rem;
     }
     #card-projects {
-        height: 18rem;
+        height: 20rem;
     }
     #card-about {
         height: 66rem;

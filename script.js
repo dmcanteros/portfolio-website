@@ -7,7 +7,7 @@ function SendMail() {
         company : document.getElementById("company").value,
         message : document.getElementById("message").value
     }
-    emailjs.send("service_riihw5v", "template_ban43ck", params).then(function (res) {
+    emailjs.send("service_bh4t0bf", "template_ban43ck", params).then(function (res) {
         alert("Thank you! Your message has been sent successfully.");
     })
 }
