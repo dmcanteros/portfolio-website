@@ -1,15 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+    --blue: #55C9DF;
+    --white: #fff;
+    --black: #000;
+}
+
 * {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font: 100% 'Poppins', sans-serif;
     box-sizing: border-box;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
+
+/* --- NAV BAR --- */
+
+nav {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+#logo {
+    font: 1.8rem 'Anton', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: .1px var(--blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 5px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: var(--blue);
+    color: var(--black);
+}
+
+.menu.show,
+.hamburger.active {
+    display: none;
+}
+
+/* --- MEDIA QUERY FOR RESPONSIVENESS OF NAV BAR --- */
+
+@media screen and (max-width: 768px) {
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .menu li {
+        margin: 0;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .menu a:hover {
+        background-color: #555;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu.show .dropdown-menu {
+        display: none;
+    }
+
+    .hamburger.show .bar {
+        background-color: #fff;
+    }
+}
+
+/* STYLES BELOW ARE IN PROGRESS */
 .nav-design:hover {
     text-decoration: 3px underline #198754;
 }
@@ -18,12 +142,7 @@ body {
     height: 410rem; /* length size of the webpage */
 }
 /* logo -------------------------------*/
-#logo {
-    font-size: 25px;
-    font-family: 'Anton';
-    color: transparent;
-    -webkit-text-stroke: .1px #55C9DF;
-}
+
 /* cards ---------------------------------------------------------------------------*/
 #card-home, #card-tech-stack, #card-projects, #card-cert, #card-about, #card-linkedin, 
 #card-email {
