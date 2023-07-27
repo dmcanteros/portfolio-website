@@ -75,7 +75,7 @@ nav {
     color: var(--white);
     text-decoration: none;
     padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .menu a:hover {
@@ -133,15 +133,55 @@ nav {
     }
 }
 
-/* STYLES BELOW ARE IN PROGRESS */
-.nav-design:hover {
-    text-decoration: 3px underline #198754;
+/* --- HOME SECTION --- */
+h1.display-1 {
+    font-family: 'Anton', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--blue);
 }
+
+.typewriter {
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+.typewriter > span {
+    color: var(--white);
+    display:grid;
+    overflow: hidden;
+    height: 1.5em;
+}
+.typewriter span span {
+  width:0%;
+  max-width:max-content;
+  overflow: hidden;
+  height:inherit;
+  word-break:break-all;
+  animation:
+    c 0.5s infinite steps(1),  
+    t 2s linear infinite alternate,
+    m 12s steps(3) infinite;
+}
+.typewriter span span:before {
+    content:" ";
+    display:inline-block;
+}
+@keyframes t{
+    50%,100% {width:100%}
+}
+@keyframes c{
+    0%,100%{box-shadow:5px 0 0 #0000}
+    50%    {box-shadow:3px 0 0 #E8E6D9}
+}
+@keyframes m{
+    100% {transform:translateY(-308%)}
+}
+
+/* STYLES BELOW ARE IN PROGRESS */
 .web-height {
     /* TODO: finalized web-height per screen size and make an allowance when extending the text area */
     height: 410rem; /* length size of the webpage */
 }
-/* logo -------------------------------*/
 
 /* cards ---------------------------------------------------------------------------*/
 #card-home, #card-tech-stack, #card-projects, #card-cert, #card-about, #card-linkedin, 
@@ -254,43 +294,7 @@ nav {
     margin-right: auto;
     width: 100%;
 }
-/* infinite typing animation ---------*/
-.type {
-    display:inline-block;
-    vertical-align: bottom;
-    white-space: nowrap;
-    font-size: 18px;
-}
-.type > span {
-    display:grid;
-    overflow: hidden;
-    height: 1.5em;
-}
-.type span span {
-  width:0%;
-  max-width:max-content;
-  overflow: hidden;
-  height:inherit;
-  word-break:break-all;
-  animation:
-    c 0.5s infinite steps(1),  
-    t 2s linear infinite alternate,
-    m 12s steps(3) infinite;
-}
-.type span span:before {
-    content:" ";
-    display:inline-block;
-}
-@keyframes t{
-    50%,100% {width:100%}
-}
-@keyframes c{
-    0%,100%{box-shadow:5px 0 0 #0000}
-    50%    {box-shadow:3px 0 0 #E8E6D9}
-}
-@keyframes m{
-    100% {transform:translateY(-308%)}
-}
+
 .social a {
     text-decoration: none;
 }
