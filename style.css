@@ -1,5 +1,8 @@
+/* --- FONTS --- */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 :root {
     --blue: #55C9DF;
@@ -25,7 +28,6 @@ nav {
     color: var(--white);
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 10px;
     border-radius: 0 0 5px 5px;
 }
@@ -88,7 +90,7 @@ nav {
     display: none;
 }
 
-/* --- MEDIA QUERY FOR RESPONSIVENESS OF NAV BAR --- */
+/* --- NAV BAR RESPONSIVENESS --- */
 
 @media screen and (max-width: 768px) {
     
@@ -148,34 +150,70 @@ h1.display-1 {
 
 .typewriter > span {
     color: var(--white);
-    display:grid;
+    display: grid;
     overflow: hidden;
     height: 1.5em;
 }
-.typewriter span span {
-  width:0%;
-  max-width:max-content;
-  overflow: hidden;
-  height:inherit;
-  word-break:break-all;
-  animation:
-    c 0.5s infinite steps(1),  
-    t 2s linear infinite alternate,
-    m 12s steps(3) infinite;
+
+.typewriter span .typewriter-text {
+    font-family: 'IBM Plex Mono', monospace;
+    width: 0%;
+    max-width: max-content;
+    overflow: hidden;
+    height: inherit;
+    word-break: break-all;
+    animation:
+        c 0.5s infinite steps(1),  
+        t 2s linear infinite alternate,
+        m 12s steps(3) infinite;
 }
-.typewriter span span:before {
+
+.typewriter span .typewriter-text:before {
     content:" ";
-    display:inline-block;
+    display: inline-block;
 }
-@keyframes t{
-    50%,100% {width:100%}
+
+@keyframes t {
+    50%, 100% {
+        width: 100%;
+    }
 }
-@keyframes c{
-    0%,100%{box-shadow:5px 0 0 #0000}
-    50%    {box-shadow:3px 0 0 #E8E6D9}
+
+@keyframes c {
+    0%, 100% {
+        box-shadow: 5px 0 0 #0000;
+    }
+    50% {
+        box-shadow: 3px 0 0 #E8E6D9;
+    }
 }
-@keyframes m{
-    100% {transform:translateY(-308%)}
+
+@keyframes m {
+    100% {
+        transform: translateY(-308%);
+    }
+}
+
+/* --- .TYPEWRITER RESPONSIVENESS --- */
+
+@media (max-width: 600px) {
+
+    .typewriter span .typewriter-text {
+        font-size: 0.875rem;
+    }
+
+    .typewriter > span {
+        height: 1.5rem;
+    }
+}
+
+/* --- .BTN-OUTLINE-INFO RESPONSIVENESS --- */
+
+@media (max-width: 600px) {
+
+    .btn-outline-info {
+        font-size: 0.875rem;
+    }
 }
 
 /* STYLES BELOW ARE IN PROGRESS */
@@ -225,7 +263,7 @@ h1.display-1 {
     padding: 2em;
 }
 /* modify "h1" titles -----------------*/
-#myname, #get-in-touch, #tech-stack, #projects, #cert, #about {
+#myname, #get-in-touch, #tech-stack, #cert, #about {
     font-family: 'Anton';
     color: transparent;
 }
@@ -237,42 +275,11 @@ h1.display-1 {
     font-size: 4.8rem;
     -webkit-text-stroke: 1px #C2C4C8;
 }
-#projects, #cert, #about {
+#cert, #about {
     font-size: 4.8rem;
     -webkit-text-stroke: 1px #55C9DF;
 }
-/* arrow ------------------------------*/
-.arrow span {
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin: auto;
-    margin-bottom: -10px;
-    border-bottom: 5px solid #55C9DF;
-    border-right: 5px solid #55C9DF;
-    border-radius: 3px;
-    transform: rotate(45deg);
-    animation: scroll 2s infinite;
-}
-.arrow span:nth-child(2) {
-    animation-delay: -.2s;
-}
-.arrow span:nth-child(3) {
-    animation-delay: -.4s;
-}
-@keyframes scroll {
-    0% {
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
-}
+
 /* images ----------------------------------*/
 .about-photo {
     border-radius: 15px;
