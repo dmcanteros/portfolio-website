@@ -22,6 +22,21 @@ body {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* the container takes up at least the viewport height */
+    max-width: 90%;
+    min-width: 300px;
+    width: 60vw;
+}
+
+.center {
+    text-align: center;
+}
+
 /* --- NAV BAR --- */
 
 nav {
@@ -153,6 +168,7 @@ h1.display-1 {
     display: grid;
     overflow: hidden;
     height: 1.5em;
+    place-items: center;
 }
 
 .typewriter span .typewriter-text {
