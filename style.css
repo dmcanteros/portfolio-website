@@ -4,6 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
+.test-border {
+    border: 1px solid white;
+    height: 100vh;
+}
+
 :root {
     --blue: #55C9DF;
     --white: #fff;
@@ -25,7 +30,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     min-height: 100vh; /* the container takes up at least the viewport height */
     max-width: 90%;
@@ -229,6 +234,28 @@ h1.display-1 {
 
     .btn-outline-info {
         font-size: 0.875rem;
+    }
+}
+
+/* --- ABOUT ME SECTION --- */
+
+.container-about {
+    display: flex;
+    flex-direction: row; /* default row direction */
+}
+
+.my-info, .my-photo {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #fff;
+}
+
+/* --- .CONTAINER-ABOUT RESPONSIVENESS --- */
+
+@media (max-width: 768px) {
+    
+    .container-about {
+        grid-auto-flow: column-reverse; /* reverse order on smaller screens */
     }
 }
 
