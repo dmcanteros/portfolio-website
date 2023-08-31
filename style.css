@@ -246,8 +246,9 @@ h1.display-1 {
 
 .my-info, .my-photo {
     flex: 1;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #fff;
+    min-width: 29vw;
 }
 
 /* --- .CONTAINER-ABOUT RESPONSIVENESS --- */
@@ -255,7 +256,7 @@ h1.display-1 {
 @media (max-width: 768px) {
     
     .container-about {
-        grid-auto-flow: column-reverse; /* reverse order on smaller screens */
+        flex-direction: column-reverse; /* reverse order on smaller screens */
     }
 }
 
