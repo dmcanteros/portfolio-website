@@ -13,6 +13,8 @@
     --blue: #55C9DF;
     --white: #fff;
     --black: #000;
+    --glass-card-border: rgba(255,255,255,0.3);
+    --glass-card: rgba(255,255,255,0.1);
 }
 
 * {
@@ -247,8 +249,16 @@ h1.display-1 {
 .my-info, .my-photo {
     flex: 1;
     padding: 10px;
-    border: 1px solid #fff;
     min-width: 29vw;
+    margin-bottom: 25%;
+}
+
+.my-info {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+strong.role {
+    color: var(--blue);
 }
 
 /* --- .CONTAINER-ABOUT RESPONSIVENESS --- */
@@ -260,12 +270,25 @@ h1.display-1 {
     }
 }
 
-/* STYLES BELOW ARE IN PROGRESS */
-.web-height {
-    /* TODO: finalized web-height per screen size and make an allowance when extending the text area */
-    height: 410rem; /* length size of the webpage */
+/* --- TECH STACK SECTION --- */
+
+.container-tech-stack {
+    color: var(--white);
+    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-card-border);
+    background: var(--glass-card);
+    padding: 20px;
 }
 
+i.bx {
+    color: var(--blue);
+}
+
+p.icon-title {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+/* STYLES BELOW ARE IN PROGRESS */
 /* cards ---------------------------------------------------------------------------*/
 #card-home, #card-tech-stack, #card-projects, #card-cert, #card-about, #card-linkedin, 
 #card-email {
