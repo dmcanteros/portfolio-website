@@ -282,6 +282,7 @@ strong.role {
 
 i.bx {
     color: var(--blue);
+    font-size: 2.5rem;
 }
 
 p.icon-title {
