@@ -270,14 +270,18 @@ strong.role {
     }
 }
 
-/* --- TECH STACK SECTION --- */
+/* --- TECH STACK AND TOOLS SECTION --- */
 
-.container-tech-stack {
+.tech-stack, .tools {
     color: var(--white);
     box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
     border: 1px solid var(--glass-card-border);
     background: var(--glass-card);
     padding: 20px;
+}
+
+.skills-section h1:last-of-type {
+    margin-top: 10%;
 }
 
 i.bx {
