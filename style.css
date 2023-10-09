@@ -217,7 +217,7 @@ h1.display-1 {
     }
 }
 
-/* --- .TYPEWRITER RESPONSIVENESS --- */
+/* --- HOME SECTION RESPONSIVENESS --- */
 
 @media (max-width: 600px) {
 
@@ -228,11 +228,6 @@ h1.display-1 {
     .typewriter > span {
         height: 1.5rem;
     }
-}
-
-/* --- .BTN-OUTLINE-INFO RESPONSIVENESS --- */
-
-@media (max-width: 600px) {
 
     .btn-outline-info {
         font-size: 0.875rem;
@@ -261,12 +256,19 @@ strong.role {
     color: var(--blue);
 }
 
-/* --- .CONTAINER-ABOUT RESPONSIVENESS --- */
+/* --- ABOUT ME RESPONSIVENESS --- */
 
 @media (max-width: 768px) {
     
     .container-about {
         flex-direction: column-reverse; /* reverse order on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+
+    .my-info {
+        font-size: 0.875rem;
     }
 }
 
@@ -291,6 +293,19 @@ i.bx {
 
 p.icon-title {
     font-family: 'IBM Plex Mono', monospace;
+}
+
+/* --- TECH STACK AND TOOLS RESPONSIVENESS --- */
+
+@media (max-width: 600px) {
+
+    p.icon-title {
+        font-size: 0.875rem;
+    }
+
+    i.bx {
+        font-size: 2rem;
+    }
 }
 
 /* STYLES BELOW ARE IN PROGRESS */
