@@ -256,7 +256,7 @@ strong.role {
     color: var(--blue);
 }
 
-/* --- ABOUT ME RESPONSIVENESS --- */
+/* --- ABOUT ME SECTION RESPONSIVENESS --- */
 
 @media (max-width: 768px) {
     
@@ -286,7 +286,7 @@ strong.role {
     margin-top: 10%;
 }
 
-i.bx {
+i.bx, svg.with-icon_icon__MHUeb, iconify-icon.mt-1 {
     color: var(--blue);
     font-size: 2.5rem;
 }
@@ -295,7 +295,7 @@ p.icon-title {
     font-family: 'IBM Plex Mono', monospace;
 }
 
-/* --- TECH STACK AND TOOLS RESPONSIVENESS --- */
+/* --- TECH STACK AND TOOLS SECTION RESPONSIVENESS --- */
 
 @media (max-width: 600px) {
 
@@ -305,6 +305,21 @@ p.icon-title {
 
     i.bx {
         font-size: 2rem;
+    }
+}
+
+/* --- PROJECTS SECTION --- */
+
+.projects-section {
+    margin-top: 20%;
+}
+
+/* --- PROJECTS SECTION RESPONSIVENESS --- */
+
+@media (max-width: 600px) {
+
+    .projects-section {
+        margin-top: 50%;
     }
 }
 
