@@ -279,14 +279,14 @@ strong.role {
     box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
     border: 1px solid var(--glass-card-border);
     background: var(--glass-card);
-    padding: 20px;
+    padding: 15px;
 }
 
 .skills-section h1:last-of-type {
     margin-top: 10%;
 }
 
-i.bx, svg.with-icon_icon__MHUeb, iconify-icon.mt-1 {
+i.bx {
     color: var(--blue);
     font-size: 2.5rem;
 }
@@ -312,6 +312,10 @@ p.icon-title {
 
 .projects-section {
     margin-top: 20%;
+}
+
+.container-projects > .card-deck > .card {
+    width: 18rem;
 }
 
 /* --- PROJECTS SECTION RESPONSIVENESS --- */
