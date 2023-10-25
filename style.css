@@ -316,6 +316,7 @@ p.icon-title {
 
 .container-projects > .card-deck > .card {
     width: 18rem;
+    /* height: 18rem; */
 }
 
 /* --- PROJECTS SECTION RESPONSIVENESS --- */
