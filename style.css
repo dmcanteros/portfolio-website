@@ -15,6 +15,7 @@
     --black: #000;
     --glass-card-border: rgba(255,255,255,0.3);
     --glass-card: rgba(255,255,255,0.1);
+    --secondary-text: #d1c9c9;
 }
 
 * {
@@ -27,6 +28,7 @@ body {
     font: 100% 'Poppins', sans-serif;
     box-sizing: border-box;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow-x: hidden;
 }
 
 .container {
@@ -241,7 +243,8 @@ h1.display-1 {
     flex-direction: row; /* default row direction */
 }
 
-.my-info, .my-photo {
+.my-info,
+.my-photo {
     flex: 1;
     padding: 10px;
     min-width: 29vw;
@@ -274,7 +277,8 @@ strong.role {
 
 /* --- TECH STACK AND TOOLS SECTION --- */
 
-.tech-stack, .tools {
+.tech-stack,
+.tools {
     color: var(--white);
     box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
     border: 1px solid var(--glass-card-border);
@@ -316,7 +320,17 @@ p.icon-title {
 
 .container-projects > .card-deck > .card {
     width: 18rem;
-    /* height: 18rem; */
+}
+
+.card-text {
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.card-text:last-of-type {
+    font: 0.9rem 'IBM Plex Mono', monospace;
+    color: var(--secondary-text);
 }
 
 /* --- PROJECTS SECTION RESPONSIVENESS --- */
