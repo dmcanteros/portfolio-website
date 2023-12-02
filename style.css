@@ -46,6 +46,13 @@ body {
     text-align: center;
 }
 
+.about-section,
+.skills-section,
+.projects-section,
+.certificates-section {
+    height: auto;
+}
+
 /* --- NAV BAR --- */
 
 nav {
@@ -221,7 +228,7 @@ h1.display-1 {
 
 /* --- HOME SECTION RESPONSIVENESS --- */
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     .typewriter span .typewriter-text {
         font-size: 0.875rem;
@@ -261,14 +268,14 @@ strong.role {
 
 /* --- ABOUT ME SECTION RESPONSIVENESS --- */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     
     .container-about {
         flex-direction: column-reverse; /* reverse order on smaller screens */
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     .my-info {
         font-size: 0.875rem;
@@ -277,6 +284,10 @@ strong.role {
 
 /* --- TECH STACK AND TOOLS SECTION --- */
 
+.skills-section h1:last-of-type {
+    margin-top: 10%;
+}
+
 .tech-stack,
 .tools {
     color: var(--white);
@@ -284,10 +295,6 @@ strong.role {
     border: 1px solid var(--glass-card-border);
     background: var(--glass-card);
     padding: 15px;
-}
-
-.skills-section h1:last-of-type {
-    margin-top: 10%;
 }
 
 i.bx {
@@ -301,7 +308,7 @@ p.icon-title {
 
 /* --- TECH STACK AND TOOLS SECTION RESPONSIVENESS --- */
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     p.icon-title {
         font-size: 0.875rem;
@@ -335,47 +342,40 @@ p.icon-title {
 
 /* --- PROJECTS SECTION RESPONSIVENESS --- */
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     .projects-section {
         margin-top: 50%;
     }
 }
 
-/* STYLES BELOW ARE IN PROGRESS */
-/* cards ---------------------------------------------------------------------------*/
-#card-home, #card-tech-stack, #card-projects, #card-cert, #card-about, #card-linkedin, 
-#card-email {
-    color: #fff;
-    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.3);
-    background: rgba(255,255,255,0.1);
-    padding: 30px;
+/* --- CERTIFICATES SECTION --- */
+
+.certificates-section {
+    margin-top: 20em;
 }
-#card-home { 
-    height: 22rem;
+
+/* --- CONTACT FORM SECTION --- */
+
+.contact-section {
+    margin-top: 15em;
 }
-#card-tech-stack {
-    height: 24rem;
-    width: 28rem;
+
+.container-contact {
+    display: flex;
+    flex-direction: row; /* default row direction */
 }
-#card-projects {
-    height: 18rem;
-    width: 23rem;
+
+.description,
+.form {
+    flex: 1;
+    padding: 10px;
+    min-width: 29vw;
+    margin-bottom: 25%;
 }
-#card-cert {
-    height: 18rem;
-    width: 29rem;
-}
-#card-about {
-    height: 40rem;
-    width: 30rem;
-}
-#card-linkedin, #card-email {
-    height: 12rem;
-    width: 19rem;
-}
+
+/* TODO: Finalize form layout */
+
 .form {
     color: #fff;
     box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
@@ -383,377 +383,30 @@ p.icon-title {
     border: 1px solid rgba(255,255,255,0.3);
     padding: 2em;
 }
-/* modify "h1" titles -----------------*/
-#myname, #get-in-touch, #tech-stack, #cert, #about {
-    font-family: 'Anton';
-    color: transparent;
-}
-#myname, #get-in-touch {
-    font-size: 5rem;
-    -webkit-text-stroke: 1px #55C9DF;
-}
-#tech-stack {
-    font-size: 4.8rem;
-    -webkit-text-stroke: 1px #C2C4C8;
-}
-#cert, #about {
-    font-size: 4.8rem;
-    -webkit-text-stroke: 1px #55C9DF;
+
+.description {
+    font-family: 'IBM Plex Mono', monospace;
 }
 
-/* images ----------------------------------*/
-.about-photo {
-    border-radius: 15px;
+/* --- CONTACT FORM SECTION RESPONSIVENESS --- */
+
+@media screen and (max-width: 768px) {
+
+    .contact-section {
+        margin-top: 5em;
+    }
 }
-.cert {
-    overflow: hidden;
+
+@media screen and (max-width: 768px) {
+
+    .contact-section {
+        margin-top: -6em;
+    }
 }
-.about-photo, .cert {
-    color: #fff;
-    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255,255,255,0.3);
-    background: rgba(255,255,255,0.1);
-}
-/* margin -----------------------------*/
-#home-margin {
-    padding-top: 9em;
-}
-#intro {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
+
+
+/* STYLES BELOW ARE IN PROGRESS */
 
 .social a {
     text-decoration: none;
-}
-/* responsive screen sizes from widest to smallest  ------------------------
---------------------------------------------------------------------------*/
-/* 4k - 2560px -----------------------------------------------------------*/
-@media screen and (max-width: 2561px) {
-    .web-height {
-        height: 372rem;
-    }
-}
-/* laptop large - 1440px --------------------------------------------------*/
-@media screen and (max-width: 1440px) {
-    .web-height {
-        height: 372rem;
-    }
-}
-/* chromebook 2.0 ---------------------------------------------------------*/
-@media screen and (max-width: 1367px) {
-    #card-home {
-        padding: 18px;
-        height: 26rem;
-    }
-    .web-height {
-        height: 358rem;
-    }
-}
-/* chromebook ------------------------------------------------------------*/
-@media screen and (max-width: 1300px) {
-    #card-home {
-        padding: 18px;
-        height: 26rem;
-    }
-    .web-height {
-        height: 358rem;
-    }
-}
-/* laptop - 1024px -------------------------------------------------------*/
-@media screen and (max-width: 1025px) {
-    #card-home { 
-        height: 26rem;
-    }
-    .web-height {
-        height: 347rem;
-    }
-}
-/* surface pro 7 ---------------------------------------------------------*/
-@media screen and (max-width: 912px) {
-    #card-home { 
-        height: 20rem;
-    }
-    #card-about {
-        height: 49rem;
-    }
-    .web-height {
-        height: 365rem;
-    }
-}
-/* ipad air --------------------------------------------------------------*/
-@media screen and (max-width: 820px) {
-    #card-home { 
-        height: 20rem;
-    }
-    #card-about {
-        height: 49rem;
-    }
-    .web-height {
-        height: 365rem;
-    }
-}
-/* kindle fire hdx -------------------------------------------------------*/
-@media screen and (max-width: 800px) {
-    #card-home { 
-        height: 20rem;
-    }
-    #card-about {
-        height: 49rem;
-    }
-    .web-height {
-        height: 364rem;
-    }
-}
-/* tablet - 768px --------------------------------------------------------*/
-@media screen and (max-width: 769px) {
-    #card-about {
-        height: 49rem;
-    }
-    .web-height {
-        height: 364rem;
-    }
-}
-/* galaxy tab s4 ---------------------------------------------------------*/
-@media screen and (max-width: 712px) {
-    #card-home { 
-        height: 19rem;
-    }
-    #card-tech-stack {
-        height: 27rem;
-        width: 25rem;
-    }
-    #card-about {
-        height: 43rem;
-        padding: 20px;
-    }
-    .web-height {
-        height: 415rem;
-    }
-}
-/* surface duo -----------------------------------------------------------*/
-@media screen and (max-width: 540px) {
-    #card-home {
-        height: 25rem;
-    }
-    #card-about {
-        height: 44rem;
-    }
-    .web-height {
-        height: 399rem;
-    }
-}
-/* mobile large - 425px --------------------------------------------------*/
-@media screen and (max-width: 426px) {
-    #home-margin {
-        padding-top: 7em;
-    }
-    #myname, #tech-stack, #projects, #about, #get-in-touch, #cert {
-        font-size: 4rem;
-    }
-    #card-home {
-        height: 24rem;
-        padding: 15px;
-    }
-    #card-tech-stack {
-        height: 26rem;
-    }
-    #card-projects, #card-cert {
-        height: 17rem;
-    }
-    #card-about {
-        height: 54rem;
-        padding: 20px;
-    }
-    #card-linkedin, #card-email {
-        height: 10.5rem;
-        padding: 20px;
-    }
-    .web-height {
-        height: 381rem;
-    }
-}
-/* iphone xr -------------------------------------------------------------*/
-@media screen and (max-width: 414px) {
-    .web-height {
-        height: 410rem;
-    }
-}
-/* samsung galaxy s20 ultra ----------------------------------------------*/
-@media screen and (max-width: 413px) {
-    .web-height {
-        height: 382rem;
-    }
-}
-/* pixel 5 ---------------------------------------------------------------*/
-@media screen and (max-width: 394px) {
-    #card-home {
-        height: 25rem;
-    }
-    #card-about {
-        height: 55rem;
-    }
-    .web-height {
-        height: 383rem;
-    }
-}
-/* iphone 12 pro ---------------------------------------------------------*/
-@media screen and (max-width: 391px) {
-    #card-home {
-        height: 25rem;
-    }
-    #card-about {
-        height: 57rem;
-    }
-    #cert {
-        font-size: 3.8rem; /* smaller than usual because text is too long */
-    }
-    .web-height {
-        height: 384rem;
-    }
-}
-/* mobile medium - 375px / iphone se --------------------------------------*/
-@media screen and (max-width: 376px) {
-    #home-margin {
-        padding-top: 7em;
-    }
-    #myname, #tech-stack, #projects, #about, #get-in-touch {
-        font-size: 4rem;
-    }
-    #card-home {
-        height: 25rem;
-    }
-    #card-tech-stack {
-        height: 26rem;
-        padding: 12px;
-    }
-    #card-projects {
-        height: 17rem;
-    }
-    #cert {
-        font-size: 3.4rem; /* smaller than usual because text is too long */
-    }
-    #card-cert {
-        height: 16rem;
-    }
-    #card-about {
-        height: 65rem;
-        padding: 20px;
-    }
-    #card-linkedin, #card-email {
-        height: 10.5rem;
-        padding: 20px;
-    }
-    .web-height {
-        height: 388rem;
-    }
-}
-/* galaxy note 3 / samsung galaxy s8+ ------------------------------------*/
-@media screen and (max-width: 361px) {
-    .web-height {
-        height: 390rem;
-    }
-    #card-home {
-        height: 25rem;
-    }
-    #card-projects {
-        height: 20rem;
-    }
-    #card-about {
-        height: 66rem;
-    }
-    #card-cert {
-        height: 17rem;
-    }
-}
-/* mobile small - 320px / galaxy s9+ ------------------------------------*/
-@media screen and (max-width: 321px) {
-    #home-margin {
-        padding-top: 7em;
-    }
-    #myname, #tech-stack, #projects, #about, #get-in-touch {
-        font-size: 3.5rem;
-    }
-    #card-home {
-        height: 23rem;
-    }
-    #card-tech-stack {
-        height: 25rem;
-        padding: 12px;
-    }
-    .size {
-        font-size: 15px;
-    }
-    #card-projects {
-        height: 17rem;
-    }
-    #card-about {
-        height: 68rem;
-        padding: 19px;
-    }
-    #cert {
-        font-size: 2.7rem; /* smaller than usual because text is too long */
-    }
-    #card-cert {
-        height: 16rem;
-    }
-    #card-linkedin, #card-email {
-        height: 10.5rem;
-        padding: 20px;
-    }
-    .web-height {
-        height: 379rem;
-    }
-}
-/* galaxy fold ----------------------------------------------------------*/
-@media screen and (max-width: 281px) {
-    #card-home {
-        padding: 20px;
-        height: 22rem;
-    }
-    #myname, #tech-stack, #projects, #about, #get-in-touch  {
-        font-size: 3rem;
-    }
-    #home-margin {
-        padding-top: 7em;
-    }
-    .type {
-        font-size: 16px;
-    }
-    .type > span {
-        height: 1.4em;
-    }
-    .size, .form-floating label {
-        font-size: 13px;
-    }
-    #card-tech-stack {
-        height: 27rem;
-        padding: 20px;
-    }
-    #card-projects {
-        height: 15rem;
-        padding: 20px;
-    }
-    #cert {
-        font-size: 2.4rem; /* smaller than usual because text is too long */
-    }
-    #card-cert {
-        height: 15rem;
-        padding: 20px;
-    }
-    #card-about {
-        height: 65rem;
-        padding: 20px;
-    }
-    #card-linkedin, #card-email {
-        height: 10rem;
-        padding: 20px;
-    }
-    #floatingInput {
-        font-size: 13px;
-    }
-    .web-height {
-        height: 368rem;
-    }
 }
