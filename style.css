@@ -49,7 +49,8 @@ body {
 .about-section,
 .skills-section,
 .projects-section,
-.certificates-section {
+.certificates-section,
+.contact-section {
     height: auto;
 }
 
@@ -369,22 +370,23 @@ p.icon-title {
 .description,
 .form {
     flex: 1;
-    padding: 10px;
     min-width: 29vw;
     margin-bottom: 25%;
 }
 
-/* TODO: Finalize form layout */
-
 .form {
     color: #fff;
     box-shadow: 0 5px 31px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px solid rgba(255,255,255,0.3);
-    padding: 2em;
+    padding: 1.5em;
 }
 
-.description {
+.description,
+input[type="text"],
+input[type="email"],
+textarea,
+label {
     font-family: 'IBM Plex Mono', monospace;
 }
 
@@ -395,15 +397,22 @@ p.icon-title {
     .contact-section {
         margin-top: 5em;
     }
-}
 
-@media screen and (max-width: 768px) {
-
-    .contact-section {
-        margin-top: -6em;
+    .container-contact {
+        flex-direction: column; /* reverse order on smaller screens */
     }
 }
 
+@media screen and (max-width: 600px) {
+
+    .description,
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    label {
+        font-size: 0.875rem;
+    }
+}
 
 /* STYLES BELOW ARE IN PROGRESS */
 

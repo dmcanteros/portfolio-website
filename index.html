@@ -496,7 +496,7 @@
 
         <!-- END OF CERTIFICATES SECTION -->
 
-        <!-- START OF CONTACT FORM SECTION --> <!-- TODO: Finish contact form ---->
+        <!-- START OF CONTACT FORM SECTION -->
 
         <section class="contact-section container position-inherit test-border">
 
@@ -504,9 +504,9 @@
 
           <hr class="border opacity-50 mt-0 w-100">
 
-          <div class="container-contact gap-1">
+          <div class="container-contact gap-2">
 
-            <p class="description text-white">
+            <p class="description text-white test-border">
               I am deeply excited to discuss this further with you.
               <br><br>
               If you are looking for a <strong class="role">Front-End Web Developer</strong>, 
@@ -514,7 +514,7 @@
               <strong>dc@daphanecanteros.dev</strong>.
             </p>
 
-            <div class="form">
+            <div class="form test-border p-0">
               <div class="col-lg-6 form text-bg-dark gy-5">
 
                 <div class="form-floating mb-3">
@@ -568,7 +568,6 @@
                   placeholder="Leave your message here" 
                   id="message" 
                   id="floatingTextarea2" 
-                  placeholder="Message" 
                   style="height: 100px"></textarea>
 
                   <label for="floatingTextarea2" 
@@ -577,12 +576,14 @@
 
                 </div>
 
-                <button type="button" 
-                class="container-fluid btn btn-success size" 
-                data-bs-toggle="modal" 
-                data-bs-target="#exampleModal" 
-                onclick="SendMail()">Send Your Message
-                </button>
+                <div class="container-button d-flex justify-content-center">
+
+                  <button type="button" 
+                  class="btn btn-outline-info mx-2 p-2 btn-form"
+                  onclick="SendMail()">Send Message
+                  </button>
+
+                </div>
 
               </div>
             </div>
