@@ -346,14 +346,23 @@ p.icon-title {
 @media screen and (max-width: 600px) {
 
     .projects-section {
-        margin-top: 50%;
+        margin-top: 13em;
     }
 }
 
 /* --- CERTIFICATES SECTION --- */
 
 .certificates-section {
-    margin-top: 20em;
+    margin-top: 15em;
+}
+
+/* --- CERTIFICATES SECTION RESPONSIVENESS --- */
+
+@media screen and (max-width: 768px) {
+
+    .certificates-section {
+        margin-top: 12em;
+    }
 }
 
 /* --- CONTACT FORM SECTION --- */
@@ -371,7 +380,6 @@ p.icon-title {
 .form {
     flex: 1;
     min-width: 29vw;
-    margin-bottom: 25%;
 }
 
 .form {
@@ -395,7 +403,7 @@ label {
 @media screen and (max-width: 768px) {
 
     .contact-section {
-        margin-top: 5em;
+        margin-top: 0.1em;
     }
 
     .container-contact {
