@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
+/* --- FOR TEST ONLY --- */
+
 .test-border {
     border: 1px solid white;
     height: 100vh;
@@ -369,6 +371,7 @@ p.icon-title {
 
 .contact-section {
     margin-top: 15em;
+    margin-bottom: 10em;
 }
 
 .container-contact {
@@ -422,8 +425,17 @@ label {
     }
 }
 
-/* STYLES BELOW ARE IN PROGRESS */
+/* --- FOOTER SECTION --- */
 
-.social a {
+.footer-section {
+    height: 50vh;
+}
+
+.icon a {
     text-decoration: none;
+}
+
+.copyright {
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--secondary-text);
 }
