@@ -431,6 +431,11 @@ label {
     height: 50vh;
 }
 
+.icon {
+    height: 6vh;
+    margin-top: 3rem;
+}
+
 .icon a {
     text-decoration: none;
 }
