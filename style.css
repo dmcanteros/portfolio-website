@@ -433,14 +433,21 @@ label {
 
 .icon {
     height: 6vh;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .icon a {
     text-decoration: none;
 }
 
+.icon a > i.bx {
+    color: var(--blue);
+    font-size: 2.5rem;
+    padding: 25px;
+}
+
 .copyright {
     font-family: 'IBM Plex Mono', monospace;
     color: var(--secondary-text);
+    margin-top: 75px;
 }
