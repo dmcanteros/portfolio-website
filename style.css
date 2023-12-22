@@ -451,3 +451,37 @@ label {
     color: var(--secondary-text);
     margin-top: 75px;
 }
+
+/* --- FOOTER SECTION RESPONSIVENESS --- */
+
+@media screen and (max-width: 1024px) {
+
+    .icon {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .icon a > i.bx  {
+        font-size: 2rem;
+    }
+
+    .copyright p {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    .icon a > i.bx {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    .icon a > i.bx {
+        padding: 10px;
+    }
+}
