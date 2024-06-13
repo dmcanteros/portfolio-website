@@ -1,15 +1,8 @@
-/* --- FONTS --- */
+/* --- Fonts --- */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
-
-/* --- FOR TEST ONLY --- */
-
-.test-border {
-    border: 1px solid white;
-    height: 100vh;
-}
 
 :root {
     --blue: #55C9DF;
@@ -56,7 +49,7 @@ body {
     height: auto;
 }
 
-/* --- NAV BAR --- */
+/* --- Nav Bar --- */
 
 nav {
     color: var(--white);
@@ -124,7 +117,7 @@ nav {
     display: none;
 }
 
-/* --- NAV BAR RESPONSIVENESS --- */
+/* --- Nav Bar Responsiveness --- */
 
 @media screen and (max-width: 768px) {
     
@@ -169,7 +162,7 @@ nav {
     }
 }
 
-/* --- HOME SECTION --- */
+/* --- Home Section --- */
 
 h1.display-1 {
     font-family: 'Anton', sans-serif;
@@ -229,7 +222,7 @@ h1.display-1 {
     }
 }
 
-/* --- HOME SECTION RESPONSIVENESS --- */
+/* --- Home Section Responsiveness --- */
 
 @media screen and (max-width: 600px) {
 
@@ -246,7 +239,7 @@ h1.display-1 {
     }
 }
 
-/* --- ABOUT ME SECTION --- */
+/* --- About Section --- */
 
 .container-about {
     display: flex;
@@ -269,7 +262,7 @@ strong.role {
     color: var(--blue);
 }
 
-/* --- ABOUT ME SECTION RESPONSIVENESS --- */
+/* --- About Section Responsiveness --- */
 
 @media screen and (max-width: 768px) {
     
@@ -285,7 +278,7 @@ strong.role {
     }
 }
 
-/* --- TECH STACK AND TOOLS SECTION --- */
+/* --- Tech Stack and Tools Section --- */
 
 .skills-section h1:last-of-type {
     margin-top: 10%;
@@ -309,7 +302,7 @@ p.icon-title {
     font-family: 'IBM Plex Mono', monospace;
 }
 
-/* --- TECH STACK AND TOOLS SECTION RESPONSIVENESS --- */
+/* --- Tech Stack and Tools Section Responsiveness --- */
 
 @media screen and (max-width: 600px) {
 
@@ -322,7 +315,7 @@ p.icon-title {
     }
 }
 
-/* --- PROJECTS SECTION --- */
+/* --- Projects Section --- */
 
 .projects-section {
     margin-top: 20%;
@@ -343,7 +336,7 @@ p.icon-title {
     color: var(--secondary-text);
 }
 
-/* --- PROJECTS SECTION RESPONSIVENESS --- */
+/* --- Projects Section Responsiveness --- */
 
 @media screen and (max-width: 600px) {
 
@@ -352,13 +345,13 @@ p.icon-title {
     }
 }
 
-/* --- CERTIFICATES SECTION --- */
+/* --- Certificates Section --- */
 
 .certificates-section {
     margin-top: 15em;
 }
 
-/* --- CERTIFICATES SECTION RESPONSIVENESS --- */
+/* --- Certificates Section Responsiveness --- */
 
 @media screen and (max-width: 768px) {
 
@@ -367,7 +360,7 @@ p.icon-title {
     }
 }
 
-/* --- CONTACT FORM SECTION --- */
+/* --- Contact Section --- */
 
 .contact-section {
     margin-top: 15em;
@@ -401,7 +394,7 @@ label {
     font-family: 'IBM Plex Mono', monospace;
 }
 
-/* --- CONTACT FORM SECTION RESPONSIVENESS --- */
+/* --- Contact Section Responsiveness --- */
 
 @media screen and (max-width: 768px) {
 
@@ -425,7 +418,7 @@ label {
     }
 }
 
-/* --- FOOTER SECTION --- */
+/* --- Footer Section --- */
 
 .footer-section {
     height: 50vh;
@@ -452,7 +445,7 @@ label {
     margin-top: 75px;
 }
 
-/* --- FOOTER SECTION RESPONSIVENESS --- */
+/* --- Footer Section Responsiveness --- */
 
 @media screen and (max-width: 1024px) {
 

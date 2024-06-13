@@ -13,17 +13,21 @@
     <link rel="icon" href="assets\images\mylogo.png" type="image/png" />
     <link rel="stylesheet" href="./style.css" type="text/css" />
 
-    <!-- EmailJS -->
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function(){
-        emailjs.init("4Ktl2_yVQBc0nej9g");
-      })();
-    </script>
-
     <title>Daphane Canteros | Web Developer</title>
 
+    <!-- Contact Form Public Key -->
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "4Ktl2_yVQBc0nej9g",
+          });
+      })();
+    </script>
   </head>
 
   <body>
@@ -363,10 +367,10 @@
           <div class="container-contact gap-2">
 
             <p class="description text-white">
-              I am deeply excited to discuss this further with you.
+              I am genuinely happy to further discuss this with you.
+              <span>&#128522;</span>
               <br><br>
-              If you are looking for a <strong class="role">Front-End Web Developer</strong>, 
-              kindly fill-out the form or you may send an email to 
+              Kindly fill-out the form or you may directly send an email to
               <strong>canterosdaphanemara@gmail.com</strong>.
             </p>
 
@@ -424,7 +428,9 @@
                   placeholder="Leave your message here" 
                   id="message" 
                   id="floatingTextarea2" 
-                  style="height: 100px"></textarea>
+                  style="height: 100px" 
+                  required>
+                  </textarea>
 
                   <label for="floatingTextarea2" 
                   class="text-white-50 size">Leave your message here
@@ -434,9 +440,9 @@
 
                 <div class="container-button d-flex justify-content-center">
 
-                  <button type="button" 
-                  class="btn btn-outline-info mx-2 p-2 btn-form"
-                  onclick="SendMail()">Send Message
+                  <button type="button"  
+                  id="sendBtn" 
+                  class="btn btn-outline-info mx-2 p-2 btn-form">Send Message
                   </button>
 
                 </div>

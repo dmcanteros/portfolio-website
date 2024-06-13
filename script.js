@@ -1,13 +1,18 @@
-// script.js
-function SendMail() {
-    var params = {
-        from_name : document.getElementById("fullName").value, 
-        fullName : document.getElementById("fullName").value,
+// Contact form
+function sendMail() {
+    let params = {
+        fullName : document.getElementById("fullName").value, // Name of sender
         email_id : document.getElementById("email_id").value,
         company : document.getElementById("company").value,
-        message : document.getElementById("message").value
+        message : document.getElementById("message").value,
     }
-    emailjs.send("service_bh4t0bf", "template_ban43ck", params).then(function (res) {
-        alert("Thank you! Your message has been sent successfully.");
-    })
+    
+    emailjs.send("service_riihw5v", "template_iyeawip", params)
+    .then(function(response) {
+        alert("Thank you! Your message has been sent.");
+    }, function(error) {
+        alert("Failed to send message. Please try again.");
+    });
 }
+
+document.getElementById("sendBtn").addEventListener("click", sendMail);
