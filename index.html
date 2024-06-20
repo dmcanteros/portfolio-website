@@ -17,15 +17,17 @@
 
     <!-- Contact Form Public Key -->
 
+    <script defer type="text/javascript" src="./script-files.js/api.js"></script>
+
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
 
     <script type="text/javascript">
       (function(){
-          emailjs.init({
-            publicKey: "4Ktl2_yVQBc0nej9g",
-          });
+        emailjs.init({
+          publicKey: "4Ktl2_yVQBc0nej9g",
+        });
       })();
     </script>
   </head>
@@ -374,21 +376,20 @@
               <strong>canterosdaphanemara@gmail.com</strong>.
             </p>
 
-            <div class="form p-0">
+            <form class="form p-0">
               <div class="col-lg-6 form text-bg-dark gy-5">
 
                 <div class="form-floating mb-3">
 
                   <input type="text" 
                   class="form-control text-bg-dark" 
-                  id="fullName" 
-                  id="floatingInput" 
+                  id="fullName"  
                   name="fullName"
                   placeholder="Full Name" 
                   autocomplete="off" 
                   required />
 
-                  <label for="floatingInput" 
+                  <label for="fullName" 
                   class="text-white-50">Full Name
                   </label>
 
@@ -399,13 +400,12 @@
                   <input type="email" 
                   class="form-control text-bg-dark" 
                   id="email_id" 
-                  id="floatingInput" 
                   name="email_id"
                   placeholder="Email" 
                   autocomplete="off" 
                   required />
 
-                  <label for="floatingInput" 
+                  <label for="email_id" 
                   class="text-white-50 size">Email
                   </label>
 
@@ -416,13 +416,12 @@
                   <input type="text" 
                   class="form-control text-bg-dark" 
                   id="company" 
-                  id="floatingInput" 
                   name="company"
                   placeholder="Company" 
                   autocomplete="off" 
                   required />
 
-                  <label for="floatingInput" 
+                  <label for="company" 
                   class="text-white-50 size">Company
                   </label>
 
@@ -433,10 +432,10 @@
                   <textarea class="form-control text-bg-dark size" 
                   placeholder="Leave your message here" 
                   id="message" 
-                  id="floatingTextarea2" 
-                  style="height: 100px"></textarea>
+                  name="message"
+                  style="height: 100px" required></textarea>
 
-                  <label for="floatingTextarea2" 
+                  <label for="message" 
                   class="text-white-50 size">Leave your message here
                   </label>
 
@@ -444,7 +443,7 @@
 
                 <div class="container-button d-flex justify-content-center">
 
-                  <button type="button"  
+                  <button type="button" 
                   id="sendBtn" 
                   class="btn btn-outline-info mx-2 p-2 btn-form">Send Message
                   </button>
@@ -452,7 +451,7 @@
                 </div>
 
               </div>
-            </div>
+            </form>
             
           </div>
 
@@ -497,7 +496,6 @@
 
         <!-- Script Modules -->
 
-        <script type="module" src="./script-files.js/api.js"></script>
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
         <script src="./script-files.js/vanilla-tilt.js"></script>

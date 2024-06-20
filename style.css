@@ -4,11 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
-.test-border {
-    border: 1px solid white;
-    height: 100vh;
-}
-
 :root {
     --blue: #55C9DF;
     --white: #fff;
