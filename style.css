@@ -396,6 +396,10 @@ label {
     font-family: 'IBM Plex Mono', monospace;
 }
 
+.warning {
+    border: 2px solid red !important;
+}
+
 /* --- Contact Section Responsiveness --- */
 
 @media screen and (max-width: 768px) {
