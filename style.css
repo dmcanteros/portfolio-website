@@ -397,7 +397,8 @@ label {
 }
 
 .warning {
-    border: 2px solid red !important;
+    border: 2px solid var(--blue) !important; /* the warning will only show in 
+    the form validation if the user did not fill-out all the required fields */
 }
 
 /* --- Contact Section Responsiveness --- */
