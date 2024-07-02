@@ -11,6 +11,7 @@
     --glass-card-border: rgba(255,255,255,0.3);
     --glass-card: rgba(255,255,255,0.1);
     --secondary-text: #d1c9c9;
+    --navbar: #212529;
 }
 
 * {
@@ -80,10 +81,13 @@ nav {
 }
 
 .hamburger .bar {
+    display: block;
     width: 25px;
     height: 3px;
     background-color: var(--white);
     margin: 5px 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu {
@@ -94,6 +98,7 @@ nav {
 
 .menu li {
     margin-right: 20px;
+    list-style: none;
 }
 
 .menu li:last-child {
@@ -112,28 +117,29 @@ nav {
     color: var(--black);
 }
 
-.menu.show,
-.hamburger.active {
-    display: none;
-}
-
 /* --- Nav Bar Responsiveness --- */
 
 @media screen and (max-width: 768px) {
     
     .menu {
-        display: none;
+        display: none; /* hide menu by default */
         flex-direction: column;
-        background-color: #333;
-        position: absolute;
+        background-color: var(--navbar);
+        position: fixed;
         top: 50px;
         left: 0;
         width: 100%;
-        z-index: 1;
+        text-align: center;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
-    .menu li {
-        margin: 0;
+    .menu.active {
+        display: flex; /* show menu when active */
+    }
+
+    .menu li,
+    .menu li:last-child {
+        margin: 0 auto;
     }
 
     .menu a {
@@ -142,23 +148,27 @@ nav {
     }
 
     .menu a:hover {
-        background-color: #555;
+        background-color: var(--blue);
+        color: var(--black);
     }
 
     .hamburger {
         display: block;
+        cursor: pointer;
     }
 
-    .menu.show {
-        display: flex;
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
     }
 
-    .menu.show .dropdown-menu {
-        display: none;
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
     }
 
-    .hamburger.show .bar {
-        background-color: #fff;
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
 
